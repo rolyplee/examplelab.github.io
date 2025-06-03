@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 title: "Welcome"
 author_profile: false
 ---
