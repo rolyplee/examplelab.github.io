@@ -1,9 +1,18 @@
-/* === CENTER ALL TEXT === */
+
+/* === Center the title and homepage content === */
 body,
 .page,
-.page__content,
 .page__title,
-h1, h2, h3, h4, h5, h6,
-p, ul, ol, li, a, blockquote {
-  text-align: center !important;
+.page__content {
+  text-align: center;
+}
+
+.page__title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page__content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
