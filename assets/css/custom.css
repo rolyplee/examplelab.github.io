@@ -1,0 +1,9 @@
+/* === CENTER ALL TEXT === */
+body,
+.page,
+.page__content,
+.page__title,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li, a, blockquote {
+  text-align: center !important;
+}
