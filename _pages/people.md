@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "People"
-permalink: /people/
+
 ---
 
 ## People – Figueroa Robotics Lab
