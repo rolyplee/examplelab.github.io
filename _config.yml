@@ -44,6 +44,7 @@ defaults:
       path: ""
     values:
       layout: single  # ✅ Use 'single' layout instead of 'home' to remove Recent Posts
+      custom_css: "/assets/css/custom.css"
 
 category_archive:
   type: liquid
