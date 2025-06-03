@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "Welcome"
-author_profile: true
+author_profile: false
 ---
 
 Welcome to the **Figueroa Robotics Lab**!  
