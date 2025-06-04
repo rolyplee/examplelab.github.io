@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "George [Jiayuan] Gao"
-permalink: /people/george-gao/
+permalink: /people/george_gao/
 ---
 
 <img src="/assets/images/people/generic-avatar.png" alt="George [Jiayuan] Gao" style="max-width:200px; border-radius:8px; margin-bottom:1rem;">
