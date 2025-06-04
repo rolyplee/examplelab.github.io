@@ -40,7 +40,6 @@ permalink: /people/
 }
 </style>
 
-# Lab Members
 
 ---
 
