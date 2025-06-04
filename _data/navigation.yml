@@ -3,3 +3,12 @@ main:
     url: /
   - title: "People"
     url: /people/
+  - title: "Research"
+    url: /research/
+  - title: "Publication"
+    url: /publication/
+  - title: "Facilites"
+    url: /facilities/
+  - title: "Lab News"
+    url: /news/
+  
