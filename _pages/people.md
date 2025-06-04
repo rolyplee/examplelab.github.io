@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Lab Members"
-permalink: /Lab Members/
+permalink: /People/
 ---
 
 <style>
