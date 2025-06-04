@@ -6,7 +6,7 @@ permalink: /People/
 
 <style>
 .page__title {
-  text-align: center;
+  text-align: center !important;
 }
 
 .people-grid {
@@ -18,15 +18,19 @@ permalink: /People/
 }
 
 .person-card {
-  flex: 0 1 calc(33.333% - 1.5rem);
+  flex: 0 1 calc(20% - 1.5rem); /* 5 per row */
   box-sizing: border-box;
   text-align: center;
   font-size: 0.9rem;
-  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .person-card img {
   width: 100%;
+  height: auto;
+  max-width: 160px;
   border-radius: 8px;
   object-fit: cover;
   aspect-ratio: 1 / 1;
