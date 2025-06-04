@@ -3,26 +3,32 @@ layout: single
 title: "Lab Members"
 permalink: /people/
 ---
+<style>
+.page__title {
+  text-align: center !important;
+}
 
-<style>
-<style>
+.people-grid-wrapper {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
 .people-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
-  padding: 1rem 2rem;
+  align-items: start;
 }
 
 .person-card {
-  flex: 0 1 calc(20% - 2rem); /* 5 per row */
   text-align: left;
   font-size: 0.9rem;
 }
 
 .person-card img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
   object-fit: cover;
   aspect-ratio: 1 / 1;
