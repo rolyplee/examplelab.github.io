@@ -12,7 +12,7 @@ permalink: /people/
 .people-section {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  padding: 2rem 5rem;
+  padding: 2rem 2rem;
   box-sizing: border-box;
 }
 
