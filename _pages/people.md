@@ -20,26 +20,32 @@ permalink: /people/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
+  justify-items: start;
   align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .person-card {
   text-align: left;
   font-size: 0.9rem;
+  max-width: 220px;
+  width: 100%;
 }
 
 .person-card img {
   width: 100%;
+  max-width: 180px;
   height: auto;
-  max-width: 100%;
-  min-height: 160px;
   border-radius: 8px;
   object-fit: cover;
-  margin-bottom: 0.5rem;
   aspect-ratio: 1 / 1;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 </style>
 
+# Lab Members
 
 ---
 
