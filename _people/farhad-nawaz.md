@@ -1,10 +1,10 @@
 ---
 layout: single
 title: "Farhad Nawaz"
-permalink: /people/farhad-nawaz/
+permalink: /people/farhad_nawaz/
 ---
 
-<img src="/assets/images/people/generic-avatar.png" alt="Farhad Nawaz" style="max-width:200px; border-radius:8px; margin-bottom:1rem;">
+<img src="/assets/images/people/generic_avatar.png" alt="Farhad Nawaz" style="max-width:200px; border-radius:8px; margin-bottom:1rem;">
 
 ## Farhad Nawaz
 
