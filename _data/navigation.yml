@@ -5,10 +5,12 @@ main:
     url: /people/
   - title: "Research"
     url: /research/
-  - title: "Publication"
-    url: /publication/
-  - title: "Facilites"
-    url: /facilities/
+    children:
+      - title: "Projects"
+        url: /research/projects/
+      - title: "Facilities"
+        url: /research/facilities/
+  - title: "Publications"
+    url: /publications/
   - title: "Lab News"
     url: /news/
-  
