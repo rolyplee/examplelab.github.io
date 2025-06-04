@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Dain Kim"
-permalink: /people/dain-kim/
+permalink: /people/dain_kim/
 ---
 
 <img src="/assets/images/people/generic-avatar.png" alt="Dain Kim" style="max-width:200px; border-radius:8px; margin-bottom:1rem;">
