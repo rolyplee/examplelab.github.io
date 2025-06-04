@@ -5,18 +5,24 @@ permalink: /people/
 ---
 
 <style>
+.page__title {
+  text-align: center;
+}
+
 .people-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
-  padding-top: 1rem;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .person-card {
-  width: 220px;
+  flex: 0 1 calc(33.333% - 1.5rem);
+  box-sizing: border-box;
   text-align: center;
   font-size: 0.9rem;
+  max-width: 240px;
 }
 
 .person-card img {
@@ -27,6 +33,7 @@ permalink: /people/
   margin-bottom: 0.5rem;
 }
 </style>
+
 
 # People – Figueroa Robotics Lab
 
