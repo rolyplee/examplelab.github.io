@@ -76,14 +76,6 @@ permalink: /people/
 </div>
 </div>
 
-<!-- === Visiting Scholars === -->
-<div class="people-section">
-<h2>Visiting Scholars</h2>
-<div class="people-grid">
-<div class="person-card"><a href="{{ site.baseurl }}/people/enrico_martini/"><img src="/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/enrico_martini/"><h3>Enrico Martini</h3></a><p>Verona, Italy<br>Spring 2024</p></div>
-<div class="person-card"><a href="{{ site.baseurl }}/people/ze_zhang/"><img src="/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/ze_zhang/"><h3>Ze Zhang</h3></a><p>Chalmers, Sweden<br>Fall 2024</p></div>
-</div>
-</div>
 
 <!-- === Master's Thesis Students === -->
 <div class="people-section">
@@ -114,5 +106,14 @@ permalink: /people/
 <div class="person-card"><a href="{{ site.baseurl }}/people/natey_kim/"><img src="/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/natey_kim/"><h3>Natey Kim</h3></a><p>M.S. Robotics, 2026–present</p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/jingshuo_li/"><img src="/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/jingshuo_li/"><h3>Jingshuo Li</h3></a><p>M.S. MEAM, 2026–present</p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/jalaj_shukla/"><img src="/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/jalaj_shukla/"><h3>Jalaj Shukla</h3></a><p>M.S. MEAM, 2025–present</p></div>
+</div>
+</div>
+
+<!-- === Visiting Scholars === -->
+<div class="people-section">
+<h2>Visiting Scholars</h2>
+<div class="people-grid">
+<div class="person-card"><a href="{{ site.baseurl }}/people/enrico_martini/"><img src="/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/enrico_martini/"><h3>Enrico Martini</h3></a><p>Verona, Italy<br>Spring 2024</p></div>
+<div class="person-card"><a href="{{ site.baseurl }}/people/ze_zhang/"><img src="/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/ze_zhang/"><h3>Ze Zhang</h3></a><p>Chalmers, Sweden<br>Fall 2024</p></div>
 </div>
 </div>
