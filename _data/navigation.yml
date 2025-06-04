@@ -1,8 +1,10 @@
 main:
   - title: "Home"
     url: /
+
   - title: "People"
     url: /people/
+
   - title: "Research"
     url: /research/
     children:
@@ -10,7 +12,9 @@ main:
         url: /research/projects/
       - title: "Facilities"
         url: /research/facilities/
-  - title: "Publications"
-    url: /publications/
+
+  - title: "Publication"
+    url: /publication/
+
   - title: "Lab News"
     url: /news/
