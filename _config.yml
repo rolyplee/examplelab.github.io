@@ -25,6 +25,9 @@ plugins:
 # ✅ Removed paginate to disable blog layout
 # paginate: 5
 # paginate_path: /page:num/
+collections:
+  people:
+    output: true
 
 
 footer:
