@@ -40,7 +40,7 @@ permalink: /people/
 
 ## PhD Students
 
-<div style="width: 100vw; margin-left: calc(-50vw + 50%);">
+<div class="people-grid-wrapper">
   <div class="people-grid">
 
 <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Ho Jin Choi</h3><p>MEAM, 2024–present</p></div>
