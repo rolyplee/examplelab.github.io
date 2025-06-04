@@ -5,28 +5,23 @@ permalink: /people/
 ---
 
 <style>
-.page__title {
-  text-align: center !important;
-}
-
+<style>
 .people-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;   /* align left */
+  justify-content: flex-start;
   gap: 2rem;
-  margin-top: 1rem;
+  padding: 1rem 2rem;
 }
 
 .person-card {
-  flex: 0 1 calc(20% - 2rem);    /* 5 per row, more spread out */
-  box-sizing: border-box;
-  text-align: left;              /* left-align text */
+  flex: 0 1 calc(20% - 2rem); /* 5 per row */
+  text-align: left;
   font-size: 0.9rem;
 }
 
 .person-card img {
   width: 100%;
-  max-width: 100%;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
@@ -39,7 +34,8 @@ permalink: /people/
 
 ## PhD Students
 
-<div class="people-grid">
+<div style="width: 100vw; margin-left: calc(-50vw + 50%);">
+  <div class="people-grid">
 
 <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Ho Jin Choi</h3><p>MEAM, 2024–present</p></div>
 <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Farhad Nawaz</h3><p>ESE, 2023–present<br><em>Co-advised with Nikolai Matni</em></p></div>
@@ -48,6 +44,7 @@ permalink: /people/
 <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Yifan Xue</h3><p>MEAM, 2022–present</p></div>
 <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Tianyu Li</h3><p>MEAM, 2022–present</p></div>
 
+</div>
 </div>
 
 ---
