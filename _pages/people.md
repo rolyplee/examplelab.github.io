@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "People"
-permalink: /people/
+title: "Lab Members"
+permalink: /Lab Members/
 ---
 
 <style>
@@ -35,7 +35,7 @@ permalink: /people/
 </style>
 
 
-# People – Figueroa Robotics Lab
+
 
 ---
 
