@@ -6,14 +6,9 @@ twitter_username: ""
 github_username: ""
 minimal_mistakes_skin: default
 search: true
-# enable the navigation dropdown
-plugins:
-  - jekyll-include-cache
 
-# enable navigation dropdown
-navigation:
-  dropdowns:
-    enabled: true
+
+
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 permalink: pretty
@@ -39,6 +34,10 @@ url: "https://rolyplee.github.io"
 baseurl: "/examplelab.github.io"
 
 
+navigation:
+  dropdowns:
+    enabled: true
+    
 footer:
   links:
     - label: "Twitter"
