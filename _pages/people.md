@@ -12,17 +12,17 @@ permalink: /people/
 .people-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 
 .person-card {
-  flex: 0 1 calc(20% - 1.5rem);
+  flex: 0 1 calc(20% - 2rem);
   box-sizing: border-box;
   text-align: center;
   font-size: 0.9rem;
-  max-width: 180px;
+  max-width: 200px;
 }
 
 .person-card img {
@@ -35,8 +35,6 @@ permalink: /people/
 }
 </style>
 
----
-
 ## PhD Students
 
 <div class="people-grid">
@@ -48,8 +46,6 @@ permalink: /people/
 <div class="person-card"><a href="/people/ho-jin-choi"><img src="/assets/images/people/generic-avatar.png"><h3>Ho Jin Choi</h3></a><p>MEAM, 2024–present</p></div>
 </div>
 
----
-
 ## Research Engineers
 
 <div class="people-grid">
@@ -57,16 +53,6 @@ permalink: /people/
 <div class="person-card"><a href="/people/sunan-sun"><img src="/assets/images/people/generic-avatar.png"><h3>Sunan Sun</h3></a><p>M.S. Robotics, 2023</p></div>
 </div>
 
----
-
-## Visiting Scholars
-
-<div class="people-grid">
-<div class="person-card"><a href="/people/enrico-martini"><img src="/assets/images/people/generic-avatar.png"><h3>Enrico Martini</h3></a><p>Verona, Italy<br>Spring 2024</p></div>
-<div class="person-card"><a href="/people/ze-zhang"><img src="/assets/images/people/generic-avatar.png"><h3>Ze Zhang</h3></a><p>Chalmers, Sweden<br>Fall 2024</p></div>
-</div>
-
----
 
 ## Master's Thesis Students
 
@@ -80,8 +66,6 @@ permalink: /people/
 <div class="person-card"><a href="/people/george-gao"><img src="/assets/images/people/generic-avatar.png"><h3>George [Jiayuan] Gao</h3></a><p>M.S. Robotics, 2024–present</p></div>
 <div class="person-card"><a href="/people/paul-lee"><img src="/assets/images/people/generic-avatar.png"><h3>Paul [Sanghyub] Lee</h3></a><p>M.S. Robotics, 2024–present</p></div>
 </div>
-
----
 
 ## Non-Thesis Master's Research
 
@@ -97,4 +81,11 @@ permalink: /people/
 <div class="person-card"><a href="/people/natey-kim"><img src="/assets/images/people/generic-avatar.png"><h3>Natey Kim</h3></a><p>M.S. Robotics, 2026–present</p></div>
 <div class="person-card"><a href="/people/jingshuo-li"><img src="/assets/images/people/generic-avatar.png"><h3>Jingshuo Li</h3></a><p>M.S. MEAM, 2026–present</p></div>
 <div class="person-card"><a href="/people/jalaj-shukla"><img src="/assets/images/people/generic-avatar.png"><h3>Jalaj Shukla</h3></a><p>M.S. MEAM, 2025–present</p></div>
+</div>
+
+## Visiting Scholars
+
+<div class="people-grid">
+<div class="person-card"><a href="/people/enrico-martini"><img src="/assets/images/people/generic-avatar.png"><h3>Enrico Martini</h3></a><p>Verona, Italy<br>Spring 2024</p></div>
+<div class="person-card"><a href="/people/ze-zhang"><img src="/assets/images/people/generic-avatar.png"><h3>Ze Zhang</h3></a><p>Chalmers, Sweden<br>Fall 2024</p></div>
 </div>
