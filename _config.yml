@@ -28,6 +28,8 @@ plugins:
 collections:
   people:
     output: true
+url: "https://rolyplee.github.io"
+baseurl: "/examplelab.github.io"
 
 
 footer:
