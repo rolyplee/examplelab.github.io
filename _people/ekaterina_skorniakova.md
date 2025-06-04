@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Ekaterina Skorniakova"
-permalink: /people/ekaterina-skorniakova/
+permalink: /people/ekaterina_skorniakova/
 ---
 
 <img src="/assets/images/people/generic-avatar.png" alt="Ekaterina Skorniakova" style="max-width:200px; border-radius:8px; margin-bottom:1rem;">
