@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Enrico Martini"
-permalink: /people/enrico-martini/
+permalink: /people/enrico_martini/
 ---
 
 <img src="/assets/images/people/generic-avatar.png" alt="Enrico Martini" style="max-width:200px; border-radius:8px; margin-bottom:1rem;">
