@@ -43,14 +43,14 @@ permalink: /people/
 <div class="people-grid-wrapper">
   <div class="people-grid">
 
-<div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Ho Jin Choi</h3><p>MEAM, 2024–present</p></div>
-<div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Farhad Nawaz</h3><p>ESE, 2023–present<br><em>Co-advised with Nikolai Matni</em></p></div>
-<div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Yifei Simon Shao</h3><p>CIS, 2023–present<br><em>Co-advised with V. Kumar & P. Chaudhari</em></p></div>
-<div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Shafagh Keyvanian</h3><p>MEAM, 2022–present<br><em>Co-advised with Michelle Johnson</em></p></div>
-<div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Yifan Xue</h3><p>MEAM, 2022–present</p></div>
-<div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Tianyu Li</h3><p>MEAM, 2022–present</p></div>
+  <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Ho Jin Choi</h3><p>MEAM, 2024–present</p></div>
+  <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Farhad Nawaz</h3><p>ESE, 2023–present<br><em>Co-advised with Nikolai Matni</em></p></div>
+  <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Yifei Simon Shao</h3><p>CIS, 2023–present<br><em>Co-advised with V. Kumar & P. Chaudhari</em></p></div>
+  <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Shafagh Keyvanian</h3><p>MEAM, 2022–present<br><em>Co-advised with Michelle Johnson</em></p></div>
+  <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Yifan Xue</h3><p>MEAM, 2022–present</p></div>
+  <div class="person-card"><img src="/assets/images/people/generic-avatar.png"><h3>Tianyu Li</h3><p>MEAM, 2022–present</p></div>
 
-</div>
+  </div>
 </div>
 
 ---
