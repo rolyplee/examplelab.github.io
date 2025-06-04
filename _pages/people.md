@@ -51,6 +51,14 @@ permalink: /people/
 }
 </style>
 
+<!-- === Principal Investigator === -->
+<div class="people-section">
+<h2>Principal Investigator</h2>
+<div class="people-grid">
+<div class="person-card"><a href="{{ site.baseurl }}/people/nadia_figueroa/"><img src="/assets/images/people/generic-avatar.png"></a><a href="{{ site.baseurl }}/people/nadia_figueroa/"><h3>Dr. Nadia Figueroa</h3></a><p>Shalini and Rajeev Misra Presidential Assistant Professor, MEAM</p></div>
+</div>
+</div>
+
 <!-- === PhD Students === -->
 <div class="people-section">
 <h2>PhD Students</h2>
