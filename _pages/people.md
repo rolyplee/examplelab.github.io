@@ -12,34 +12,28 @@ permalink: /people/
 .people-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
+  justify-content: flex-start;   /* align left */
+  gap: 2rem;
   margin-top: 1rem;
 }
 
 .person-card {
-  flex: 0 1 calc(20% - 1.5rem); /* 5 per row */
+  flex: 0 1 calc(20% - 2rem);    /* 5 per row, more spread out */
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;              /* left-align text */
   font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .person-card img {
   width: 100%;
+  max-width: 100%;
   height: auto;
-  max-width: 160px;
   border-radius: 8px;
   object-fit: cover;
   aspect-ratio: 1 / 1;
   margin-bottom: 0.5rem;
 }
 </style>
-
-
-
 
 ---
 
