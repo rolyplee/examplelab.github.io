@@ -13,7 +13,9 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 permalink: pretty
 timezone: America/New_York
-
+collections:
+  pages:
+    output: true
 include:
   - _pages
 
