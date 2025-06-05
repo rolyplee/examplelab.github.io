@@ -8,17 +8,20 @@ permalink: /people/
 .page__title {
   text-align: center !important;
 }
+
 .people-section {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   padding: 2rem 4rem;
   box-sizing: border-box;
 }
+
 .people-section h2 {
   text-align: left;
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
+
 .people-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -26,11 +29,13 @@ permalink: /people/
   justify-items: center;
   align-items: start;
 }
+
 .person-card {
   width: 180px;
   text-align: center;
   font-size: 0.9rem;
 }
+
 .person-card img {
   width: 180px;
   height: 180px;
@@ -38,13 +43,25 @@ permalink: /people/
   object-fit: cover;
   margin-bottom: 0.5rem;
 }
+
 .person-card h3 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   margin: 0.25rem 0;
   text-align: center;
+  word-wrap: break-word;
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+@media (min-width: 1000px) {
+  .person-card h3 {
+    font-size: 0.95rem;
+  }
 }
 </style>
+
 
 <!-- === Principal Investigator === -->
 <div class="people-section">
