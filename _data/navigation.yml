@@ -7,7 +7,7 @@ main:
 
   - title: "Research"
     url: /research/
-    sublinks:
+    children:
       - title: "Projects"
         url: /research/projects/
       - title: "Facilities"
