@@ -1,85 +1,18 @@
 ---
 layout: single
 title: "Publications"
-permalink: /publications/
+permalink: /publication/
 ---
 
 <style>
-/* Center the page title from the theme */
-.page__title {
-  text-align: center !important;
-}
-
-/* Full-width band but center all inner content */
-.people-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding: 2rem 4rem;
-  box-sizing: border-box;
-  text-align: center; /* center inline content by default */
-}
-
-/* Center each section heading */
-.people-section h2 {
-  text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-/* Center the entire grid block and each card within it */
-.people-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  justify-content: center;  /* center the grid as a whole */
-  justify-items: center;     /* center cards in their columns */
-  align-items: start;        /* keep cards top-aligned inside each cell */
-}
-
-/* Make each card a flex column and center its contents */
-.person-card {
-  width: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;  /* centers image + text horizontally */
-  justify-content: flex-start;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-/* Image sizing + consistent box even if image fails to load */
-.person-card img {
-  width: 180px;
-  height: 180px;
-  border-radius: 8px;
-  object-fit: cover;
-  margin-bottom: 0.5rem;
-  background: #f3f4f6; /* light placeholder bg */
-}
-
-/* Name styling */
-.person-card h3 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin: 0.25rem 0;
-  line-height: 1.2;
-  word-wrap: break-word;
-  white-space: normal;
-  max-width: 100%;
-}
-
-/* Tighten paragraph spacing under names */
-.person-card p {
-  margin: 0.15rem 0 0;
-}
-
-/* Keep name size stable on big screens */
-@media (min-width: 1000px) {
-  .person-card h3 {
-    font-size: 0.95rem;
-  }
-}
+/* Table styling to match your Alumni tables */
+.pub-table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 2rem 0; font-size: 0.95rem; }
+.pub-table thead th { font-weight: 700; }
+.pub-table td, .pub-table th { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+/* Make long titles wrap nicely */
+.pub-table td:nth-child(3) { word-break: normal; overflow-wrap: anywhere; }
 </style>
+
 
 
 <h2>Peer-Reviewed Journals and Transactions</h2>
