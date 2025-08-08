@@ -152,14 +152,7 @@ sanghyub-lee" target="_blank">
   </div>
 </div>
 
-<!-- === Visiting Scholars === -->
-<div class="people-section">
-<h2>Visiting Scholars</h2>
-<div class="people-grid">
-<div class="person-card"><a href="{{ site.baseurl }}/people/enrico_martini/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/enrico_martini/"><h3>Enrico Martini</h3></a><p>Verona, Italy<br>Spring 2024</p></div>
-<div class="person-card"><a href="{{ site.baseurl }}/people/ze_zhang/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/ze_zhang/"><h3>Ze Zhang</h3></a><p>Chalmers, Sweden<br>Fall 2024</p></div>
-</div>
-</div>
+
 
 <!-- === Master's Thesis Students === -->
 <div class="people-section">
