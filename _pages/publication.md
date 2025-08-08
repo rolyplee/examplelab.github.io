@@ -4,14 +4,7 @@ title: "Publications"
 permalink: /publications/
 ---
 
-<style>
-/* Table styling to match your Alumni tables */
-.pub-table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 2rem 0; font-size: 0.95rem; }
-.pub-table thead th { font-weight: 700; }
-.pub-table td, .pub-table th { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
-/* Make long titles wrap nicely */
-.pub-table td:nth-child(3) { word-break: normal; overflow-wrap: anywhere; }
-</style>
+
 
 # Publications
 
