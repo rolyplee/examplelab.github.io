@@ -124,7 +124,7 @@ sanghyub-lee" target="_blank">
   </div>
 
   <div class="person-card">
-      <a href="https://ggao22.github.io/" target="_blank">img src="{{ site.baseurl }}/assets/images/people/george_gao.png"></a>
+      <a href="https://ggao22.github.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/george_gao.png"></a>
       <a href="https://ggao22.github.io/" target="_blank">h3>George [Jiayuan] Gao</h3></a>
       <p>M.S. Robotics, 2025<br>2025<br><em>Research Engineer at Dyna Robotics</em></p>
   </div>
