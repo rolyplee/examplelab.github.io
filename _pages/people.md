@@ -109,11 +109,26 @@ sanghyub-lee" target="_blank">
 
 <!-- === Research Engineers === -->
 <div class="people-section">
-<h2>Research Engineers</h2>
-<div class="people-grid">
-<div class="person-card"><a href="{{ site.baseurl }}/people/harshil_parekh/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/harshil_parekh/"><h3>Harshil Parekh</h3></a><p>M.S. Robotics, 2023<br>Now at BotBuilt</p></div>
+  <h2>Research Engineers</h2>
+  <div class="people-grid">
+    <div class="person-card">
+      <a href="#"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
+      <a href="#"><h3>Daudi Zein</h3></a>
+      <p>M.S. Robotics, 2025<br>2025–present</p>
+    </div>
 
-</div>
+    <div class="person-card">
+      <a href="{{ site.baseurl }}/people/jalaj_shukla/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
+      <a href="{{ site.baseurl }}/people/jalaj_shukla/"><h3>Jalaj Shukla</h3></a>
+      <p>M.S. MEAM, 2025<br>2025–present</p>
+    </div>
+
+    <div class="person-card">
+      <a href="https://ggao22.github.io/" target="_blank">img src="{{ site.baseurl }}/assets/images/people/george_gao.png"></a>
+      <a href="https://ggao22.github.io/" target="_blank">h3>George [Jiayuan] Gao</h3></a>
+      <p>M.S. Robotics, 2025<br>2025<br><em>Research Engineer at Dyna Robotics</em></p>
+    </div>
+  </div>
 </div>
 
 <!-- === Visiting Scholars === -->
@@ -134,8 +149,8 @@ sanghyub-lee" target="_blank">
 <div class="person-card"><a href="{{ site.baseurl }}/people/satyajeet_das/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/satyajeet_das/"><h3>Satyajeet Das</h3></a><p>M.S. ESE, 2023–2024</p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/haihui_gao/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/haihui_gao/"><h3>Haihui Gao</h3></a><p>M.S. ESE & MEAM, 2022–2024</p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/zhiquan_zhang/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/zhiquan_zhang/"><h3>Zhiquan Zhang</h3></a><p>M.S. ESE, 2022–2024</p></div>
-<div class="person-card"><a href="{{ site.baseurl }}/people/george_gao/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/george_gao/"><h3>George [Jiayuan] Gao</h3></a><p>M.S. Robotics, 2024–present</p></div>
-<div class="person-card"><a href="{{ site.baseurl }}/people/paul_lee/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/paul_lee/"><h3>Paul [Sanghyub] Lee</h3></a><p>M.S. Robotics, 2024–present</p></div>
+
+
 </div>
 </div>
 
@@ -153,6 +168,6 @@ sanghyub-lee" target="_blank">
 <div class="person-card"><a href="{{ site.baseurl }}/people/felix_zheng/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/felix_zheng/"><h3>Felix [Yuchen] Zheng</h3></a><p>M.S. Robotics, 2026–present</p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/natey_kim/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/natey_kim/"><h3>Natey Kim</h3></a><p>M.S. Robotics, 2026–present</p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/jingshuo_li/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/jingshuo_li/"><h3>Jingshuo Li</h3></a><p>M.S. MEAM, 2026–present</p></div>
-<div class="person-card"><a href="{{ site.baseurl }}/people/jalaj_shukla/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/jalaj_shukla/"><h3>Jalaj Shukla</h3></a><p>M.S. MEAM, 2025–present</p></div>
+
 </div>
 </div>
