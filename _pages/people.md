@@ -92,6 +92,18 @@ permalink: /people/
   <p>MEAM, 2025–present</p>
 </div>
 
+<div class="person-card">
+  <a href="https://sites.google.com/seas.upenn.edu/
+sanghyub-lee" target="_blank">
+    <img src="{{ site.baseurl }}/assets/images/people/sanghyub_lee.png">
+  </a>
+  <a href="https://sites.google.com/seas.upenn.edu/
+sanghyub-lee" target="_blank">
+    <h3>Paul(Sanghyub) Lee</h3>
+  </a>
+  <p>MEAM, 2025–present</p>
+</div>
+
 </div>
 </div>
 
