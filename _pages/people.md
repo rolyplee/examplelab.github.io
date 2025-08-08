@@ -100,7 +100,7 @@ permalink: /people/
 <h2>Research Engineers</h2>
 <div class="people-grid">
 <div class="person-card"><a href="{{ site.baseurl }}/people/harshil_parekh/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/harshil_parekh/"><h3>Harshil Parekh</h3></a><p>M.S. Robotics, 2023<br>Now at BotBuilt</p></div>
-<div class="person-card"><a href="{{ site.baseurl }}/people/sunan_sun/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/sunan_sun/"><h3>Sunan Sun</h3></a><p>M.S. Robotics, 2023</p></div>
+
 </div>
 </div>
 
