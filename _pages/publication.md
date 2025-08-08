@@ -5,12 +5,27 @@ permalink: /publication/
 ---
 
 <style>
-/* Table styling to match your Alumni tables */
-.pub-table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 2rem 0; font-size: 0.95rem; }
+.pub-table-wrapper { overflow-x: auto; }
+
+/* Table look */
+.pub-table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 2rem; font-size: 0.95rem; table-layout: auto; }
 .pub-table thead th { font-weight: 700; }
 .pub-table td, .pub-table th { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
-/* Make long titles wrap nicely */
-.pub-table td:nth-child(3) { word-break: normal; overflow-wrap: anywhere; }
+
+/* Make columns sane: widen Title + Journal, shrink # and Year */
+.pub-table col:nth-child(1) { width: 6%; }   /* # */
+.pub-table col:nth-child(2) { width: 22%; }  /* Authors */
+.pub-table col:nth-child(3) { width: 36%; }  /* Title (wider) */
+.pub-table col:nth-child(4) { width: 24%; }  /* Journal/Conference */
+.pub-table col:nth-child(5) { width: 6%; }   /* Year */
+.pub-table col:nth-child(6) { width: 6%; }   /* Notes */
+
+/* Better wrapping: don't break in the middle of words */
+.pub-table td:nth-child(3),
+.pub-table td:nth-child(4) {
+  word-break: normal;
+  overflow-wrap: break-word; /* wrap at spaces and long tokens, not every letter */
+}
 </style>
 
 
