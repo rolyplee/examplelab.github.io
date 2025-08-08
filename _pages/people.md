@@ -1,9 +1,3 @@
----
-layout: single
-title: "Lab Members"
-permalink: /people/
----
-
 <style>
 .page__title {
   text-align: center !important;
@@ -16,23 +10,25 @@ permalink: /people/
   box-sizing: border-box;
 }
 
+/* Center section headings */
 .people-section h2 {
-  text-align: left;
+  text-align: center; /* was left */
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
+/* Center profiles grid */
 .people-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 2rem;
-  justify-items: center;
+  justify-items: center; /* centers cards in grid */
   align-items: start;
 }
 
 .person-card {
   width: 180px;
-  text-align: center;
+  text-align: center; /* already centered content */
   font-size: 0.9rem;
 }
 
@@ -61,6 +57,7 @@ permalink: /people/
   }
 }
 </style>
+
 
 
 <!-- === Principal Investigator === -->
