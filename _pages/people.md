@@ -75,7 +75,7 @@ permalink: /people/
 <div class="people-section">
 <h2>PhD Students</h2>
 <div class="people-grid">
-<div class="person-card"><a href="http://imtianyuli.com/"><img src="{{ site.baseurl }}/assets/images/people/tianyu_li.jpg"></a><a href="http://imtianyuli.com/" target="_blank"><h3>Tianyu Li</h3></a><p>MEAM, 2022–present</p></div>
+<div class="person-card"><a href="http://imtianyuli.com/"  target="_blank"><img src="{{ site.baseurl }}/assets/images/people/tianyu_li.png"></a><a href="http://imtianyuli.com/" target="_blank"><h3>Tianyu Li</h3></a><p>MEAM, 2022–present</p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/yifan_xue/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/yifan_xue/"><h3>Yifan Xue</h3></a><p>MEAM, 2022–present</p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/shafagh_keyvanian/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/shafagh_keyvanian/"><h3>Shafagh Keyvanian</h3></a><p>MEAM, 2022–present<br><em>Co-advised with Michelle Johnson</em></p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/yifei_simon_shao/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/yifei_simon_shao/"><h3>Yifei Simon Shao</h3></a><p>CIS, 2023–present<br><em>Co-advised with V. Kumar & P. Chaudhari</em></p></div>
