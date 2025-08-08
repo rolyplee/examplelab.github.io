@@ -14,27 +14,30 @@ permalink: /people/
   margin-left: calc(-50vw + 50%);
   padding: 2rem 4rem;
   box-sizing: border-box;
+  text-align: center; /* center text within section */
 }
 
 /* Center section headings */
 .people-section h2 {
-  text-align: center; /* was left */
+  text-align: center;
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
-/* Center profiles grid */
+/* Center entire grid within the section */
 .people-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 2rem;
-  justify-items: center; /* centers cards in grid */
+  justify-content: center; /* center the grid itself */
+  justify-items: center;    /* center items in columns */
   align-items: start;
 }
 
+/* Center each profile card */
 .person-card {
   width: 180px;
-  text-align: center; /* already centered content */
+  text-align: center;
   font-size: 0.9rem;
 }
 
