@@ -81,6 +81,17 @@ permalink: /people/
 <div class="person-card"><a href="{{ site.baseurl }}/people/yifei_simon_shao/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/yifei_simon_shao/"><h3>Yifei Simon Shao</h3></a><p>CIS, 2023–present<br><em>Co-advised with V. Kumar & P. Chaudhari</em></p></div>
 <div class="person-card"><a href="https://sites.google.com/view/farhad-nawaz"  target="_blank"><img src="{{ site.baseurl }}/assets/images/people/farhad_nawaz.png"></a><a href="https://sites.google.com/view/farhad-nawaz"  target="_blank"><h3>Farhad Nawaz</h3></a><p>ESE, 2023–present<br><em>Co-advised with Nikolai Matni</em></p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/ho_jin_choi/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/ho_jin_choi/"><h3>Ho Jin Choi</h3></a><p>MEAM, 2024–present</p></div>
+
+<div class="person-card">
+  <a href="https://sunan-sun.github.io/" target="_blank">
+    <img src="{{ site.baseurl }}/assets/images/people/sunan_sun.png">
+  </a>
+  <a href="https://sunan-sun.github.io/" target="_blank">
+    <h3>Sunan Sun</h3>
+  </a>
+  <p>MEAM, 2025–present</p>
+</div>
+
 </div>
 </div>
 
