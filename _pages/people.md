@@ -1,3 +1,9 @@
+---
+layout: single
+title: "Lab Members"
+permalink: /people/
+---
+
 <style>
 .page__title {
   text-align: center !important;
