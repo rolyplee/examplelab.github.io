@@ -145,14 +145,14 @@ sanghyub-lee" target="_blank">
   <h2>Master's Thesis Students</h2>
   <div class="people-grid">
     <div class="person-card">
-      <a href="{{ site.baseurl }}/people/mateusz_jaszczuk/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="{{ site.baseurl }}/people/mateusz_jaszczuk/"><h3>Mateusz Jaszczuk</h3></a>
+      <a href="https://mateuszjaszczuk.com/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/mateusz_jaszczuk.png"></a>
+      <a href="https://mateuszjaszczuk.com/" target="_blank"><h3>Mateusz Jaszczuk</h3></a>
       <p>M.S. MEAM, 2026<br>2025–present<br><em>Thesis: “Learning to Feel: Force-Aware Data-Driven Estimation and Control for Fluid Physical Interaction”</em></p>
     </div>
 
-  <div class="person-card">
-      <a href="{{ site.baseurl }}/people/ekaterina_skorniakova/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="{{ site.baseurl }}/people/ekaterina_skorniakova/"><h3>Ekaterina Skorniakova</h3></a>
+  <div class="person-card">  
+      <a href="https://www.linkedin.com/in/ekaterina-skorniakova/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/ekaterina_skorniakova.png"></a>
+      <a href="https://www.linkedin.com/in/ekaterina-skorniakova/" target="_blank"><h3>Ekaterina Skorniakova</h3></a>
       <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “Coupled Passive Dynamical System Interaction Control on SE(3)”</em></p>
     </div>
 
@@ -175,9 +175,9 @@ sanghyub-lee" target="_blank">
       <p>M.S. Robotics, 2026<br>2025–present<br><em>Independent Study Spring 2025</em></p>
     </div>
 
-  <div class="person-card">
-      <a href="{{ site.baseurl }}/people/zizhe_zhang/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="{{ site.baseurl }}/people/zizhe_zhang/"><h3>Zizhe Zhang</h3></a>
+  <div class="person-card">   
+      <a href="https://zizhe.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/zizhe_zhang.png"></a>
+      <a href="https://zizhe.io/" target="_blank"><h3>Zizhe Zhang</h3></a>
       <p>M.S. ESE/Robotics, 2026<br>2025–present<br><em>Research Intern Spring 2025</em></p>
     </div>
 
