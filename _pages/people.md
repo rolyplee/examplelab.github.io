@@ -187,6 +187,7 @@ sanghyub-lee" target="_blank">
 </div>
 
 
+
 <!-- === Alumni === -->
 <div class="people-section">
   <h2>Alumni</h2>
@@ -270,8 +271,8 @@ sanghyub-lee" target="_blank">
     </tbody>
   </table>
 
-  <!-- Alumni: Master's Theses -->
-  <div class="alumni-group">Master's Theses</div>
+  <!-- Alumni: Master's Thesis -->
+  <div class="alumni-group">Master's Thesis</div>
   <table class="alumni-table">
     <thead>
       <tr><th>Name</th><th>Degree</th><th>Years</th><th>Thesis / Notes</th></tr>
@@ -358,6 +359,7 @@ sanghyub-lee" target="_blank">
     </thead>
     <tbody>
       <tr><td><a href="#">Natey Kim</a></td><td>Bioengineering</td><td>2024</td><td>2024 PURM Summer Scholarship Recipient</td></tr>
+      <tr><td><a href="#">Michael North</a></td><td>Bioengineering</td><td>2024</td><td>2024 PURM Summer Scholarship Recipient</td></tr>
     </tbody>
   </table>
 </div>
