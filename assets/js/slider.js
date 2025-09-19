@@ -1,5 +1,5 @@
+// /assets/js/slider.js
 (function () {
-  // Wait for DOM if defer isn't supported for some reason
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
@@ -17,6 +17,10 @@
     const dotsEl = slider.querySelector('.dots');
     let index = 0;
 
+    // 1) Explicitly set the track width and each slide width
+    track.style.width = `${slides.length * 100}%`;
+    slides.forEach(s => { s.style.width = `${100 / slides.length}%`; });
+
     // Build dots
     slides.forEach((_, i) => {
       const b = document.createElement('button');
@@ -27,7 +31,8 @@
     });
 
     function update() {
-      track.style.transform = `translateX(-${index * 100}%)`;
+      // 2) Use translate3d to avoid any transform conflicts
+      track.style.transform = `translate3d(-${index * (100 / slides.length)}%, 0, 0)`;
       Array.from(dotsEl.children).forEach((b, i) =>
         b.setAttribute('aria-selected', i === index ? 'true' : 'false')
       );
@@ -49,11 +54,12 @@
       if (dx < -40) goTo(index + 1);
     });
 
-    // Optional autoplay (pause on hover)
-    let timer = setInterval(() => goTo(index + 1), 4000);
+    // Autoplay (optional)
+    let timer = setInterval(() => goTo(index + 1), 5000);
     slider.addEventListener('mouseenter', () => clearInterval(timer));
-    slider.addEventListener('mouseleave', () => timer = setInterval(() => goTo(index + 1), 4000));
+    slider.addEventListener('mouseleave', () => timer = setInterval(() => goTo(index + 1), 5000));
 
+    // Start
     update();
   }
 })();
