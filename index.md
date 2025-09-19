@@ -4,7 +4,6 @@ title: ""
 author_profile: false
 permalink: /
 ---
-
 <h1 style="text-align: center;"><strong>Welcome to the Figueroa Robotics Lab</strong></h1>
 
 <div style="text-align: center; margin: 20px 0;">
