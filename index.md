@@ -3,7 +3,6 @@ layout: single
 title: ""
 author_profile: false
 permalink: /
-classes: wide
 ---
 
 <div class="lab-wrapper">
