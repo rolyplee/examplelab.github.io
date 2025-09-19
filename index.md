@@ -7,7 +7,7 @@ author_profile: false
 <h1 style="text-align: center;"><strong>Welcome to the Figueroa Robotics Lab</strong></h1>
 
 <div style="text-align: center; margin: 20px 0;">
-  <img src="{{ site.baseurl }}/assets/images/title_page.png" alt="Figueroa Robotics Lab" style="max-width: 100%; height: auto; border-radius: 8px;">
+  <img src="{{ site.baseurl }}/assets/images/IMG_4148.JPG" alt="Figueroa Robotics Lab" style="max-width: 100%; height: auto; border-radius: 8px;">
 </div>
 
 <p>
