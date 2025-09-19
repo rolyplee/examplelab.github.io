@@ -5,135 +5,108 @@ author_profile: false
 permalink: /
 ---
 
-<div class="lab-wrapper">
+<div class="lab-block">
 
-  <!-- ====== MAIN PHOTO SLIDER ====== -->
-  <div class="slider" aria-label="Figueroa Robotics Lab Photo Gallery">
-    <button class="nav prev" aria-label="Previous slide">‹</button>
+  <!-- ====== HERO SLIDER ====== -->
+  <div class="hero-slider" aria-label="Figueroa Robotics Lab Photo Gallery">
+    <button class="hs-nav hs-prev" aria-label="Previous slide">‹</button>
 
-    <div class="track" role="region" aria-live="polite">
-      <img src="{{ '/assets/images/IMG_4148.JPG' | relative_url }}" alt="Lab photo 1" class="slide current">
-      <img src="{{ '/assets/images/IMG_4075.JPG' | relative_url }}" alt="Lab photo 2" class="slide">
-      <img src="{{ '/assets/images/IMG_4115.JPG' | relative_url }}" alt="Lab photo 3" class="slide">
+    <div class="hs-track" role="region" aria-live="polite">
+      <img src="{{ '/assets/images/IMG_4148.JPG' | relative_url }}" alt="Lab photo 1" class="hs-slide hs-current">
+      <img src="{{ '/assets/images/IMG_4075.JPG' | relative_url }}" alt="Lab photo 2" class="hs-slide">
+      <img src="{{ '/assets/images/IMG_4115.JPG' | relative_url }}" alt="Lab photo 3" class="hs-slide">
     </div>
 
-    <button class="nav next" aria-label="Next slide">›</button>
-    <div class="dots" role="tablist" aria-label="Choose slide"></div>
+    <button class="hs-nav hs-next" aria-label="Next slide">›</button>
+    <div class="hs-dots" role="tablist" aria-label="Choose slide"></div>
   </div>
 
   <!-- ====== HEADING BELOW SLIDER ====== -->
   <h1 class="lab-title"><strong>Welcome to the Figueroa Robotics Lab</strong></h1>
 
   <p class="lab-text">
-    The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and ever-changing environments—achieving fluid human-robot collaborative autonomy: when humans and robots collaborate harmoniously.
+    The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots
+    to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and
+    ever-changing environments—achieving fluid human-robot collaborative autonomy: when humans and robots collaborate harmoniously.
   </p>
 
 </div>
 
 <style>
-/* Wrapper: center all content and reduce top gap */
-.lab-wrapper{
-  max-width: 1600px;
-  margin: 1.5rem auto 2rem;   /* top margin tightened */
+/* ===== Layout / spacing ===== */
+.lab-block{
+  max-width: 1600px;              /* big, but within the centered page */
+  margin: 1.5rem auto 2rem;       /* tighten top gap under the menu */
   padding: 0 1rem;
   text-align: center;
 }
-
-/* Heading below slider */
 .lab-title{
   margin: 2rem 0 1rem;
   font-size: 2rem;
   line-height: 1.2;
 }
-
-/* Description paragraph */
 .lab-text{
   max-width: 1000px;
   margin: 2rem auto 0;
   line-height: 1.6;
-  text-align: center;
 }
 
-/* ===== Slider ===== */
-.slider{
+/* ===== Slider (namespaced to avoid collisions) ===== */
+.hero-slider{
   position: relative;
   width: 100%;
-  max-width: 1600px;      /* large but still centered */
+  max-width: 1600px;
   margin: 0 auto 1.5rem;
-  overflow: hidden;
+  overflow: hidden;                /* hide off-screen slides */
   border-radius: 12px;
   background: #f2f2f2;
 }
-
-.track{
+.hs-track{
   display: flex;
   transition: transform 300ms ease;
   will-change: transform;
 }
-
-.slide{
-  flex: 0 0 100%;   /* exactly one viewport width per slide */
+.hs-slide{
+  flex: 0 0 100%;                 /* exactly one viewport width per slide */
   width: 100%;
-  height: auto;
-  object-fit: contain;    /* show entire image, no crop */
   display: block;
+  height: auto;                   /* no fixed height -> no cropping */
+  object-fit: contain;            /* keep full image visible */
 }
 
-/* Navigation arrows */
-.nav{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 24px;
+/* Controls */
+.hs-nav{
+  position: absolute; top: 50%; transform: translateY(-50%);
+  border: none; background: rgba(0,0,0,0.5); color:#fff;
+  width: 48px; height: 48px; border-radius: 50%;
+  cursor: pointer; font-size: 24px;
 }
-.prev{ left: 16px; }
-.next{ right: 16px; }
+.hs-prev{ left: 16px; }
+.hs-next{ right: 16px; }
 
-/* Dots */
-.dots{
-  position: absolute;
-  left: 50%;
-  bottom: 16px;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
+.hs-dots{
+  position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
+  display: flex; gap: 8px;
 }
-.dots button{
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(0,0,0,0.35);
-  cursor: pointer;
+.hs-dots button{
+  width: 12px; height: 12px; border-radius: 50%;
+  border: none; background: rgba(0,0,0,0.35); cursor: pointer;
 }
-.dots button[aria-selected="true"]{ background: #000; }
+.hs-dots button[aria-selected="true"]{ background:#000; }
 </style>
 
 <script>
-// /assets/js/slider.js replacement (inline for convenience)
+/* ===== Minimal, conflict-free slider JS (no width fiddling) ===== */
 (function () {
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-
   function init() {
-    const slider = document.querySelector('.slider');
+    const slider = document.querySelector('.hero-slider');
     if (!slider) return;
 
-    const track  = slider.querySelector('.track');
-    const slides = Array.from(slider.querySelectorAll('.slide'));
-    const prev   = slider.querySelector('.prev');
-    const next   = slider.querySelector('.next');
-    const dotsEl = slider.querySelector('.dots');
+    const track  = slider.querySelector('.hs-track');
+    const slides = Array.from(slider.querySelectorAll('.hs-slide'));
+    const prev   = slider.querySelector('.hs-prev');
+    const next   = slider.querySelector('.hs-next');
+    const dotsEl = slider.querySelector('.hs-dots');
     let index = 0;
 
     // Build dots
@@ -151,7 +124,6 @@ permalink: /
         b.setAttribute('aria-selected', i === index ? 'true' : 'false')
       );
     }
-
     function goTo(i) {
       index = (i + slides.length) % slides.length;
       update();
@@ -160,7 +132,7 @@ permalink: /
     prev?.addEventListener('click', () => goTo(index - 1));
     next?.addEventListener('click', () => goTo(index + 1));
 
-    // Swipe support
+    // Touch swipe
     let startX = 0;
     track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
     track.addEventListener('touchend', e => {
@@ -175,6 +147,12 @@ permalink: /
     slider.addEventListener('mouseleave', () => timer = setInterval(() => goTo(index + 1), 5000));
 
     update();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
   }
 })();
 </script>
