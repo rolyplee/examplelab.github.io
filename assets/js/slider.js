@@ -1,4 +1,3 @@
-// /assets/js/slider.js
 (function () {
   // Wait for DOM if defer isn't supported for some reason
   if (document.readyState === "loading") {
