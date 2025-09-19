@@ -5,6 +5,10 @@ author_profile: false
 permalink: /
 ---
 
+<h1 style="text-align: center; margin-bottom: 1rem;">
+  <strong>Welcome to the Figueroa Robotics Lab</strong>
+</h1>
+
 <!-- ====== MAIN PHOTO SLIDER ====== -->
 <div class="slider" aria-label="Figueroa Robotics Lab Photo Gallery">
   <button class="nav prev" aria-label="Previous slide">‹</button>
@@ -22,15 +26,15 @@ permalink: /
 </div>
 
 <style>
-/* ====== Slider Styles (larger hero) ====== */
+/* ====== Slider Styles (hero size) ====== */
 .slider {
   position: relative;
-  max-width: 1200px;   /* wider than before */
-  margin: 0 auto 2rem; /* center and add space below */
+  max-width: 1200px;        /* wide hero */
+  margin: 0 auto 2rem;      /* center and add space below */
   overflow: hidden;
   border-radius: 12px;
-  aspect-ratio: 21/9;  /* cinematic wide aspect ratio */
-  background: #f2f2f2; /* fallback background */
+  aspect-ratio: 21/9;       /* cinematic aspect ratio */
+  background: #f2f2f2;
 }
 .track {
   display: flex;
@@ -41,7 +45,7 @@ permalink: /
   width: 100%;
   height: 100%;
   flex: 0 0 100%;
-  object-fit: cover;   /* crop/scale images nicely */
+  object-fit: cover;
   display: block;
 }
 .nav {
@@ -51,7 +55,7 @@ permalink: /
   border: none;
   background: rgba(0,0,0,0.5);
   color: #fff;
-  width: 48px; height: 48px;  /* bigger buttons */
+  width: 48px; height: 48px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 24px;
@@ -77,7 +81,7 @@ permalink: /
 .dots button[aria-selected="true"] { background: white; }
 </style>
 
-<!-- Link to external JS (placed in /assets/js/slider.js) -->
+<!-- External JS (same as before) -->
 <script src="{{ '/assets/js/slider.js' | relative_url }}" defer></script>
 
 <p style="max-width: 900px; margin: 2rem auto; text-align: center;">
