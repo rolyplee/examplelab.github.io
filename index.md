@@ -9,6 +9,7 @@ classes: wide
 <div class="lab-wrapper">
   <h1 class="lab-title"><strong>Welcome to the Figueroa Robotics Lab</strong></h1>
 
+  <!-- Slider -->
   <div class="slider" aria-label="Figueroa Robotics Lab Photo Gallery">
     <button class="nav prev" aria-label="Previous slide">‹</button>
 
@@ -28,73 +29,80 @@ classes: wide
 </div>
 
 <style>
-/* ----- Hard-center everything inside the page content ----- */
-.main .page__content .lab-wrapper {
-  /* push below sticky masthead */
+/* 1) Neutralize Minimal Mistakes' left/right padding on this page only */
+.main .page__content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 2) A true centered container for title + slider + text */
+.lab-wrapper{
+  /* push below sticky header */
   padding-top: 5.5rem;
 
-  /* center the whole block in the page */
+  /* hard center */
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 
-  /* override theme padding/flow */
+  /* center children */
   display: flex;
   flex-direction: column;
-  align-items: center;   /* <- centers title, slider, and paragraph */
+  align-items: center;
   gap: 1.25rem;
   text-align: center;
+  padding-inline: 1rem; /* small breathing room on tiny screens */
 }
 
-/* Title */
-.lab-title { margin: 0; line-height: 1.2; font-size: 2rem; }
+.lab-title{ margin: 0; font-size: 2rem; line-height: 1.2; }
 
-/* Paragraph */
-.lab-text {
+.lab-text{
   max-width: 1000px;
+  margin: 0;             /* spacing comes from flex gap */
   line-height: 1.6;
-  margin: 0;            /* flex gap handles spacing */
 }
 
-/* ----- Slider (no cropping, grows big, stays centered) ----- */
-.slider {
+/* 3) Slider (no cropping) */
+.slider{
   position: relative;
-  width: min(100%, 1400px);  /* never exceed wrapper */
-  margin: 0 auto;
+  display: block;
+  width: min(100%, 1400px);
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
   border-radius: 12px;
   background: #f2f2f2;
 }
-.track { display: flex; transition: transform 300ms ease; }
-.slide {
+.track{ display: flex; transition: transform 300ms ease; }
+.slide{
   width: 100%;
   flex: 0 0 100%;
   display: block;
-  height: auto;              /* natural height */
-  object-fit: contain;       /* no cropping */
+  height: auto;           /* natural height */
+  object-fit: contain;    /* no cropping */
 }
 
 /* Controls */
-.nav {
+.nav{
   position: absolute; top: 50%; transform: translateY(-50%);
-  border: none; background: rgba(0,0,0,0.5); color: #fff;
+  border: none; background: rgba(0,0,0,0.5); color:#fff;
   width: 48px; height: 48px; border-radius: 50%;
   cursor: pointer; font-size: 24px;
 }
-.prev { left: 16px; } .next { right: 16px; }
-.dots {
+.prev{ left: 16px; } .next{ right: 16px; }
+
+.dots{
   position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
   display: flex; gap: 8px;
 }
-.dots button {
+.dots button{
   width: 12px; height: 12px; border-radius: 50%;
   border: none; background: rgba(0,0,0,0.35); cursor: pointer;
 }
-.dots button[aria-selected="true"] { background: #000; }
+.dots button[aria-selected="true"]{ background:#000; }
 
-/* Optional: if the masthead is taller in your config, bump this up a bit */
-@media (min-width: 992px) {
-  .main .page__content .lab-wrapper { padding-top: 6rem; }
+@media (min-width: 992px){
+  .lab-wrapper{ padding-top: 6rem; } /* if your masthead is taller */
 }
 </style>
 
