@@ -19,8 +19,8 @@ permalink: /
   <div class="hs-dots" role="tablist" aria-label="Choose slide"></div>
 </div>
 
-<!-- ===== FULL-BLEED TEXT BELOW ===== -->
-<section class="content-wrap fullbleed">
+<!-- ===== CONTENT BELOW ===== -->
+<section class="content-wrap">
   <h1 class="lab-title">Welcome to the Figueroa Robotics Lab</h1>
 
   <p class="lab-text">
@@ -38,11 +38,10 @@ permalink: /
   background: #f2f2f2;
 }
 
-/* Make the slider break out of the page container and span the viewport */
 .hero-slider.fullbleed{
   width: 100vw;                 /* full browser width */
   max-width: 100vw;
-  margin-left: 50%;             /* center the 100vw box within the page */
+  margin-left: 50%;
   transform: translateX(-50%);
   border-radius: 0;
 }
@@ -54,59 +53,72 @@ permalink: /
   will-change: transform;
 }
 .hs-slide{
-  flex: 0 0 100%;               /* one slide per viewport width */
+  flex: 0 0 100%;
   width: 100%;
   display: block;
   height: auto;
-  object-fit: contain;          /* never crop */
-  max-height: 85vh;             /* keep reasonable height on tall screens */
+  object-fit: contain;          /* keep full image visible */
+  max-height: 85vh;
 }
 
 /* Controls & dots */
 .hs-nav{
-  position: absolute; top: 50%; transform: translateY(-50%);
-  border: none; background: rgba(0,0,0,0.5); color:#fff;
-  width: 48px; height: 48px; border-radius: 50%;
-  cursor: pointer; font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0,0,0,0.5);
+  color:#fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
 }
-.hs-prev{ left: 16px; } .hs-next{ right: 16px; }
+.hs-prev{ left: 16px; }
+.hs-next{ right: 16px; }
+
 .hs-dots{
-  position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
-  display: flex; gap: 8px;
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
 }
 .hs-dots button{
-  width: 12px; height: 12px; border-radius: 50%;
-  border: none; background: rgba(0,0,0,0.35); cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.35);
+  cursor: pointer;
 }
 .hs-dots button[aria-selected="true"]{ background:#000; }
 
-/* ---------- Text layout: full width like the slider ---------- */
+/* ---------- Balanced text layout below slider ---------- */
 .content-wrap{
-  margin: 2rem 0;               /* vertical spacing only */
-  padding: 0 2rem;              /* breathing room at edges */
+  width: 100%;                 /* allow full container width */
+  max-width: 1400px;           /* cap for large screens */
+  margin: 2rem auto;           /* center horizontally */
+  padding: 0 2rem;             /* side padding on small/medium screens */
   box-sizing: border-box;
   text-align: center;
-}
-.content-wrap.fullbleed{
-  width: 100vw;                 /* make it full browser width */
-  max-width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 
 .lab-title{
   margin: 1.75rem 0 1rem;
   font-size: clamp(1.4rem, 2vw + 0.5rem, 1.8rem);
   line-height: 1.2;
-  white-space: nowrap;          /* keep single line on desktop */
   text-align: center;
+  white-space: nowrap;          /* keep on one line on desktop */
 }
 
 .lab-text{
   margin: 0 auto;
-  /* remove the max-width so it spans like the slider */
+  max-width: 90%;              /* percentage of content-wrap width */
   line-height: 1.65;
-  text-align: center;           /* or 'left' if you prefer */
+  text-align: center;
 }
 
 /* Tighten gap to the masthead if needed */
