@@ -31,32 +31,35 @@ permalink: /
 </div>
 
 <style>
+/* Wrapper: center all content and reduce top gap */
 .lab-wrapper{
-  max-width: 1600px;      /* allows bigger slider while staying centered */
-  margin: 5rem auto 2rem;
+  max-width: 1600px;
+  margin: 1.5rem auto 2rem;   /* top margin tightened */
   padding: 0 1rem;
-  text-align: center;     /* centers slider and heading */
+  text-align: center;
 }
 
+/* Heading below slider */
 .lab-title{
-  margin: 2rem 0 1rem;    /* spacing above and below the heading */
+  margin: 2rem 0 1rem;
   font-size: 2rem;
   line-height: 1.2;
 }
 
+/* Description paragraph */
 .lab-text{
   max-width: 1000px;
   margin: 2rem auto 0;
   line-height: 1.6;
-  text-align: left;      /* right-aligned paragraph */
+  text-align: center;
 }
 
-/* Slider */
+/* ===== Slider ===== */
 .slider{
   position: relative;
   width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: 1600px;      /* large but still centered */
+  margin: 0 auto 1.5rem;
   overflow: hidden;
   border-radius: 12px;
   background: #f2f2f2;
@@ -69,32 +72,109 @@ permalink: /
 }
 
 .slide{
-  flex: 0 0 100%;
-  min-width: 100%;
-  max-width: 100%;
-  display: block;
+  flex: 0 0 100%;   /* exactly one viewport width per slide */
+  width: 100%;
   height: auto;
   object-fit: contain;    /* show entire image, no crop */
+  display: block;
 }
 
+/* Navigation arrows */
 .nav{
-  position: absolute; top: 50%; transform: translateY(-50%);
-  border: none; background: rgba(0,0,0,0.5); color:#fff;
-  width: 48px; height: 48px; border-radius: 50%;
-  cursor: pointer; font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
 }
 .prev{ left: 16px; }
 .next{ right: 16px; }
 
+/* Dots */
 .dots{
-  position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
-  display: flex; gap: 8px;
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
 }
 .dots button{
-  width: 12px; height: 12px; border-radius: 50%;
-  border: none; background: rgba(0,0,0,0.35); cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.35);
+  cursor: pointer;
 }
-.dots button[aria-selected="true"]{ background:#000; }
+.dots button[aria-selected="true"]{ background: #000; }
 </style>
 
-<script src="{{ '/assets/js/slider.js' | relative_url }}" defer></script>
+<script>
+// /assets/js/slider.js replacement (inline for convenience)
+(function () {
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+
+  function init() {
+    const slider = document.querySelector('.slider');
+    if (!slider) return;
+
+    const track  = slider.querySelector('.track');
+    const slides = Array.from(slider.querySelectorAll('.slide'));
+    const prev   = slider.querySelector('.prev');
+    const next   = slider.querySelector('.next');
+    const dotsEl = slider.querySelector('.dots');
+    let index = 0;
+
+    // Build dots
+    slides.forEach((_, i) => {
+      const b = document.createElement('button');
+      b.setAttribute('role', 'tab');
+      b.setAttribute('aria-label', `Go to slide ${i+1}`);
+      b.addEventListener('click', () => goTo(i));
+      dotsEl.appendChild(b);
+    });
+
+    function update() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      Array.from(dotsEl.children).forEach((b, i) =>
+        b.setAttribute('aria-selected', i === index ? 'true' : 'false')
+      );
+    }
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      update();
+    }
+
+    prev?.addEventListener('click', () => goTo(index - 1));
+    next?.addEventListener('click', () => goTo(index + 1));
+
+    // Swipe support
+    let startX = 0;
+    track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
+    track.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - startX;
+      if (dx > 40) goTo(index - 1);
+      if (dx < -40) goTo(index + 1);
+    });
+
+    // Optional autoplay
+    let timer = setInterval(() => goTo(index + 1), 5000);
+    slider.addEventListener('mouseenter', () => clearInterval(timer));
+    slider.addEventListener('mouseleave', () => timer = setInterval(() => goTo(index + 1), 5000));
+
+    update();
+  }
+})();
+</script>
