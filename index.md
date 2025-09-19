@@ -6,7 +6,6 @@ permalink: /
 ---
 
 <div class="lab-wrapper">
-  
 
   <div class="slider" aria-label="Figueroa Robotics Lab Photo Gallery">
     <button class="nav prev" aria-label="Previous slide">‹</button>
