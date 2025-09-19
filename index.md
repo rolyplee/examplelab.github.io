@@ -1,7 +1,6 @@
 ---
 layout: single
-title: "Photo Gallery"
-permalink: /gallery/
+title: ""
 author_profile: false
 ---
 
