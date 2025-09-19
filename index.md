@@ -35,33 +35,33 @@ permalink: /
 <style>
 /* ===== Layout / spacing ===== */
 .lab-block{
-  max-width: 1600px;
-  margin: 1.5rem auto 2rem;    /* tighten top gap */
+  max-width: 1800px;            /* ↑ allow slightly larger slider */
+  margin: 1.5rem auto 2rem;
   padding: 0 1rem;
-  text-align: center;          /* center slider and heading */
+  text-align: center;           /* center everything inside */
 }
 
 /* Heading below slider */
 .lab-title{
   margin: 2rem 0 1rem;
-  font-size: 1.6rem;           /* ↓ smaller so it fits one line on desktop */
+  font-size: 1.6rem;            /* small enough to fit one line */
   line-height: 1.2;
-  white-space: nowrap;         /* keep on one line if screen is wide enough */
+  white-space: nowrap;          /* stay on one line on wide screens */
 }
 
-/* Description paragraph (left aligned) */
+/* Description paragraph — centered again */
 .lab-text{
   max-width: 1000px;
   margin: 2rem auto 0;
   line-height: 1.6;
-  text-align: left;            /* ← left aligned text */
+  text-align: center;           /* <- centered text */
 }
 
 /* ===== Slider ===== */
 .hero-slider{
   position: relative;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1800px;            /* ↑ slider can grow wider */
   margin: 0 auto 1.5rem;
   overflow: hidden;
   border-radius: 12px;
@@ -75,11 +75,11 @@ permalink: /
 }
 
 .hs-slide{
-  flex: 0 0 100%;              /* exactly one viewport width per slide */
+  flex: 0 0 100%;               /* one viewport width per slide */
   width: 100%;
   display: block;
-  height: auto;                /* no cropping */
-  object-fit: contain;
+  height: auto;                 /* natural image height */
+  object-fit: contain;          /* no cropping */
 }
 
 /* Controls */
@@ -119,7 +119,7 @@ permalink: /
 </style>
 
 <script>
-/* ===== Minimal slider JS for hero-slider ===== */
+/* ===== Minimal slider JS ===== */
 (function () {
   function init() {
     const slider = document.querySelector('.hero-slider');
