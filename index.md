@@ -3,10 +3,10 @@ layout: single
 title: ""
 author_profile: false
 permalink: /
-classes: wide        # keep wide layout so slider can expand
+classes: wide   # still use wide so we can fill most of the screen
 ---
 
-<div class="lab-hero">
+<div class="lab-wrapper">
 
   <h1 class="lab-title">
     <strong>Welcome to the Figueroa Robotics Lab</strong>
@@ -26,51 +26,56 @@ classes: wide        # keep wide layout so slider can expand
     <div class="dots" role="tablist" aria-label="Choose slide"></div>
   </div>
 
+  <p class="lab-text">
+  The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and ever-changing environments—achieving fluid human-robot collaborative autonomy: when humans and robots collaborate harmoniously.
+  </p>
+
 </div>
 
-<p class="lab-text">
-The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and ever-changing environments—achieving fluid human-robot collaborative autonomy: when humans and robots collaborate harmoniously.
-</p>
-
 <style>
-/* ====== Centering wrapper ====== */
-.lab-hero {
-  text-align: center;        /* centers the title and the slider block */
-  margin-bottom: 2rem;
+/* Center the entire block relative to the whole page */
+.lab-wrapper {
+  max-width: 1400px;      /* slider + text will never exceed this width */
+  margin: 0 auto;         /* centers the wrapper in the page */
+  text-align: center;     /* centers the title and paragraph text */
+  padding: 0 1rem;        /* small horizontal breathing room */
 }
+
 .lab-title {
   margin-bottom: 1rem;
   font-size: 2rem;
 }
+
 .lab-text {
   max-width: 1000px;
-  margin: 2rem auto;
-  text-align: center;
+  margin: 2rem auto 0;
   line-height: 1.6;
+  text-align: center;
 }
 
-/* ====== Slider Styles ====== */
+/* ====== Slider ====== */
 .slider {
   position: relative;
-  display: inline-block;     /* so text-align:center centers it */
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   overflow: hidden;
   border-radius: 12px;
   background: #f2f2f2;
 }
+
 .track {
   display: flex;
   transition: transform 300ms ease;
 }
+
 .slide {
   width: 100%;
   flex: 0 0 100%;
   height: auto;
-  object-fit: contain;       /* no cropping */
+  object-fit: contain;   /* show entire image, no cropping */
   display: block;
 }
+
 .nav {
   position: absolute;
   top: 50%;
@@ -78,13 +83,15 @@ The goal of our research is to study and develop the physical and perceptual ada
   border: none;
   background: rgba(0,0,0,0.5);
   color: #fff;
-  width: 48px; height: 48px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 24px;
 }
 .prev { left: 16px; }
 .next { right: 16px; }
+
 .dots {
   position: absolute;
   left: 50%;
