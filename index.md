@@ -23,6 +23,9 @@ permalink: /
 <section class="content-wrap">
   <h1 class="lab-title">Welcome to the Figueroa Robotics Lab</h1>
 
+  <p class="lab-text">
+    The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide-range of human capabilities, needs and ever-changing environments achieving fluid human-robot collaborative autonomy; i.e., when humans and robots collaborate harmoniously. We focus on applications where such fluid collaboration is necessary or safety critical, such as teaching robots cumbersome dexterous manipulation tasks with minimal human effort, navigating swiftly and safely in busy human-centric spaces, physically assisting humans in heavy work and contact-rich activities, physical therapy and rehabilitation. We tackle these problems by developing novel and tightly coupled learning, control and estimation algorithms that enjoy from stability, safety, efficiency and robustness guarantees. This involves research at the intersection of machine learning, control theory, artificial intelligence, perception, biomechanics and psychology - with a physical human-robot interaction perspective.
+  </p>
 </section>
 
 <style>
@@ -62,38 +65,35 @@ permalink: /
 }
 .hs-dots button[aria-selected="true"]{ background:#000; }
 
-/* ---------- Text layout below slider ---------- */
+/* ---------- Text section: match slider width ---------- */
 .content-wrap{
-  width: 100%;
-  max-width: 1600px;
-  margin: 2.25rem auto;
-  padding: 0 1.5rem;
+  width: 100vw;                 /* match slider’s full width */
+  max-width: 100vw;
+  margin: 2.25rem 0;
+  padding: 0;                   /* no side padding so it’s truly full width */
   box-sizing: border-box;
-
-  /* NEW: force inner elements to center regardless of theme padding */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .lab-title{
-  margin: 1.75rem 0 1.25rem;
+  margin: 1.75rem auto 1.25rem;
   font-weight: 800;
   font-size: clamp(1.6rem, 2.2vw + 0.6rem, 2.4rem);
   line-height: 1.2;
   text-align: center;
-  white-space: nowrap;         /* keep one line on large screens */
+  white-space: nowrap;          /* keep one line on large screens */
 }
 @media (max-width: 768px){
   .lab-title{
-    white-space: normal;       /* allow wrapping on phones */
+    white-space: normal;        /* allow wrapping on phones */
     font-size: clamp(1.4rem, 4vw + 0.6rem, 2rem);
   }
 }
 
 .lab-text{
   margin: 0 auto;
-  max-width: 95ch;             /* comfortable line length */
+  width: 100%;                  /* span the full slider width */
+  max-width: 100%;
   line-height: 1.85;
   text-align: center;
 }
@@ -116,7 +116,6 @@ permalink: /
     const dotsEl = slider.querySelector('.hs-dots');
     let index = 0;
 
-    // Build dots
     slides.forEach((_, i) => {
       const b = document.createElement('button');
       b.setAttribute('role', 'tab');
