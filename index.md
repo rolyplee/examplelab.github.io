@@ -99,7 +99,7 @@ permalink: /
 /* ---------- Balanced text layout below slider ---------- */
 .content-wrap{
   width: 100%;                 /* allow full container width */
-  max-width: 1400px;           /* cap for large screens */
+  max-width: 1200px;           /* cap for large screens */
   margin: 2rem auto;           /* center horizontally */
   padding: 0 2rem;             /* side padding on small/medium screens */
   box-sizing: border-box;
