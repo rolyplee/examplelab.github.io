@@ -19,21 +19,21 @@ permalink: /
   <div class="hs-dots" role="tablist" aria-label="Choose slide"></div>
 </div>
 
-<!-- ===== CONTENT BELOW ===== -->
+<!-- ===== CONTENT BELOW (≈ half page width, centered) ===== -->
 <section class="content-wrap">
   <h1 class="lab-title">Welcome to the Figueroa Robotics Lab</h1>
 
   <p class="lab-text">
-    The goal of my research is to study and develop the physical and perceptual adaptive intelligence necessary for robots
-    to learn from and interact with humans, while being able to adapt to a wide-range of human capabilities, needs and
-    ever-changing environments achieving fluid human-robot collaborative autonomy; i.e., when humans and robots collaborate
+    The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots
+    to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and
+    ever-changing environments—achieving fluid human-robot collaborative autonomy; i.e., when humans and robots collaborate
     harmoniously. We focus on applications where such fluid collaboration is necessary or safety critical, such as teaching
-    robots cumbersome dexterous manipulation tasks with minimal human effort, navigating swiftly and safely in busy
-    human-centric spaces, physically assisting humans in heavy work and contact-rich activities, physical therapy and
-    rehabilitation. We tackle these problems by developing novel and tightly coupled learning, control and estimation
-    algorithms that enjoy stability, safety, efficiency and robustness guarantees. This involves research at the intersection
-    of machine learning, control theory, artificial intelligence, perception, biomechanics and psychology — with a physical
-    human-robot interaction perspective.
+    robots cumbersome dexterous manipulation tasks with minimal human effort, navigating swiftly and safely in busy human-centric
+    spaces, physically assisting humans in heavy work and contact-rich activities, physical therapy and rehabilitation.
+    We tackle these problems by developing novel and tightly coupled learning, control, and estimation algorithms that enjoy
+    stability, safety, efficiency, and robustness guarantees. This involves research at the intersection of machine learning,
+    control theory, artificial intelligence, perception, biomechanics, and psychology—with a physical human-robot interaction
+    perspective.
   </p>
 </section>
 
@@ -74,13 +74,16 @@ permalink: /
 }
 .hs-dots button[aria-selected="true"]{ background:#000; }
 
-/* ---------- Text section: centered container (~half screen) ---------- */
+/* ---------- Text section: half page width, perfectly centered ---------- */
 .content-wrap{
-  width: min(50vw, 900px);   /* about half the viewport, capped for very wide screens */
-  margin: 2.25rem auto;      /* horizontally centered */
-  padding: 0 1rem;           /* breathing room on smaller screens */
+  width: min(50vw, 900px);      /* about half the viewport, capped on very wide screens */
+  margin-left: auto;            /* center the block horizontally */
+  margin-right: auto;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  padding: 0 1rem;              /* a bit of side breathing room on smaller screens */
   box-sizing: border-box;
-  text-align: center;        /* centers the heading inside the block */
+  text-align: center;           /* centers the heading text */
 }
 
 .lab-title{
@@ -89,20 +92,20 @@ permalink: /
   font-size: clamp(1.6rem, 2.2vw + 0.6rem, 2.4rem);
   line-height: 1.2;
   text-align: center;
-  white-space: nowrap;       /* keep one line on large screens */
+  white-space: nowrap;          /* keep one line on large screens */
 }
 
 @media (max-width: 768px){
   .content-wrap{ width: min(90vw, 900px); }
-  .lab-title{ white-space: normal; }
+  .lab-title{ white-space: normal; }  /* allow wrapping on phones */
 }
 
 .lab-text{
   margin: 0 auto;
-  max-width: 70ch;           /* readable line length */
+  max-width: 70ch;              /* comfortable line length inside the centered block */
   line-height: 1.85;
-  text-align: justify;       /* ✅ justify text left & right like Word */
-  text-align-last: center;   /* center the final line for a balanced finish */
+  text-align: justify;          /* even left/right edges */
+  text-align-last: center;      /* last line centered for a balanced finish */
 }
 
 /* Tighten gap to the masthead if needed */
@@ -123,6 +126,7 @@ permalink: /
     const dotsEl = slider.querySelector('.hs-dots');
     let index = 0;
 
+    // Build dots
     slides.forEach((_, i) => {
       const b = document.createElement('button');
       b.setAttribute('role', 'tab');
@@ -151,7 +155,7 @@ permalink: /
       if (dx < -40) goTo(index + 1);
     });
 
-    // Autoplay
+    // Autoplay (pause on hover)
     let timer = setInterval(() => goTo(index + 1), 5000);
     slider.addEventListener('mouseenter', () => clearInterval(timer));
     slider.addEventListener('mouseleave', () =>
