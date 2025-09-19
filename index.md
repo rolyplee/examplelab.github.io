@@ -23,11 +23,6 @@ permalink: /
 <section class="content-wrap">
   <h1 class="lab-title">Welcome to the Figueroa Robotics Lab</h1>
 
-  <p class="lab-text">
-    The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots
-    to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and
-    ever-changing environments—achieving fluid human-robot collaborative autonomy: when humans and robots collaborate harmoniously.
-  </p>
 </section>
 
 <style>
