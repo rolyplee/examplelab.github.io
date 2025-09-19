@@ -98,27 +98,27 @@ permalink: /
 
 /* ---------- Balanced text layout below slider ---------- */
 .content-wrap{
-  width: 100%;                 /* allow full container width */
-  max-width: 1400px;           /* cap for large screens */
-  margin: 2rem auto;           /* center horizontally */
-  padding: 0 2rem;             /* side padding on small/medium screens */
+  width: 100%;
+  max-width: 1500px;            /* cap for large screens */
+  margin: 2rem auto;            /* center horizontally */
+  padding: 0 1.5rem;            /* moderate side padding */
   box-sizing: border-box;
-  text-align: center;
+  text-align: center;           /* center the heading block */
 }
 
 .lab-title{
-  margin: 1.75rem 0 1rem;
-  font-size: clamp(1.4rem, 2vw + 0.5rem, 1.8rem);
-  line-height: 1.2;
-  text-align: center;
-  white-space: nowrap;          /* keep on one line on desktop */
+  margin: 1.75rem 0 1.25rem;
+  font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);  /* responsive size */
+  line-height: 1.25;
+  text-align: center;           /* ensure heading is centered */
+  white-space: normal;          /* allow wrapping if needed */
 }
 
 .lab-text{
   margin: 0 auto;
-  max-width: 90%;              /* percentage of content-wrap width */
-  line-height: 1.65;
-  text-align: center;
+  max-width: 80ch;              /* comfortable reading width */
+  line-height: 1.75;            /* more breathing room */
+  text-align: center;           /* center the paragraph text */
 }
 
 /* Tighten gap to the masthead if needed */
