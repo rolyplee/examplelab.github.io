@@ -31,66 +31,81 @@ permalink: /
 </section>
 
 <style>
-/* ---------- Slider: full-browser-width, centered ---------- */
+/* ---------- Slider: full-browser-width, centered & scrollbar-safe ---------- */
 .hero-slider{
   position: relative;
   overflow: hidden;
   background: #f2f2f2;
 }
+
+/* Avoid 100vw overflow: 100vw - (100vw - 100%) == full width minus scrollbar */
 .hero-slider.fullbleed{
-  width: 100vw;
-  max-width: 100vw;
+  width: calc(100vw - (100vw - 100%));
+  max-width: none;
   margin-left: 50%;
   transform: translateX(-50%);
   border-radius: 0;
 }
-.hs-track{ display: flex; transition: transform 300ms ease; will-change: transform; }
-.hs-slide{
-  flex: 0 0 100%; width: 100%; display: block;
-  height: auto; object-fit: contain; max-height: 85vh;
+
+/* Track & slides */
+.hs-track{
+  display: flex;
+  transition: transform 300ms ease;
+  will-change: transform;
 }
+.hs-slide{
+  flex: 0 0 100%;
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: contain;          /* never crop */
+  max-height: 85vh;
+}
+
 /* Controls & dots */
 .hs-nav{
   position: absolute; top: 50%; transform: translateY(-50%);
   border: none; background: rgba(0,0,0,0.5); color:#fff;
-  width: 48px; height: 48px; border-radius: 50%; cursor: pointer; font-size: 24px;
+  width: 48px; height: 48px; border-radius: 50%;
+  cursor: pointer; font-size: 24px;
 }
 .hs-prev{ left: 16px; } .hs-next{ right: 16px; }
-.hs-dots{ position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); display: flex; gap: 8px; }
-.hs-dots button{ width: 12px; height: 12px; border-radius: 50%; border: none; background: rgba(0,0,0,0.35); cursor: pointer; }
+.hs-dots{
+  position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
+  display: flex; gap: 8px;
+}
+.hs-dots button{
+  width: 12px; height: 12px; border-radius: 50%;
+  border: none; background: rgba(0,0,0,0.35); cursor: pointer;
+}
 .hs-dots button[aria-selected="true"]{ background:#000; }
 
-/* ---------- Balanced text layout below slider ---------- */
+/* ---------- Balanced, centered text layout ---------- */
 .content-wrap{
   width: 100%;
-  max-width: 1600px;          /* wider content area */
-  margin: 2.25rem auto;
+  max-width: 1600px;            /* roomy container */
+  margin: 2rem auto;            /* centered */
   padding: 0 1.5rem;
   box-sizing: border-box;
-  text-align: center;
+  text-align: center;           /* centers the heading block */
 }
 
-/* Title: keep on one line on desktop, wrap on small screens */
 .lab-title{
   margin: 1.75rem 0 1.25rem;
   font-weight: 800;
   font-size: clamp(1.6rem, 2.2vw + 0.6rem, 2.4rem);
   line-height: 1.2;
   text-align: center;
-  white-space: nowrap;         /* one line on desktop */
+  white-space: nowrap;          /* one line on desktop */
 }
 @media (max-width: 768px){
-  .lab-title{
-    white-space: normal;       /* allow wrapping on phones */
-    font-size: clamp(1.4rem, 4vw + 0.6rem, 2rem);
-  }
+  .lab-title{ white-space: normal; }
 }
 
-/* Paragraph: roomier and wider than before */
 .lab-text{
   margin: 0 auto;
-  max-width: 95ch;            /* wider line length */
-  line-height: 1.85;          /* airier lines */
+  max-width: 95ch;              /* comfortable line length */
+  line-height: 1.85;
   text-align: center;
 }
 
@@ -112,6 +127,7 @@ permalink: /
     const dotsEl = slider.querySelector('.hs-dots');
     let index = 0;
 
+    // Build dots
     slides.forEach((_, i) => {
       const b = document.createElement('button');
       b.setAttribute('role', 'tab');
@@ -126,11 +142,12 @@ permalink: /
         b.setAttribute('aria-selected', i === index ? 'true' : 'false')
       );
     }
-    function goTo(i){ index = (i + slides.length) % slides.length; update(); }
+    function goTo(i) { index = (i + slides.length) % slides.length; update(); }
 
     prev?.addEventListener('click', () => goTo(index - 1));
     next?.addEventListener('click', () => goTo(index + 1));
 
+    // Touch swipe
     let startX = 0;
     track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
     track.addEventListener('touchend', e => {
@@ -139,6 +156,7 @@ permalink: /
       if (dx < -40) goTo(index + 1);
     });
 
+    // Autoplay (pause on hover)
     let timer = setInterval(() => goTo(index + 1), 5000);
     slider.addEventListener('mouseenter', () => clearInterval(timer));
     slider.addEventListener('mouseleave', () =>
@@ -147,6 +165,7 @@ permalink: /
 
     update();
   }
+
   document.readyState === 'loading'
     ? document.addEventListener('DOMContentLoaded', init)
     : init();
