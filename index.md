@@ -7,6 +7,7 @@ permalink: /
 
 <div class="lab-wrapper">
 
+  <!-- ====== MAIN PHOTO SLIDER ====== -->
   <div class="slider" aria-label="Figueroa Robotics Lab Photo Gallery">
     <button class="nav prev" aria-label="Previous slide">‹</button>
 
@@ -19,43 +20,43 @@ permalink: /
     <button class="nav next" aria-label="Next slide">›</button>
     <div class="dots" role="tablist" aria-label="Choose slide"></div>
   </div>
+
+  <!-- ====== HEADING BELOW SLIDER ====== -->
   <h1 class="lab-title"><strong>Welcome to the Figueroa Robotics Lab</strong></h1>
 
   <p class="lab-text">
     The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and ever-changing environments—achieving fluid human-robot collaborative autonomy: when humans and robots collaborate harmoniously.
   </p>
+
 </div>
 
 <style>
-/* Wrapper: keeps everything centered on the page */
 .lab-wrapper{
-  max-width: 1600px;      /* allow a bigger slider */
+  max-width: 1600px;      /* allows bigger slider while staying centered */
   margin: 5rem auto 2rem;
   padding: 0 1rem;
-  text-align: center;     /* center the title and slider */
+  text-align: center;     /* centers slider and heading */
 }
 
-/* Title */
 .lab-title{
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem;    /* spacing above and below the heading */
   font-size: 2rem;
   line-height: 1.2;
 }
 
-/* Description text: override to right align */
 .lab-text{
   max-width: 1000px;
   margin: 2rem auto 0;
   line-height: 1.6;
-  text-align: right;      /* <-- right aligned paragraph */
+  text-align: right;      /* right-aligned paragraph */
 }
 
-/* Slider: larger but still centered */
+/* Slider */
 .slider{
   position: relative;
   width: 100%;
-  max-width: 1600px;      /* increase size here */
-  margin: 0 auto 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 12px;
   background: #f2f2f2;
