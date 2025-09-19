@@ -19,12 +19,21 @@ permalink: /
   <div class="hs-dots" role="tablist" aria-label="Choose slide"></div>
 </div>
 
-<!-- ===== CONTENT BELOW (≈ half page width) ===== -->
+<!-- ===== CONTENT BELOW ===== -->
 <section class="content-wrap">
   <h1 class="lab-title">Welcome to the Figueroa Robotics Lab</h1>
 
   <p class="lab-text">
-    The goal of my research is to study and develop the physical and perceptual adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide-range of human capabilities, needs and ever-changing environments achieving fluid human-robot collaborative autonomy; i.e., when humans and robots collaborate harmoniously. We focus on applications where such fluid collaboration is necessary or safety critical, such as teaching robots cumbersome dexterous manipulation tasks with minimal human effort, navigating swiftly and safely in busy human-centric spaces, physically assisting humans in heavy work and contact-rich activities, physical therapy and rehabilitation. We tackle these problems by developing novel and tightly coupled learning, control and estimation algorithms that enjoy from stability, safety, efficiency and robustness guarantees. This involves research at the intersection of machine learning, control theory, artificial intelligence, perception, biomechanics and psychology - with a physical human-robot interaction perspective.
+    The goal of my research is to study and develop the physical and perceptual adaptive intelligence necessary for robots
+    to learn from and interact with humans, while being able to adapt to a wide-range of human capabilities, needs and
+    ever-changing environments achieving fluid human-robot collaborative autonomy; i.e., when humans and robots collaborate
+    harmoniously. We focus on applications where such fluid collaboration is necessary or safety critical, such as teaching
+    robots cumbersome dexterous manipulation tasks with minimal human effort, navigating swiftly and safely in busy
+    human-centric spaces, physically assisting humans in heavy work and contact-rich activities, physical therapy and
+    rehabilitation. We tackle these problems by developing novel and tightly coupled learning, control and estimation
+    algorithms that enjoy stability, safety, efficiency and robustness guarantees. This involves research at the intersection
+    of machine learning, control theory, artificial intelligence, perception, biomechanics and psychology — with a physical
+    human-robot interaction perspective.
   </p>
 </section>
 
@@ -55,35 +64,50 @@ permalink: /
   width: 48px; height: 48px; border-radius: 50%; cursor: pointer; font-size: 24px;
 }
 .hs-prev{ left: 16px; } .hs-next{ right: 16px; }
-.hs-dots{ position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); display: flex; gap: 8px; }
-.hs-dots button{ width: 12px; height: 12px; border-radius: 50%; border: none; background: rgba(0,0,0,0.35); cursor: pointer; }
+.hs-dots{
+  position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
+  display: flex; gap: 8px;
+}
+.hs-dots button{
+  width: 12px; height: 12px; border-radius: 50%;
+  border: none; background: rgba(0,0,0,0.35); cursor: pointer;
+}
 .hs-dots button[aria-selected="true"]{ background:#000; }
 
-/* ---------- Text section: ~half the page width, centered ---------- */
+/* ---------- Text section: half page width, perfectly centered ---------- */
 .content-wrap{
-  width: min(50vw, 900px);   /* ≈ half screen, capped for huge monitors */
-  margin: 2.25rem auto;      /* perfectly centered */
-  padding: 0 1rem;           /* a little breathing room on small screens */
-  text-align: center;
+  width: min(50vw, 900px);      /* about half the viewport, capped on very wide screens */
+  margin: 2.25rem auto;         /* auto margins center the block */
+  padding: 0 1rem;              /* small side padding for smaller screens */
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;          /* horizontally center heading + paragraph */
+  text-align: center;           /* center the text itself */
 }
 
 .lab-title{
-  margin: 1.5rem 0 1.0rem;
+  margin: 1.5rem 0 1rem;
   font-weight: 800;
   font-size: clamp(1.6rem, 2.2vw + 0.6rem, 2.4rem);
   line-height: 1.2;
   text-align: center;
-  white-space: nowrap;       /* keep one line on large screens */
+  white-space: nowrap;          /* keep one line on large screens */
 }
+
 @media (max-width: 768px){
-  .content-wrap{ width: min(90vw, 900px); }   /* friendlier on phones */
-  .lab-title{ white-space: normal; }
+  .content-wrap{
+    width: min(90vw, 900px);    /* friendlier on phones/tablets */
+    padding: 0 1rem;
+  }
+  .lab-title{
+    white-space: normal;        /* allow wrapping on smaller screens */
+  }
 }
 
 .lab-text{
   margin: 0 auto;
-  max-width: 70ch;           /* readable line length inside the half-width block */
+  max-width: 70ch;              /* readable line length inside the half-width block */
   line-height: 1.85;
   text-align: center;
 }
@@ -125,6 +149,7 @@ permalink: /
     prev?.addEventListener('click', () => goTo(index - 1));
     next?.addEventListener('click', () => goTo(index + 1));
 
+    // Touch swipe
     let startX = 0;
     track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
     track.addEventListener('touchend', e => {
@@ -133,6 +158,7 @@ permalink: /
       if (dx < -40) goTo(index + 1);
     });
 
+    // Autoplay
     let timer = setInterval(() => goTo(index + 1), 5000);
     slider.addEventListener('mouseenter', () => clearInterval(timer));
     slider.addEventListener('mouseleave', () =>
@@ -141,6 +167,7 @@ permalink: /
 
     update();
   }
+
   document.readyState === 'loading'
     ? document.addEventListener('DOMContentLoaded', init)
     : init();
