@@ -48,7 +48,7 @@ permalink: /
   max-width: 1000px;
   margin: 2rem auto 0;
   line-height: 1.6;
-  text-align: right;      /* right-aligned paragraph */
+  text-align: left;      /* right-aligned paragraph */
 }
 
 /* Slider */
