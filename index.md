@@ -19,8 +19,8 @@ permalink: /
   <div class="hs-dots" role="tablist" aria-label="Choose slide"></div>
 </div>
 
-<!-- ===== CONTENT BELOW ===== -->
-<section class="content-wrap">
+<!-- ===== FULL-BLEED TEXT BELOW ===== -->
+<section class="content-wrap fullbleed">
   <h1 class="lab-title">Welcome to the Figueroa Robotics Lab</h1>
 
   <p class="lab-text">
@@ -44,7 +44,7 @@ permalink: /
   max-width: 100vw;
   margin-left: 50%;             /* center the 100vw box within the page */
   transform: translateX(-50%);
-  border-radius: 0;             /* full-bleed feels better with square corners */
+  border-radius: 0;
 }
 
 /* Track & slides */
@@ -80,24 +80,33 @@ permalink: /
 }
 .hs-dots button[aria-selected="true"]{ background:#000; }
 
-/* ---------- Text layout below slider ---------- */
+/* ---------- Text layout: full width like the slider ---------- */
 .content-wrap{
-  max-width: 1100px;            /* center the content area */
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 2rem 0;               /* vertical spacing only */
+  padding: 0 2rem;              /* breathing room at edges */
+  box-sizing: border-box;
+  text-align: center;
 }
+.content-wrap.fullbleed{
+  width: 100vw;                 /* make it full browser width */
+  max-width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .lab-title{
   margin: 1.75rem 0 1rem;
-  font-size: clamp(1.4rem, 2vw + 0.5rem, 1.8rem);  /* responsive size */
-  line-height: 1.15;
-  text-align: center;           /* heading centered */
-  white-space: nowrap;          /* keep on one line on desktop */
+  font-size: clamp(1.4rem, 2vw + 0.5rem, 1.8rem);
+  line-height: 1.2;
+  white-space: nowrap;          /* keep single line on desktop */
+  text-align: center;
 }
+
 .lab-text{
   margin: 0 auto;
-  max-width: 70ch;              /* comfortable reading width */
+  /* remove the max-width so it spans like the slider */
   line-height: 1.65;
-  text-align: left;             /* better reading alignment */
+  text-align: center;           /* or 'left' if you prefer */
 }
 
 /* Tighten gap to the masthead if needed */
