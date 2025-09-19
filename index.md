@@ -35,68 +35,91 @@ permalink: /
 <style>
 /* ===== Layout / spacing ===== */
 .lab-block{
-  max-width: 1600px;              /* big, but within the centered page */
-  margin: 1.5rem auto 2rem;       /* tighten top gap under the menu */
+  max-width: 1600px;
+  margin: 1.5rem auto 2rem;    /* tighten top gap */
   padding: 0 1rem;
-  text-align: center;
+  text-align: center;          /* center slider and heading */
 }
+
+/* Heading below slider */
 .lab-title{
   margin: 2rem 0 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;           /* ↓ smaller so it fits one line on desktop */
   line-height: 1.2;
+  white-space: nowrap;         /* keep on one line if screen is wide enough */
 }
+
+/* Description paragraph (left aligned) */
 .lab-text{
   max-width: 1000px;
   margin: 2rem auto 0;
   line-height: 1.6;
+  text-align: left;            /* ← left aligned text */
 }
 
-/* ===== Slider (namespaced to avoid collisions) ===== */
+/* ===== Slider ===== */
 .hero-slider{
   position: relative;
   width: 100%;
   max-width: 1600px;
   margin: 0 auto 1.5rem;
-  overflow: hidden;                /* hide off-screen slides */
+  overflow: hidden;
   border-radius: 12px;
   background: #f2f2f2;
 }
+
 .hs-track{
   display: flex;
   transition: transform 300ms ease;
   will-change: transform;
 }
+
 .hs-slide{
-  flex: 0 0 100%;                 /* exactly one viewport width per slide */
+  flex: 0 0 100%;              /* exactly one viewport width per slide */
   width: 100%;
   display: block;
-  height: auto;                   /* no fixed height -> no cropping */
-  object-fit: contain;            /* keep full image visible */
+  height: auto;                /* no cropping */
+  object-fit: contain;
 }
 
 /* Controls */
 .hs-nav{
-  position: absolute; top: 50%; transform: translateY(-50%);
-  border: none; background: rgba(0,0,0,0.5); color:#fff;
-  width: 48px; height: 48px; border-radius: 50%;
-  cursor: pointer; font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
 }
 .hs-prev{ left: 16px; }
 .hs-next{ right: 16px; }
 
 .hs-dots{
-  position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
-  display: flex; gap: 8px;
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
 }
 .hs-dots button{
-  width: 12px; height: 12px; border-radius: 50%;
-  border: none; background: rgba(0,0,0,0.35); cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.35);
+  cursor: pointer;
 }
 .hs-dots button[aria-selected="true"]{ background:#000; }
 </style>
 
 <script>
-/* ===== Minimal, conflict-free slider JS (no width fiddling) ===== */
+/* ===== Minimal slider JS for hero-slider ===== */
 (function () {
   function init() {
     const slider = document.querySelector('.hero-slider');
@@ -113,7 +136,7 @@ permalink: /
     slides.forEach((_, i) => {
       const b = document.createElement('button');
       b.setAttribute('role', 'tab');
-      b.setAttribute('aria-label', `Go to slide ${i+1}`);
+      b.setAttribute('aria-label', `Go to slide ${i + 1}`);
       b.addEventListener('click', () => goTo(i));
       dotsEl.appendChild(b);
     });
@@ -124,6 +147,7 @@ permalink: /
         b.setAttribute('aria-selected', i === index ? 'true' : 'false')
       );
     }
+
     function goTo(i) {
       index = (i + slides.length) % slides.length;
       update();
@@ -141,7 +165,7 @@ permalink: /
       if (dx < -40) goTo(index + 1);
     });
 
-    // Optional autoplay
+    // Autoplay (pause on hover)
     let timer = setInterval(() => goTo(index + 1), 5000);
     slider.addEventListener('mouseenter', () => clearInterval(timer));
     slider.addEventListener('mouseleave', () => timer = setInterval(() => goTo(index + 1), 5000));
@@ -149,8 +173,8 @@ permalink: /
     update();
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
   } else {
     init();
   }
