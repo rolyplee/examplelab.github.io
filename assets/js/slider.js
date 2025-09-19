@@ -1,4 +1,3 @@
-// /assets/js/slider.js
 (function () {
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
@@ -17,10 +16,6 @@
     const dotsEl = slider.querySelector('.dots');
     let index = 0;
 
-    // 1) Explicitly set the track width and each slide width
-    track.style.width = `${slides.length * 100}%`;
-    slides.forEach(s => { s.style.width = `${100 / slides.length}%`; });
-
     // Build dots
     slides.forEach((_, i) => {
       const b = document.createElement('button');
@@ -31,8 +26,8 @@
     });
 
     function update() {
-      // 2) Use translate3d to avoid any transform conflicts
-      track.style.transform = `translate3d(-${index * (100 / slides.length)}%, 0, 0)`;
+      // Move one full slide width per index
+      track.style.transform = `translateX(-${index * 100}%)`;
       Array.from(dotsEl.children).forEach((b, i) =>
         b.setAttribute('aria-selected', i === index ? 'true' : 'false')
       );
@@ -42,10 +37,11 @@
       update();
     }
 
-    prev.addEventListener('click', () => goTo(index - 1));
-    next.addEventListener('click', () => goTo(index + 1));
+    // Controls
+    prev?.addEventListener('click', () => goTo(index - 1));
+    next?.addEventListener('click', () => goTo(index + 1));
 
-    // Touch swipe
+    // Swipe
     let startX = 0;
     track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
     track.addEventListener('touchend', e => {
@@ -59,7 +55,6 @@
     slider.addEventListener('mouseenter', () => clearInterval(timer));
     slider.addEventListener('mouseleave', () => timer = setInterval(() => goTo(index + 1), 5000));
 
-    // Start
     update();
   }
 })();
