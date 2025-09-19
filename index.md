@@ -24,7 +24,7 @@ permalink: /
   <h1 class="lab-title">Welcome to the Figueroa Robotics Lab</h1>
 
   <p class="lab-text">
-    The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots
+    The goal of my research is to study and develop the physical and perceptual adaptive intelligence necessary for robots
     to learn from and interact with humans, while being able to adapt to a wide-range of human capabilities, needs and
     ever-changing environments achieving fluid human-robot collaborative autonomy; i.e., when humans and robots collaborate
     harmoniously. We focus on applications where such fluid collaboration is necessary or safety critical, such as teaching
@@ -38,7 +38,7 @@ permalink: /
 </section>
 
 <style>
-/* ---------- Slider: full-browser-width, centered ---------- */
+/* ---------- Slider: full-browser-width ---------- */
 .hero-slider{
   position: relative;
   overflow: hidden;
@@ -74,16 +74,13 @@ permalink: /
 }
 .hs-dots button[aria-selected="true"]{ background:#000; }
 
-/* ---------- Text section: half page width, perfectly centered ---------- */
+/* ---------- Text section: centered container (~half screen) ---------- */
 .content-wrap{
-  width: min(50vw, 900px);      /* about half the viewport, capped on very wide screens */
-  margin: 2.25rem auto;         /* auto margins center the block */
-  padding: 0 1rem;              /* small side padding for smaller screens */
+  width: min(50vw, 900px);   /* about half the viewport, capped for very wide screens */
+  margin: 2.25rem auto;      /* horizontally centered */
+  padding: 0 1rem;           /* breathing room on smaller screens */
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;          /* horizontally center heading + paragraph */
-  text-align: center;           /* center the text itself */
+  text-align: center;        /* centers the heading inside the block */
 }
 
 .lab-title{
@@ -92,24 +89,20 @@ permalink: /
   font-size: clamp(1.6rem, 2.2vw + 0.6rem, 2.4rem);
   line-height: 1.2;
   text-align: center;
-  white-space: nowrap;          /* keep one line on large screens */
+  white-space: nowrap;       /* keep one line on large screens */
 }
 
 @media (max-width: 768px){
-  .content-wrap{
-    width: min(90vw, 900px);    /* friendlier on phones/tablets */
-    padding: 0 1rem;
-  }
-  .lab-title{
-    white-space: normal;        /* allow wrapping on smaller screens */
-  }
+  .content-wrap{ width: min(90vw, 900px); }
+  .lab-title{ white-space: normal; }
 }
 
 .lab-text{
   margin: 0 auto;
-  max-width: 70ch;              /* readable line length inside the half-width block */
+  max-width: 70ch;           /* readable line length */
   line-height: 1.85;
-  text-align: center;
+  text-align: justify;       /* ✅ justify text left & right like Word */
+  text-align-last: center;   /* center the final line for a balanced finish */
 }
 
 /* Tighten gap to the masthead if needed */
