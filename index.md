@@ -49,6 +49,7 @@ permalink: /
   flex: 0 0 100%; width: 100%; display: block;
   height: auto; object-fit: contain; max-height: 85vh;
 }
+
 /* Controls & dots */
 .hs-nav{
   position: absolute; top: 50%; transform: translateY(-50%);
@@ -56,28 +57,37 @@ permalink: /
   width: 48px; height: 48px; border-radius: 50%; cursor: pointer; font-size: 24px;
 }
 .hs-prev{ left: 16px; } .hs-next{ right: 16px; }
-.hs-dots{ position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); display: flex; gap: 8px; }
-.hs-dots button{ width: 12px; height: 12px; border-radius: 50%; border: none; background: rgba(0,0,0,0.35); cursor: pointer; }
+.hs-dots{
+  position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
+  display: flex; gap: 8px;
+}
+.hs-dots button{
+  width: 12px; height: 12px; border-radius: 50%;
+  border: none; background: rgba(0,0,0,0.35); cursor: pointer;
+}
 .hs-dots button[aria-selected="true"]{ background:#000; }
 
-/* ---------- Balanced text layout below slider ---------- */
+/* ---------- Text layout below slider ---------- */
 .content-wrap{
   width: 100%;
-  max-width: 1600px;          /* wider content area */
+  max-width: 1600px;
   margin: 2.25rem auto;
   padding: 0 1.5rem;
   box-sizing: border-box;
-  text-align: center;
+
+  /* NEW: force inner elements to center regardless of theme padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Title: keep on one line on desktop, wrap on small screens */
 .lab-title{
   margin: 1.75rem 0 1.25rem;
   font-weight: 800;
   font-size: clamp(1.6rem, 2.2vw + 0.6rem, 2.4rem);
   line-height: 1.2;
   text-align: center;
-  white-space: nowrap;         /* one line on desktop */
+  white-space: nowrap;         /* keep one line on large screens */
 }
 @media (max-width: 768px){
   .lab-title{
@@ -86,11 +96,10 @@ permalink: /
   }
 }
 
-/* Paragraph: roomier and wider than before */
 .lab-text{
   margin: 0 auto;
-  max-width: 95ch;            /* wider line length */
-  line-height: 1.85;          /* airier lines */
+  max-width: 95ch;             /* comfortable line length */
+  line-height: 1.85;
   text-align: center;
 }
 
@@ -112,6 +121,7 @@ permalink: /
     const dotsEl = slider.querySelector('.hs-dots');
     let index = 0;
 
+    // Build dots
     slides.forEach((_, i) => {
       const b = document.createElement('button');
       b.setAttribute('role', 'tab');
