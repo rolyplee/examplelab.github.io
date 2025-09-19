@@ -6,19 +6,8 @@ permalink: /
 ---
 <h1 style="text-align: center;"><strong>Welcome to the Figueroa Robotics Lab</strong></h1>
 
-<div style="text-align: center; margin: 20px 0;">
-  <img src="{{ '/assets/images/IMG_4148.JPG' | relative_url }}"
-       alt="Figueroa Robotics Lab"
-       style="max-width: 100%; height: auto; border-radius: 8px;">
-</div>
-
-<p>
-The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and ever-changing environments—achieving fluid human-robot collaborative autonomy: when humans and robots collaborate harmoniously.
-</p>
-
 <hr style="margin: 40px 0;">
 
-<h2 style="text-align: center;">Lab Photo Slider</h2>
 
 <!-- ====== PHOTO SLIDER ====== -->
 <div class="slider" aria-label="Photo gallery">
@@ -87,3 +76,9 @@ The goal of our research is to study and develop the physical and perceptual ada
 
 <!-- Load slider JS from assets (more reliable than inline script in Markdown) -->
 <script src="{{ '/assets/js/slider.js' | relative_url }}" defer></script>
+
+
+<p>
+The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and ever-changing environments—achieving fluid human-robot collaborative autonomy: when humans and robots collaborate harmoniously.
+</p>
+
