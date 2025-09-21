@@ -26,11 +26,11 @@ permalink: /
 </div>
 
 <style>
-/* ---------- Slider: full-browser-width ---------- */
+/* ---------- Slider ---------- */
 .hero-slider{
   position: relative;
   overflow: hidden;
-  background: #000;  /* fallback while images load */
+  background: #f2f2f2;       /* ✅ light grey fallback while images load */
 }
 .hero-slider.fullbleed{
   width: 100vw;
@@ -39,27 +39,39 @@ permalink: /
   transform: translateX(-50%);
   border-radius: 0;
 }
-.hs-track{ display: flex; transition: transform 300ms ease; will-change: transform; }
+.hs-track{
+  display: flex;
+  transition: transform 300ms ease;
+  will-change: transform;
+  position: relative;
+  z-index: 1;                 /* images below overlay & controls */
+}
 .hs-slide{
-  flex: 0 0 100%; width: 100%; display: block;
-  height: auto; object-fit: contain; max-height: 85vh;
+  flex: 0 0 100%;
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: contain;
+  max-height: 85vh;
 }
 
 /* ---------- Overlay Title ---------- */
 .hero-title{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;       /* let clicks pass through to arrows */
+  z-index: 3;                 /* above images */
 }
 .hero-title h1{
-  color: rgba(255,255,255,0.85);   /* ✅ white with slight transparency */
-  background: rgba(0,0,0,0.25);    /* faint dark backdrop for readability */
+  color: rgba(255,255,255,0.85);   /* white, slightly transparent */
+  background: rgba(0,0,0,0.25);    /* subtle dark pad for readability */
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
   font-weight: 800;
+  margin: 0;
 }
 
 /* ---------- Controls & dots ---------- */
@@ -67,11 +79,15 @@ permalink: /
   position: absolute; top: 50%; transform: translateY(-50%);
   border: none; background: rgba(0,0,0,0.5); color:#fff;
   width: 48px; height: 48px; border-radius: 50%; cursor: pointer; font-size: 24px;
+  z-index: 4;                 /* above title overlay */
 }
-.hs-prev{ left: 16px; } .hs-next{ right: 16px; }
+.hs-prev{ left: 16px; }
+.hs-next{ right: 16px; }
+
 .hs-dots{
   position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
   display: flex; gap: 8px;
+  z-index: 4;
 }
 .hs-dots button{
   width: 12px; height: 12px; border-radius: 50%;
@@ -114,8 +130,8 @@ permalink: /
     }
     function goTo(i){ index = (i + slides.length) % slides.length; update(); }
 
-    prev?.addEventListener('click', () => goTo(index - 1));
-    next?.addEventListener('click', () => goTo(index + 1));
+    if (prev) prev.addEventListener('click', () => goTo(index - 1));
+    if (next) next.addEventListener('click', () => goTo(index + 1));
 
     // Touch swipe
     let startX = 0;
@@ -130,7 +146,7 @@ permalink: /
     let timer = setInterval(() => goTo(index + 1), 5000);
     slider.addEventListener('mouseenter', () => clearInterval(timer));
     slider.addEventListener('mouseleave', () =>
-      timer = setInterval(() => goTo(index + 1), 5000)
+      (timer = setInterval(() => goTo(index + 1), 5000))
     );
 
     update();
