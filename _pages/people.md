@@ -188,7 +188,7 @@ sanghyub-lee" target="_blank">
     </div>
 
   <div class="person-card">   
-      <a href="http://www.linkedin.com/in/dhyey-shah-3039371b5" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/dhyeh_shah.JPG"></a>
+      <a href="http://www.linkedin.com/in/dhyey-shah-3039371b5" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/dhyey_shah.JPG"></a>
       <a href="http://www.linkedin.com/in/dhyey-shah-3039371b5" target="_blank"><h3>Dhyey Shah</h3></a>
       <p>M.S. ESE, 2026<br>2025–present<br><em>Research Intern Fall 2025</em></p>
     </div>
