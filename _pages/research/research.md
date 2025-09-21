@@ -66,76 +66,7 @@ permalink: /research/
 </div>
 
 <style>
-/* === overall wrapper === */
-.research-wrap {
-  max-width: 1600px;          /* wide container */
-  margin: 0 auto;             /* center on page */
-  padding: 0 4vw 3rem;        /* responsive side padding */
-  text-align: center;
-}
-
-/* === title and paragraph === */
-.research-title {
-  margin: 2rem 0 1rem;
-  font-weight: 800;
-  font-size: clamp(1.8rem, 2.6vw + .8rem, 2.8rem);
-}
-
-.research-text {
-  max-width: 1200px;          /* tweak this for paragraph width */
-  margin: 0 auto 3rem;
-  font-size: 1.05rem;
-  line-height: 1.85;
-  text-align: justify;        /* flush left/right edges */
-  text-align-last: center;    /* center last line for a balanced block */
-  padding: 0 1rem;
-}
-
-/* === research team grid === */
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  gap: 2.5rem;
-  justify-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.research-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.img-wrap {
-  width: 100%;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 8px 28px rgba(0,0,0,.08);
-}
-
-.research-card img {
-  width: 100%;
-  height: 360px;
-  object-fit: contain;        /* show full image without cropping */
-  background: #f5f5f5;        /* neutral background if aspect ratio differs */
-  transition: transform .35s ease, filter .35s ease;
-}
-
-.research-card h3 {
-  margin-top: 0.85rem;
-  font-size: clamp(1.2rem, 1.4vw + .8rem, 1.8rem);
-  font-weight: 700;
-}
-
-.research-card:hover img {
-  transform: scale(1.03);
-  filter: brightness(1.05);
-}
-
-/* === override theme’s default narrow inner wrap === */
+/* Let the page content use the full width of the theme container */
 .page__content,
 .page .page__inner-wrap {
   max-width: none !important;
@@ -144,13 +75,83 @@ permalink: /research/
   padding-right: 0 !important;
 }
 
-@media (max-width: 640px) {
-  .research-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+/* Overall wrapper – wide and centered with responsive side padding */
+.research-wrap{
+  max-width: 1400px;                /* <- tweak this wider/narrower if you want */
+  margin: 0 auto;
+  padding: 0 clamp(16px, 5vw, 48px) 3rem;
+  text-align: center;
+}
+
+/* Title */
+.research-title{
+  margin: 2rem 0 1rem;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 2.6vw + .8rem, 2.8rem);
+}
+
+/* Paragraph block: wider + nicer justification behavior */
+.research-text{
+  /* Make the text block comfortably wide, but responsive */
+  max-width: min(1200px, 85vw);     /* <- widen/narrow here if needed */
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
+  line-height: 1.85;
+
+  /* Only fully justify on big screens to avoid “weird gaps” */
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: center;
+  hyphens: auto;
+  padding: 0 0.5rem;
+}
+
+/* On narrower screens, don’t fully justify (prevents rivers/gaps) */
+@media (max-width: 1100px){
+  .research-text{
+    text-align: left;
+    text-align-last: auto;
   }
-  .research-card img {
-    height: 300px;
-  }
+}
+
+/* Team grid centered, same large images */
+.research-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.research-card{
+  display: flex; flex-direction: column; align-items: center;
+  text-decoration: none; color: inherit;
+}
+
+.research-card .img-wrap{
+  width: 100%;
+  border-radius: 14px; overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,.08);
+}
+
+.research-card img{
+  width: 100%; height: 360px;
+  object-fit: contain;              /* show full image, don’t crop */
+  background: #f5f5f5;
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.research-card h3{
+  margin-top: .85rem;
+  font-size: clamp(1.2rem, 1.4vw + .8rem, 1.8rem);
+  font-weight: 700; text-align: center;
+}
+
+.research-card:hover img{ transform: scale(1.03); filter: brightness(1.05); }
+
+@media (max-width: 640px){
+  .research-grid{ grid-template-columns: 1fr; gap: 1.5rem; }
+  .research-card img{ height: 300px; }
 }
 </style>
