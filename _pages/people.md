@@ -128,29 +128,6 @@ sanghyub-lee" target="_blank">
 </div>
 </div>
 
-<!-- === Research Engineers === -->
-<div class="people-section">
-  <h2>Research Engineers</h2>
-  <div class="people-grid">
-    <div class="person-card">
-      <a href="#"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="#"><h3>Daudi Zein</h3></a>
-      <p>M.S. Robotics, 2025<br>2025–present</p>
-  </div>
-
-  <div class="person-card">
-      <a href="{{ site.baseurl }}/people/jalaj_shukla/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="{{ site.baseurl }}/people/jalaj_shukla/"><h3>Jalaj Shukla</h3></a>
-      <p>M.S. MEAM, 2025<br>2025–present</p>
-  </div>
-
-  <div class="person-card">
-      <a href="https://ggao22.github.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/george_gao.png"></a>
-      <a href="https://ggao22.github.io/" target="_blank"><h3>George [Jiayuan] Gao</h3></a>
-      <p>M.S. Robotics, 2025<br>2025<br><em>Research Engineer at Dyna Robotics</em></p>
-  </div>
-  </div>
-</div>
 
 
 
@@ -159,21 +136,27 @@ sanghyub-lee" target="_blank">
   <h2>Master's Thesis Students</h2>
   <div class="people-grid">
     <div class="person-card">
-      <a href="https://mateuszjaszczuk.com/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/mateusz_jaszczuk.png"></a>
+      <a href="https://mateuszjaszczuk.com/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/mateusz_jaszczuk.JPG"></a>
       <a href="https://mateuszjaszczuk.com/" target="_blank"><h3>Mateusz Jaszczuk</h3></a>
       <p>M.S. MEAM, 2026<br>2025–present<br><em>Thesis: “Learning to Feel: Force-Aware Data-Driven Estimation and Control for Fluid Physical Interaction”</em></p>
     </div>
 
   <div class="person-card">  
-      <a href="https://www.linkedin.com/in/ekaterina-skorniakova/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/ekaterina_skorniakova.png"></a>
+      <a href="https://www.linkedin.com/in/ekaterina-skorniakova/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/ekaterina_skorniakova.JPG"></a>
       <a href="https://www.linkedin.com/in/ekaterina-skorniakova/" target="_blank"><h3>Ekaterina Skorniakova</h3></a>
       <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “Coupled Passive Dynamical System Interaction Control on SE(3)”</em></p>
     </div>
 
   <div class="person-card">
-      <a href="{{ site.baseurl }}/people/natey_kim/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="{{ site.baseurl }}/people/natey_kim/"><h3>Natey Kim</h3></a>
+      <a href="https://www.linkedin.com/in/nateykim/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
+      <a href="https://www.linkedin.com/in/nateykim/" target="_blank"><h3>Natey Kim</h3></a>
       <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “Real-time Human Limb Dynamics Tracking via HD-sEMG driven Musculoskeletal Digital Twin Modeling”</em></p>
+    </div>
+
+  <div class="person-card">  
+      <a href="http://www.yihanli.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/ekaterina_skorniakova.JPG"></a>
+      <a href="http://www.yihanli.io/" target="_blank"><h3>Yihan Li </h3></a>
+      <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “RoboHockey: A Robotic Benchmark for Dynamic Whole-body Contact-rich Tasks”</em></p>
     </div>
   </div>
 </div>
@@ -200,6 +183,31 @@ sanghyub-lee" target="_blank">
       <a href="{{ site.baseurl }}/people/yihan_li/"><h3>Yihan Li</h3></a>
       <p>M.S. Robotics, 2026<br>2024–present<br><em>Independent Study Fall 2024</em></p>
     </div>
+  </div>
+</div>
+
+
+<!-- === Research Engineers === -->
+<div class="people-section">
+  <h2>Research Engineers</h2>
+  <div class="people-grid">
+    <div class="person-card">
+      <a href="#"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
+      <a href="#"><h3>Daudi Zein</h3></a>
+      <p>M.S. Robotics, 2025<br>2025–present</p>
+  </div>
+
+  <div class="person-card">
+      <a href="{{ site.baseurl }}/people/jalaj_shukla/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
+      <a href="{{ site.baseurl }}/people/jalaj_shukla/"><h3>Jalaj Shukla</h3></a>
+      <p>M.S. MEAM, 2025<br>2025–present</p>
+  </div>
+
+  <div class="person-card">
+      <a href="https://ggao22.github.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/george_gao.png"></a>
+      <a href="https://ggao22.github.io/" target="_blank"><h3>George [Jiayuan] Gao</h3></a>
+      <p>M.S. Robotics, 2025<br>2025<br><em>Research Engineer at Dyna Robotics</em></p>
+  </div>
   </div>
 </div>
 
