@@ -216,6 +216,8 @@ sanghyub-lee" target="_blank">
 </div>
 
 
+
+
 <!-- === Research Engineers === -->
 <div class="people-section">
   <h2>Research Engineers</h2>
@@ -231,8 +233,7 @@ sanghyub-lee" target="_blank">
 </div>
 
 
-
-<!-- === Alumni === -->
+<!-- === Alumni (completed/⋆) === -->
 <div class="people-section">
   <h2>Alumni</h2>
 
@@ -249,9 +250,7 @@ sanghyub-lee" target="_blank">
       text-align: left;
       vertical-align: top;
     }
-    .alumni-table th {
-      font-weight: 700;
-    }
+    .alumni-table th { font-weight: 700; }
     .alumni-group {
       margin-top: 1.5rem;
       margin-bottom: 0.5rem;
@@ -259,151 +258,107 @@ sanghyub-lee" target="_blank">
       font-weight: 600;
     }
   </style>
-<!-- Alumni: Research Engineers -->
+
+  <!-- Alumni: Research Engineers (⋆) -->
   <div class="alumni-group">Research Engineers</div>
   <table class="alumni-table">
     <thead>
       <tr><th>Name</th><th>Degree</th><th>Years</th><th>Next step / Notes</th></tr>
     </thead>
     <tbody>
-      <tr>
-        <td><a href="{{ site.baseurl }}/people/yi_hsuan_cheng/">Yi-Hsuan Cheng</a></td>
-        <td>M.S. Robotics, 2025</td>
-        <td>2025</td>
-        <td>ML-AI Robotics Engineer at RoboForce</td>
-      </tr>
-      <tr>
-        <td><a href="{{ site.baseurl }}/people/sunan_sun/">Sunan Sun</a></td>
-        <td>M.S. Robotics, 2023</td>
-        <td>2022–2025</td>
-        <td>Now Ph.D. candidate in MEAM (Penn)</td>
-      </tr>
-      <tr>
-        <td><a href="{{ site.baseurl }}/people/davin_tjandra/">Davin Tjandra</a></td>
-        <td>M.S. MEAM, 2025</td>
-        <td>2025</td>
-        <td>Robotics Software Engineer at Intrinsic (Google)</td>
-      </tr>
-      <tr>
-        <td><a href="{{ site.baseurl }}/people/harshil_parekh/">Harshil Parekh</a></td>
-        <td>M.S. Robotics, 2023</td>
-        <td>2022–2024</td>
-        <td>Robotics Software Engineer at BotBuilt</td>
-      </tr>
+      <tr><td>Jalaj Shukla</td><td>M.S. MEAM, 2025</td><td>2025</td><td>Senior Software Engineer at Blue Sky Robotics</td></tr>
+      <tr><td>George [Jiayuan] Gao</td><td>M.S. Robotics, 2025</td><td>2025</td><td>Research Engineer at Dyna Robotics</td></tr>
+      <tr><td>Yi-Hsuan Cheng</td><td>M.S. Robotics, 2025</td><td>2025</td><td>ML-AI Robotics Engineer at RoboForce</td></tr>
+      <tr><td>Davin Tjandra</td><td>M.S. MEAM, 2025</td><td>2025</td><td>Robotics Software Engineer at Intrinsic (Google)</td></tr>
+      <tr><td>Harshil Parekh</td><td>M.S. Robotics, 2023</td><td>2022–2024</td><td>Robotics Software Engineer at BotBuilt</td></tr>
     </tbody>
   </table>
 
-  <!-- Alumni: Visiting Scholars -->
+  <!-- Alumni: Visiting Scholars (⋆) -->
   <div class="alumni-group">Visiting Scholars</div>
   <table class="alumni-table">
     <thead>
       <tr><th>Name</th><th>Affiliation</th><th>Term</th><th>Notes</th></tr>
     </thead>
     <tbody>
-      <tr>
-        <td><a href="{{ site.baseurl }}/people/ze_zhang/">Ze Zhang</a></td>
-        <td>Automation, Chalmers University of Technology (Sweden)</td>
-        <td>Fall 2024</td>
-        <td>Ph.D. Candidate; Visiting Research Scholar (advised by Knut Åkesson)</td>
-      </tr>
-      <tr>
-        <td><a href="{{ site.baseurl }}/people/enrico_martini/">Enrico Martini</a></td>
-        <td>Computer Science, University of Verona (Italy)</td>
-        <td>Spring 2024</td>
-        <td>Ph.D. Candidate; Visiting Research Scholar (advised by Nicola Bombieri)</td>
-      </tr>
+      <tr><td>Ze Zhang</td><td>Automation, Chalmers University of Technology (Sweden)</td><td>Fall 2024</td><td>Ph.D. Candidate; Visiting Research Scholar (advised by Knut Åkesson)</td></tr>
+      <tr><td>Enrico Martini</td><td>Computer Science, University of Verona (Italy)</td><td>Spring 2024</td><td>Ph.D. Candidate; Visiting Research Scholar (advised by Nicola Bombieri)</td></tr>
     </tbody>
   </table>
 
-  <!-- Alumni: Master's Thesis -->
-  <div class="alumni-group">Master's Thesis</div>
+  <!-- Alumni: Master’s Theses (⋆) -->
+  <div class="alumni-group">Master’s Thesis</div>
   <table class="alumni-table">
     <thead>
       <tr><th>Name</th><th>Degree</th><th>Years</th><th>Thesis / Notes</th></tr>
     </thead>
     <tbody>
       <tr>
-        <td><a href="{{ site.baseurl }}/people/paul_lee/">Paul [Sanghyub] Lee</a></td>
+        <td>Paul [Sanghyub] Lee</td>
         <td>M.S. Robotics, 2025</td>
         <td>2024–2025</td>
-        <td>“Towards Real-Time Muscle Health Monitoring and Muscle-in-the-Loop Robotic Assistants via AI-Driven Wearable Ultrasound Processing”; Now Ph.D. candidate in MEAM (Penn)</td>
+        <td>“Towards Real-Time Muscle Health Monitoring and Muscle-in-the-Loop Robotic Assistants via AI-Driven Wearable Ultrasound Processing”; now Ph.D. candidate in MEAM (Penn)</td>
       </tr>
       <tr>
-        <td><a href="{{ site.baseurl }}/people/george_gao/">George [Jiayuan] Gao</a></td>
+        <td>George [Jiayuan] Gao</td>
         <td>M.S. Robotics, 2025</td>
         <td>2024–2025</td>
-        <td>“Visuomotor Object-Centric Out-Of-Distribution Recovery Policy”; Outstanding Master’s Researcher Award in Robotics</td>
+        <td>“Visuomotor Object-Centric Out-Of-Distribution Recovery Policy”; <em>Outstanding Master’s Researcher Award in Robotics</em></td>
       </tr>
       <tr>
-        <td><a href="{{ site.baseurl }}/people/ho_jin_choi/">Ho Jin Choi</a></td>
+        <td>Ho Jin Choi</td>
         <td>M.S. MEAM, 2024</td>
         <td>2022–2024</td>
-        <td>“Gaussian Process-Based Active Exploration Strategies in Vision and Touch”; Outstanding Master’s Researcher Award in MEAM; Summer 2024 intern at MERL; now Ph.D. candidate in MEAM (Penn)</td>
+        <td>“Gaussian Process-Based Active Exploration Strategies in Vision and Touch”; <em>Outstanding Master’s Researcher Award in MEAM</em>; Summer 2024 intern at MERL; now Ph.D. candidate in MEAM (Penn)</td>
       </tr>
       <tr>
-        <td><a href="{{ site.baseurl }}/people/zhiquan_zhang/">Zhiquan Zhang</a></td>
+        <td>Zhiquan Zhang</td>
         <td>M.S. ESE, 2024</td>
         <td>2022–2024</td>
-        <td>“Real-Time Safety-Critical Passive Torque Control with Analytic and Learning-based Constraints”; Best Master’s Thesis in ESE; now Ph.D. candidate at UIUC</td>
+        <td>“Real-Time Safety-Critical Passive Torque Control with Analytic and Learning-based Constraints”; <em>Best Master’s Thesis in ESE</em>; now Ph.D. candidate at UIUC</td>
       </tr>
       <tr>
-        <td><a href="{{ site.baseurl }}/people/haihui_gao/">Haihui Gao</a></td>
+        <td>Haihui Gao</td>
         <td>M.S. ESE & MEAM, 2024</td>
         <td>2022–2024</td>
         <td>“Advancing Dynamical Systems in Learning from Demonstration: A Novel Approach for Modeling Self-Crossing Trajectories”; now Ph.D. candidate at University of Montreal</td>
       </tr>
       <tr>
-        <td><a href="{{ site.baseurl }}/people/satyajeet_das/">Satyajeet Das</a></td>
+        <td>Satyajeet Das</td>
         <td>M.S. ESE, 2024</td>
         <td>2023–2024</td>
         <td>“Towards Vision-based Safety: A Real-Time Approach for Generating Barrier Functions using Depth Sensors”; now Ph.D. candidate at USC (started Fall 2024)</td>
       </tr>
       <tr>
-        <td><a href="{{ site.baseurl }}/people/haoming_li/">Haoming Li</a></td>
+        <td>Haoming Li</td>
         <td>M.S. ESE, 2024</td>
         <td>2023–2024</td>
         <td>“Towards Robust SLAM with Neural Implicit Representations”; Research Engineer at the University of Pennsylvania</td>
       </tr>
-      <tr>
-        <td><a href="{{ site.baseurl }}/people/dain_kim/">Dain Kim</a></td>
-        <td>M.Eng. EECS @ MIT, 2021</td>
-        <td>2020–2021</td>
-        <td>“Imitation Learning for Sequential Manipulation Tasks: Leveraging Language and Perception” — <a href="https://dspace.mit.edu/handle/1721.1/139416" target="_blank">Thesis link</a>; Software Engineer at Academia.edu</td>
-      </tr>
     </tbody>
   </table>
 
-  <!-- Alumni: Master's Research Interns -->
-  <div class="alumni-group">Master's Research Interns</div>
+  <!-- Alumni: Master’s Research Interns (⋆) -->
+  <div class="alumni-group">Master’s Research Interns</div>
   <table class="alumni-table">
     <thead>
       <tr><th>Name</th><th>Degree</th><th>Years</th><th>Notes</th></tr>
     </thead>
     <tbody>
-      <tr><td><a href="{{ site.baseurl }}/people/jingshuo_li/">Jingshuo Li</a></td><td>M.S. MEAM, 2026</td><td>2025</td><td>Independent Study Spring 2025</td></tr>
-      <tr><td><a href="{{ site.baseurl }}/people/jalaj_shukla/">Jalaj Shukla</a></td><td>M.S. MEAM, 2025</td><td>2025</td><td>Independent Study Spring 2025</td></tr>
-      <tr><td><a href="{{ site.baseurl }}/people/yi_hsuan_cheng/">Yi-Hsuan Cheng</a></td><td>M.S. Robotics, 2025</td><td>2024–2025</td><td>Research Intern Fall 2024; Independent Study Spring 2025</td></tr>
-      <tr><td><a href="{{ site.baseurl }}/people/davin_tjandra/">Davin Tjandra</a></td><td>M.S. MEAM, 2025</td><td>2024–2025</td><td>Research Intern Fall 2024–Spring 2025</td></tr>
-      <tr><td><a href="{{ site.baseurl }}/people/shubhodeep_aditya/">Shubhodeep Shiv Aditya</a></td><td>M.S. Robotics, 2025</td><td>2024–2025</td><td>Research Intern Summer–Fall 2024; Independent Study Spring 2025; AI Computer Vision Engineer at Mytra</td></tr>
-      <tr><td><a href="#">Yuxin Li</a></td><td>M.S. MEAM, 2025</td><td>2024</td><td>Independent Study Fall 2024</td></tr>
-      <tr><td><a href="#">Shaoting Peng</a></td><td>M.S. Robotics, 2024</td><td>2022–2024</td><td>Independent Study Fall 2022; Research Intern Spring 2023–Spring 2024; now Ph.D. candidate at UIUC</td></tr>
-      <tr><td><a href="#">Atharva Makarand Pradhan</a></td><td>M.S. MEAM, 2024</td><td>2023–2024</td><td>Independent Study Fall 2023; Research Intern Spring 2024; Software Engineer at Noah Medical (since Fall 2024)</td></tr>
-      <tr><td><a href="#">Lance Tan</a></td><td>M.S. DATS, 2024</td><td>2024</td><td>Independent Study Spring 2024</td></tr>
-      <tr><td><a href="#">Parth Sanghavi</a></td><td>M.S. MEAM, 2024</td><td>2024</td><td>Independent Study Spring 2024</td></tr>
-      <tr><td><a href="#">Qi Xue</a></td><td>M.S. CIS, 2023</td><td>2023</td><td>Independent Study Fall 2023</td></tr>
-      <tr><td><a href="#">Vaibhav Wanere</a></td><td>M.S. MEAM, 2024</td><td>2023</td><td>Independent Study Summer 2023</td></tr>
-    </tbody>
-  </table>
-
-  <!-- Alumni: Undergraduate Research Interns -->
-  <div class="alumni-group">Undergraduate Research Interns</div>
-  <table class="alumni-table">
-    <thead>
-      <tr><th>Name</th><th>Field</th><th>Years</th><th>Notes</th></tr>
-    </thead>
-    <tbody>
-      <tr><td><a href="#">Natey Kim</a></td><td>Bioengineering</td><td>2024</td><td>2024 PURM Summer Scholarship Recipient</td></tr>
-      <tr><td><a href="#">Michael North</a></td><td>Bioengineering</td><td>2024</td><td>2024 PURM Summer Scholarship Recipient</td></tr>
+      <tr><td>Jalaj Shukla</td><td>M.S. MEAM, 2025</td><td>2025</td><td>Independent Study (Spring 2025)</td></tr>
+      <tr><td>Yi-Hsuan Cheng</td><td>M.S. Robotics, 2025</td><td>2024–2025</td><td>Research Intern (Fall 2024), Independent Study (Spring 2025)</td></tr>
+      <tr><td>Davin Tjandra</td><td>M.S. MEAM, 2025</td><td>2024–2025</td><td>Research Intern (Fall 2024–Spring 2025)</td></tr>
+      <tr><td>Shubhodeep Shiv Aditya</td><td>M.S. Robotics, 2025</td><td>2024–2025</td><td>Research Intern (Summer–Fall 2024), Independent Study (Spring 2025); AI Computer Vision Engineer at Mytra</td></tr>
+      <tr><td>Yuxin Li</td><td>M.S. MEAM, 2025</td><td>2024</td><td>Independent Study (Fall 2024)</td></tr>
+      <tr><td>Shaoting Peng</td><td>M.S. Robotics, 2024</td><td>2022–2024</td><td>Independent Study (Fall 2022), Research Intern (Spring 2023–Spring 2024); now Ph.D. candidate at UIUC</td></tr>
+      <tr><td>Atharva Makarand Pradhan</td><td>M.S. MEAM, 2024</td><td>2023–2024</td><td>Independent Study (Fall 2023), Research Intern (Spring 2024); Software Engineer at Noah Medical (since Fall 2024)</td></tr>
+      <tr><td>Lance Tan</td><td>M.S. DATS, 2024</td><td>2024</td><td>Independent Study (Spring 2024)</td></tr>
+      <tr><td>Parth Sanghavi</td><td>M.S. MEAM, 2024</td><td>2024</td><td>Independent Study (Spring 2024)</td></tr>
+      <tr><td>Qi Xue</td><td>M.S. CIS, 2023</td><td>2023</td><td>Independent Study (Fall 2023)</td></tr>
+      <tr><td>Vaibhav Wanere</td><td>M.S. MEAM, 2024</td><td>2023</td><td>Independent Study (Summer 2023)</td></tr>
     </tbody>
   </table>
 </div>
+
+
+
