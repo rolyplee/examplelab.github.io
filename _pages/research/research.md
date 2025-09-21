@@ -4,8 +4,92 @@ title: "Research"
 permalink: /research/
 ---
 
+<style>
+/* Center the theme’s page title line */
+.page__title{ text-align:center !important; }
+
+/* ===== Center & size the whole page content ===== */
+.research-wrap{
+  width: min(1200px, 96vw);
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* Headings below the theme title */
+.research-h2{
+  text-align: center;
+  margin: .25rem 0 1rem;
+}
+
+/* Intro paragraph: wider, centered, justified with neat edges */
+.research-intro{
+  width: min(1100px, 92vw);
+  margin: 0 auto 1.75rem;
+  line-height: 1.75;
+  text-align: justify;
+  text-align-last: center;
+}
+
+/* ===== Grid: centered; 3 on top, 2 below at full width ===== */
+.research-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(320px, 1fr));
+  gap: 28px;
+  align-items: start;
+  justify-items: center;
+  margin: 1rem auto 3rem;
+  max-width: 1200px;          /* keeps it visually centered on wide screens */
+}
+
+/* 2-up and 1-up at narrower widths */
+@media (max-width: 1100px){
+  .research-grid{ grid-template-columns: repeat(2, minmax(300px, 1fr)); }
+}
+@media (max-width: 650px){
+  .research-grid{ grid-template-columns: 1fr; }
+}
+
+/* Cards */
+.research-card{
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.img-wrap{
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,.08);
+  background: #f5f5f5;      /* subtle letterbox color when images don’t fill */
+}
+
+/* ✅ Show full image, no cropping */
+.research-card img{
+  width: 100%;
+  aspect-ratio: 3 / 2;      /* consistent card shape */
+  object-fit: contain;      /* show the whole photo */
+  display: block;
+  background: #f5f5f5;      /* behind any letterboxing */
+  transition: transform .3s ease, filter .3s ease;
+}
+
+.research-card h3{
+  margin-top: .85rem;
+  text-align: center;
+  font-size: clamp(1.1rem, 1.3vw + .7rem, 1.6rem);
+  font-weight: 700;
+}
+
+.research-card:hover img{ transform: scale(1.02); filter: brightness(1.03); }
+</style>
+
 <div class="research-wrap">
-  <h1 class="research-h1">Research</h1>
   <h2 class="research-h2">Our Research</h2>
 
   <div class="research-intro">
@@ -65,89 +149,3 @@ permalink: /research/
 
   </div>
 </div>
-
-<style>
-/* ===== Center the whole page content ===== */
-.research-wrap{
-  width: min(1200px, 96vw);   /* nice wide container */
-  margin: 0 auto;             /* <— centers everything */
-  padding: 0 16px;
-  box-sizing: border-box;
-}
-
-/* Titles */
-.research-h1{
-  text-align: center;
-  margin: .25rem 0 .5rem;
-}
-.research-h2{
-  text-align: center;
-  margin: 0 0 1rem;
-}
-
-/* Intro paragraph: centered block, justified text with even edges */
-.research-intro{
-  width: min(1000px, 90vw);
-  margin: 0 auto 1.75rem;
-  text-align: justify;
-  text-align-last: center;   /* last line centered */
-  line-height: 1.75;
-}
-
-/* ===== Grid: centered; 3 up / 2 up / 1 up responsively ===== */
-.research-grid{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
-  gap: 28px;
-  align-items: start;
-  justify-items: center;     /* centers each card inside its cell */
-  margin: 1rem auto 3rem;
-}
-
-@media (max-width: 1100px){
-  .research-grid{ grid-template-columns: repeat(2, minmax(280px, 1fr)); }
-}
-@media (max-width: 640px){
-  .research-grid{ grid-template-columns: 1fr; }
-}
-
-/* Cards */
-.research-card{
-  width: 100%;
-  max-width: 520px;          /* prevents super-wide cards; keeps grid centered */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.img-wrap{
-  width: 100%;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 8px 28px rgba(0,0,0,.08);
-}
-
-/* keep your current big photo look */
-.research-card img{
-  width: 100%;
-  height: 360px;
-  object-fit: cover;         /* if you prefer no cropping: switch to 'contain' */
-  display: block;
-  transition: transform .35s ease, filter .35s ease;
-  background: #f7f7f7;
-}
-
-.research-card h3{
-  margin-top: .85rem;
-  text-align: center;
-  font-size: clamp(1.1rem, 1.3vw + .7rem, 1.6rem);
-  font-weight: 700;
-}
-
-.research-card:hover img{
-  transform: scale(1.03);
-  filter: brightness(1.03);
-}
-</style>
