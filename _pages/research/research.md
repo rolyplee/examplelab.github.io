@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Research"
+title: ""
 permalink: /research/
 ---
 
@@ -93,7 +93,7 @@ permalink: /research/
   <h2 class="research-h2">Our Research</h2>
 
   <div class="research-intro">
-    Established in Fall 2022. The goal of my research group is to study and develop the physical and perceptual adaptive
+    Established in Fall 2022. The goal of our research group is to study and develop the physical and perceptual adaptive
     intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide-range
     of human capabilities, needs and ever-changing environments achieving fluid human-robot collaborative autonomy; i.e.,
     when humans and robots collaborate harmoniously. We focus on applications where such fluid collaboration is necessary
