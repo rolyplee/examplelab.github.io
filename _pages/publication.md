@@ -83,7 +83,7 @@ permalink: /publication/
   width: min(96vw, 1400px);   /* nice and wide */
   margin: 0 auto 2rem;
   padding: 0 1rem;
-  margin-left: -20px;         /* 👈 shift entire section slightly left */
+  margin-left: -80px;         /* 👈 shift entire section slightly left */
 }
 
 /* Section headings */
