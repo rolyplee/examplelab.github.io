@@ -19,7 +19,7 @@ permalink: /
   <div class="hs-dots" role="tablist" aria-label="Choose slide"></div>
 </div>
 
-<!-- ===== CONTENT BELOW (≈ half page width, centered) ===== -->
+<!-- ===== CONTENT BELOW (≈ half page width, centered & slightly left-shifted) ===== -->
 <section class="content-wrap">
   <h1 class="lab-title">Welcome to the Figueroa Robotics Lab</h1>
 
@@ -74,16 +74,18 @@ permalink: /
 }
 .hs-dots button[aria-selected="true"]{ background:#000; }
 
-/* ---------- Text section: half page width, perfectly centered ---------- */
+/* ---------- Text section: half page width, perfectly centered with slight left shift ---------- */
 .content-wrap{
   width: min(50vw, 900px);      /* about half the viewport, capped on very wide screens */
-  margin-left: auto;            /* center the block horizontally */
+  margin-left: auto;
   margin-right: auto;
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
-  padding: 0 1rem;              /* a bit of side breathing room on smaller screens */
+  padding: 0 1rem;
   box-sizing: border-box;
   text-align: center;           /* centers the heading text */
+  position: relative;
+  left: -5%;                    /* ✅ small nudge to the left */
 }
 
 .lab-title{
@@ -96,13 +98,13 @@ permalink: /
 }
 
 @media (max-width: 768px){
-  .content-wrap{ width: min(90vw, 900px); }
-  .lab-title{ white-space: normal; }  /* allow wrapping on phones */
+  .content-wrap{ width: min(90vw, 900px); left: 0; } /* reset shift on phones */
+  .lab-title{ white-space: normal; }
 }
 
 .lab-text{
   margin: 0 auto;
-  max-width: 70ch;              /* comfortable line length inside the centered block */
+  max-width: 70ch;              /* comfortable line length */
   line-height: 1.85;
   text-align: justify;          /* even left/right edges */
   text-align-last: center;      /* last line centered for a balanced finish */
