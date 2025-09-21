@@ -80,7 +80,7 @@ permalink: /research/
 
 /* Overall wrapper – wide and centered with responsive side padding */
 .research-wrap{
-  max-width: 1400px;                 /* overall page width */
+  max-width: 1000px;                 /* overall page width */
   margin: 0 auto;
   padding: 0 clamp(16px, 5vw, 48px) 3rem;
   text-align: center;
@@ -95,7 +95,7 @@ permalink: /research/
 
 /* Paragraph block: comfortably wide + better justification */
 .research-text{
-  max-width: min(1800px, 90vw);      /* tweak this to widen/narrow the text */
+  max-width: min(1000px, 90vw);      /* tweak this to widen/narrow the text */
   margin: 0 auto 3rem;
   font-size: 1.05rem;
   line-height: 1.85;
