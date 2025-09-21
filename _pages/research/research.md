@@ -1,108 +1,25 @@
 ---
 layout: single
-title: ""
+title: "Research"
 permalink: /research/
 ---
 
-<style>
-/* Center the theme’s page title line */
-.page__title{ text-align:center !important; }
-
-/* ===== Center & size the whole page content ===== */
-.research-wrap{
-  width: min(1200px, 96vw);
-  margin: 0 auto;
-  padding: 0 16px;
-  box-sizing: border-box;
-}
-
-/* Headings below the theme title */
-.research-h2{
-  text-align: center;
-  margin: .25rem 0 1rem;
-}
-
-/* Intro paragraph: wider, centered, justified with neat edges */
-.research-intro{
-  width: min(1100px, 92vw);
-  margin: 0 auto 1.75rem;
-  line-height: 1.75;
-  text-align: justify;
-  text-align-last: center;
-}
-
-/* ===== Grid: centered; 3 on top, 2 below at full width ===== */
-.research-grid{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(320px, 1fr));
-  gap: 28px;
-  align-items: start;
-  justify-items: center;
-  margin: 1rem auto 3rem;
-  max-width: 1200px;          /* keeps it visually centered on wide screens */
-}
-
-/* 2-up and 1-up at narrower widths */
-@media (max-width: 1100px){
-  .research-grid{ grid-template-columns: repeat(2, minmax(300px, 1fr)); }
-}
-@media (max-width: 650px){
-  .research-grid{ grid-template-columns: 1fr; }
-}
-
-/* Cards */
-.research-card{
-  width: 100%;
-  max-width: 520px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.img-wrap{
-  width: 100%;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 8px 28px rgba(0,0,0,.08);
-  background: #f5f5f5;      /* subtle letterbox color when images don’t fill */
-}
-
-/* ✅ Show full image, no cropping */
-.research-card img{
-  width: 100%;
-  aspect-ratio: 3 / 2;      /* consistent card shape */
-  object-fit: contain;      /* show the whole photo */
-  display: block;
-  background: #f5f5f5;      /* behind any letterboxing */
-  transition: transform .3s ease, filter .3s ease;
-}
-
-.research-card h3{
-  margin-top: .85rem;
-  text-align: center;
-  font-size: clamp(1.1rem, 1.3vw + .7rem, 1.6rem);
-  font-weight: 700;
-}
-
-.research-card:hover img{ transform: scale(1.02); filter: brightness(1.03); }
-</style>
-
 <div class="research-wrap">
-  <h2 class="research-h2">Our Research</h2>
+  <h1 class="research-title">Our Research</h1>
 
-  <div class="research-intro">
-    Established in Fall 2022. The goal of our research group is to study and develop the physical and perceptual adaptive
-    intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a wide-range
-    of human capabilities, needs and ever-changing environments achieving fluid human-robot collaborative autonomy; i.e.,
-    when humans and robots collaborate harmoniously. We focus on applications where such fluid collaboration is necessary
-    or safety critical, such as teaching robots cumbersome dexterous manipulation tasks with minimal human effort,
-    navigating swiftly and safely in busy human-centric spaces, physically assisting humans in heavy work and contact-rich
-    activities, physical therapy and rehabilitation. We tackle these problems by developing novel and tightly coupled
-    learning, control and estimation algorithms that enjoy from stability, safety, efficiency and robustness guarantees.
-    This involves research at the intersection of control theory, machine learning, artificial intelligence, perception
-    and biomechanics—with a physical human-robot interaction perspective.
+  <div class="research-text">
+    <p>
+      Established in Fall 2022. The goal of my research group is to study and develop the physical and perceptual
+      adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a
+      wide-range of human capabilities, needs and ever-changing environments achieving fluid human-robot collaborative
+      autonomy; i.e., when humans and robots collaborate harmoniously. We focus on applications where such fluid
+      collaboration is necessary or safety critical, such as teaching robots cumbersome dexterous manipulation tasks
+      with minimal human effort, navigating swiftly and safely in busy human-centric spaces, physically assisting humans
+      in heavy work and contact-rich activities, physical therapy and rehabilitation. We tackle these problems by
+      developing novel and tightly coupled learning, control and estimation algorithms that enjoy from stability, safety,
+      efficiency and robustness guarantees. This involves research at the intersection of control theory, machine
+      learning, artificial intelligence, perception and biomechanics—with a physical human-robot interaction perspective.
+    </p>
   </div>
 
   <div class="research-grid">
@@ -149,3 +66,90 @@ permalink: /research/
 
   </div>
 </div>
+
+<style>
+/* ===== Center the entire page content wider than Minimal-Mistakes default ===== */
+.page__content {
+  max-width: none;     /* remove theme’s built-in narrow width */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Wrap and optional manual nudge */
+.research-wrap {
+  max-width: 1400px;          /* total width of the centered block */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3vw;
+  /* ---- OPTIONAL manual nudge ----
+     Uncomment and tweak the value below if you want to shift the
+     whole block horizontally (positive = right, negative = left) */
+  /* transform: translateX(-20px); */
+}
+
+/* Title + paragraph */
+.research-title {
+  text-align: center;
+  font-size: clamp(1.8rem, 2.4vw + 0.6rem, 2.6rem);
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.research-text {
+  max-width: 1000px;          /* wider text block */
+  margin: 0 auto 2rem auto;
+  line-height: 1.85;
+  text-align: justify;        /* even left/right edges */
+  text-align-last: center;    /* center last line for balanced finish */
+}
+
+/* Grid of team images */
+.research-grid {
+  display: grid;
+  justify-content: center;    /* center grid inside wrapper */
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2.5rem;
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.img-wrap {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,.08);
+}
+
+.research-card img {
+  width: 100%;
+  height: auto;               /* show full image without cropping */
+  display: block;
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.research-card h3 {
+  margin-top: .85rem;
+  text-align: center;
+  font-size: clamp(1.1rem, 1.3vw + .7rem, 1.6rem);
+  font-weight: 700;
+}
+
+.research-card:hover img {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+@media (max-width: 640px) {
+  .research-grid { gap: 1.5rem; grid-template-columns: 1fr; }
+}
+</style>
