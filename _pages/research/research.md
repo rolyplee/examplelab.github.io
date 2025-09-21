@@ -4,7 +4,6 @@ title: "Research"
 permalink: /research/
 ---
 
-<!-- ===== FULL-WIDTH BAND (breaks out of theme container) ===== -->
 <section class="rb-fullbleed">
   <div class="rb-intro">
     <h1>Our Research</h1>
@@ -22,42 +21,36 @@ permalink: /research/
   </div>
 </section>
 
-<!-- ===== GRID (3 across desktop / 2 tablet / 1 phone) ===== -->
 <section class="rb-grid">
-  <!-- A -->
-  <a class="rb-card" href="{{ site.baseurl }}/research/" aria-label="Assistive Robotics">
+  <a class="rb-card" href="{{ site.baseurl }}/research/">
     <div class="rb-img">
       <img src="{{ site.baseurl }}/assets/images/Assistive_Robotics.JPG" alt="Assistive Robotics team">
     </div>
     <h3>Assistive Robotics</h3>
   </a>
 
-  <!-- C -->
-  <a class="rb-card" href="{{ site.baseurl }}/research/" aria-label="Control & Estimation">
+  <a class="rb-card" href="{{ site.baseurl }}/research/">
     <div class="rb-img">
       <img src="{{ site.baseurl }}/assets/images/Control_Estimation.JPG" alt="Control & Estimation team">
     </div>
     <h3>Control &amp; Estimation</h3>
   </a>
 
-  <!-- H -->
-  <a class="rb-card" href="{{ site.baseurl }}/research/" aria-label="Hardware">
+  <a class="rb-card" href="{{ site.baseurl }}/research/">
     <div class="rb-img">
       <img src="{{ site.baseurl }}/assets/images/hardware.JPG" alt="Hardware team">
     </div>
     <h3>Hardware</h3>
   </a>
 
-  <!-- I -->
-  <a class="rb-card" href="{{ site.baseurl }}/research/" aria-label="Imitation Learning">
+  <a class="rb-card" href="{{ site.baseurl }}/research/">
     <div class="rb-img">
       <img src="{{ site.baseurl }}/assets/images/Imitation_Learning.JPG" alt="Imitation Learning team">
     </div>
     <h3>Imitation Learning</h3>
   </a>
 
-  <!-- P -->
-  <a class="rb-card" href="{{ site.baseurl }}/research/" aria-label="Perception for Manipulation">
+  <a class="rb-card" href="{{ site.baseurl }}/research/">
     <div class="rb-img">
       <img src="{{ site.baseurl }}/assets/images/Perception_for_manipulation.JPG" alt="Perception for Manipulation team">
     </div>
@@ -66,17 +59,14 @@ permalink: /research/
 </section>
 
 <style>
-/* Remove extra top spacing from theme content area */
 .main .page__content { padding-top: 0.5rem; }
 
-/* ---------- FULL-BLEED WRAPPER ---------- */
+/* full-width intro text */
 .rb-fullbleed{
   width: 100vw;
   margin-left: calc(50% - 50vw);
   background: transparent;
 }
-
-/* Centered intro content inside the full-bleed band */
 .rb-intro{
   max-width: 1200px;
   margin: 0 auto 1.75rem;
@@ -95,63 +85,55 @@ permalink: /research/
   max-width: 1000px;
 }
 
-/* ---------- RESPONSIVE GRID ---------- */
+/* responsive grid */
 .rb-grid{
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto 2.5rem;
   padding: 0 24px;
   display: grid;
-  gap: 28px;
-  grid-template-columns: 1fr;           /* phones: 1 across */
+  gap: 36px;                          /* bigger gap for bigger cards */
+  grid-template-columns: 1fr;
   justify-items: center;
 }
-@media (min-width: 700px){
-  .rb-grid{ grid-template-columns: repeat(2, 1fr); }
-}
-@media (min-width: 1000px){
-  .rb-grid{ grid-template-columns: repeat(3, 1fr); }
-}
+@media (min-width: 700px){ .rb-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px){ .rb-grid{ grid-template-columns: repeat(3, 1fr); } }
 
-/* ---------- CARD ---------- */
+/* bigger cards + taller image frame */
 .rb-card{
   width: 100%;
-  max-width: 520px;
+  max-width: 620px;                    /* allow larger card width */
   text-decoration: none;
   color: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-/* Image frame: UNIFORM height via aspect-ratio, show FULL image (no crop) */
 .rb-img{
   width: 100%;
-  aspect-ratio: 4 / 3;                 /* adjust if you prefer 3/2 or 16/9 */
-  border-radius: 14px;
+  aspect-ratio: 3 / 2;                  /* slightly taller frame */
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  box-shadow: 0 12px 36px rgba(0,0,0,.1);
   background: #f3f4f6;
-  display: flex;                        /* center letterboxed images */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 .rb-img img{
   width: 100%;
   height: 100%;
-  object-fit: contain;                  /* ✅ show the whole photo, no cropping */
+  object-fit: contain;                  /* show whole image */
   display: block;
   transition: transform .35s ease, filter .35s ease;
 }
-
 .rb-card:hover .rb-img img{
   transform: scale(1.02);
   filter: brightness(1.02);
 }
-
 .rb-card h3{
-  margin: .85rem 0 0;
+  margin: 1rem 0 0;
   text-align: center;
-  font-size: clamp(1.05rem, 1.1vw + .8rem, 1.5rem);
+  font-size: clamp(1.1rem, 1.2vw + .9rem, 1.6rem);
   font-weight: 800;
 }
 </style>
