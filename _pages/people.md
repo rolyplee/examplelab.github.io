@@ -6,62 +6,66 @@ permalink: /people/
 
 <style>
 /* Center the page title from the theme */
-.page__title {
-  text-align: center !important;
-}
+.page__title { text-align: center !important; }
 
-/* Full-width band but center all inner content */
+/* Full-width band but with tighter vertical rhythm */
 .people-section {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;            /* ↓ was 2rem 4rem */
   box-sizing: border-box;
-  text-align: center; /* center inline content by default */
+  text-align: center;
 }
 
-/* Center each section heading */
+/* Reduce space between consecutive sections */
+.people-section + .people-section {
+  margin-top: 0.75rem;           /* add a small gap only */
+}
+
+/* Section headings a bit tighter */
 .people-section h2 {
   text-align: center;
   font-size: 1.6rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 0.75rem;      /* ↓ was 1rem bottom */
 }
 
-/* Center the entire grid block and each card within it */
+/* Center the grid and tighten row spacing */
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  justify-content: center;  /* center the grid as a whole */
-  justify-items: center;     /* center cards in their columns */
-  align-items: start;        /* keep cards top-aligned inside each cell */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* ↑ was 180px */
+  column-gap: 1.25rem;            /* tighter horizontal spacing */
+  row-gap: 1rem;                  /* tighter vertical spacing (↓ was 2rem) */
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
 }
 
-/* Make each card a flex column and center its contents */
+/* Bigger cards/images */
 .person-card {
-  width: 180px;
+  width: 220px;                   /* ↑ was 180px */
   display: flex;
   flex-direction: column;
-  align-items: center;  /* centers image + text horizontally */
+  align-items: center;
   justify-content: flex-start;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.95rem;             /* slightly larger text to match bigger image */
 }
 
 /* Image sizing + consistent box even if image fails to load */
 .person-card img {
-  width: 180px;
-  height: 180px;
+  width: 220px;                   /* ↑ was 180px */
+  height: 220px;                  /* ↑ was 180px */
   border-radius: 8px;
   object-fit: cover;
-  margin-bottom: 0.5rem;
-  background: #f3f4f6; /* light placeholder bg */
+  margin-bottom: 0.4rem;          /* a hair tighter under the image */
+  background: #f3f4f6;
 }
 
 /* Name styling */
 .person-card h3 {
-  font-size: 0.95rem;
+  font-size: 1rem;                /* a touch larger to fit the bigger card */
   font-weight: 600;
-  margin: 0.25rem 0;
+  margin: 0.2rem 0;
   line-height: 1.2;
   word-wrap: break-word;
   white-space: normal;
@@ -69,15 +73,11 @@ permalink: /people/
 }
 
 /* Tighten paragraph spacing under names */
-.person-card p {
-  margin: 0.15rem 0 0;
-}
+.person-card p { margin: 0.15rem 0 0; }
 
 /* Keep name size stable on big screens */
 @media (min-width: 1000px) {
-  .person-card h3 {
-    font-size: 0.95rem;
-  }
+  .person-card h3 { font-size: 1rem; }
 }
 </style>
 
