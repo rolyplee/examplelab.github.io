@@ -158,6 +158,13 @@ sanghyub-lee" target="_blank">
       <a href="http://www.yihanli.io/" target="_blank"><h3>Yihan Li </h3></a>
       <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “RoboHockey: A Robotic Benchmark for Dynamic Whole-body Contact-rich Tasks”</em></p>
     </div>
+
+
+<div class="person-card">
+      <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/bio-photo.jpg"></a>
+      <a href="{{ site.baseurl }}/people/"><h3>Felix [Yuchen] Zheng</h3></a>
+      <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “Object-centric 3D Operator World Models for Planning Common Cooking Tasks”</em></p>
+    </div>
   </div>
 </div>
 
@@ -166,14 +173,10 @@ sanghyub-lee" target="_blank">
 <div class="people-section">
   <h2>Non-Thesis Master's Research</h2>
   <div class="people-grid">
-    <div class="person-card">
-      <a href="{{ site.baseurl }}/people/felix_zheng/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="{{ site.baseurl }}/people/felix_zheng/"><h3>Felix [Yuchen] Zheng</h3></a>
-      <p>M.S. Robotics, 2026<br>2025–present<br><em>Independent Study Spring 2025</em></p>
-    </div>
+    
 
   <div class="person-card">   
-      <a href="https://zizhe.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/zizhe_zhang.png"></a>
+      <a href="https://zizhe.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/zizhe_zhang.JPG"></a>
       <a href="https://zizhe.io/" target="_blank"><h3>Zizhe Zhang</h3></a>
       <p>M.S. ESE/Robotics, 2026<br>2025–present<br><em>Research Intern Spring 2025</em></p>
     </div>
