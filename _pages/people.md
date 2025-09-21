@@ -138,19 +138,19 @@ sanghyub-lee" target="_blank">
     <div class="person-card">
       <a href="https://mateuszjaszczuk.com/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/mateusz_jaszczuk.JPG"></a>
       <a href="https://mateuszjaszczuk.com/" target="_blank"><h3>Mateusz Jaszczuk</h3></a>
-      <p>M.S. MEAM, 2026<br>2025–present<br><em>Thesis: “Learning to Feel: Force-Aware Data-Driven Estimation and Control for Fluid Physical Interaction”</em></p>
+      <p>M.S. MEAM, 2026<br>2024–present<br><em>Thesis: “Learning to Feel: Force-Aware Data-Driven Estimation and Control for Fluid Physical Interaction”</em></p>
     </div>
 
   <div class="person-card">  
       <a href="https://www.linkedin.com/in/ekaterina-skorniakova/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/ekaterina_skorniakova.JPG"></a>
       <a href="https://www.linkedin.com/in/ekaterina-skorniakova/" target="_blank"><h3>Ekaterina Skorniakova</h3></a>
-      <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “Coupled Passive Dynamical System Interaction Control on SE(3)”</em></p>
+      <p>M.S. Robotics, 2026<br>2023–present<br><em>Thesis: “Coupled Passive Dynamical System Interaction Control on SE(3)”</em></p>
     </div>
 
   <div class="person-card">
       <a href="https://www.linkedin.com/in/nateykim/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/natey_kim.JPG"></a>
       <a href="https://www.linkedin.com/in/nateykim/" target="_blank"><h3>Natey Kim</h3></a>
-      <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “Real-time Human Limb Dynamics Tracking via HD-sEMG driven Musculoskeletal Digital Twin Modeling”</em></p>
+      <p>M.S. Robotics, 2026<br>2023–present<br><em>Thesis: “Real-time Human Limb Dynamics Tracking via HD-sEMG driven Musculoskeletal Digital Twin Modeling”</em></p>
     </div>
 
   <div class="person-card">  
@@ -169,9 +169,9 @@ sanghyub-lee" target="_blank">
 </div>
 
 
-<!-- === Non-Thesis Master's Research === -->
+<!-- === Master's Research Interns === -->
 <div class="people-section">
-  <h2>Non-Thesis Master's Research</h2>
+  <h2>Master's Research Interns</h2>
   <div class="people-grid">
     
 
@@ -203,14 +203,14 @@ sanghyub-lee" target="_blank">
   <div class="person-card">
       <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/guanhua_ji.JPG"></a>
       <a href="{{ site.baseurl }}/people/"><h3>Guanhua Ji</h3></a>
-      <p>M.S. Robotics, 2027<br>2024–present<br><em>Research Intern Fall 2025</em></p>
+      <p>M.S. Robotics, 2027<br>2025–present<br><em>Research Intern Fall 2025</em></p>
     </div>
 
 
   <div class="person-card">
       <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/dayoon_suh.JPG"></a>
       <a href="{{ site.baseurl }}/people/"><h3>Dayoon Suh</h3></a>
-      <p>M.S. Robotics, 2027<br>2024–present<br><em>Research Intern Fall 2025</em></p>
+      <p>M.S. Robotics, 2027<br>2025–present<br><em>Research Intern Fall 2025</em></p>
     </div>
   </div>
 </div>
@@ -227,10 +227,26 @@ sanghyub-lee" target="_blank">
   <div class="person-card">
       <a href="https://www.linkedin.com/in/daudizein/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/daudi_zein.JPG"></a>
       <a href="https://www.linkedin.com/in/daudizein/" target="_blank"><h3>Daudi Zein</h3></a>
-      <p>M.S. Robotics, 2025<br>2025<br><em>Research Engineer</em></p>
+      <p>M.S. Robotics, 2025<br>2025-present<br><em>Research Engineer</em></p>
   </div>
   </div>
 </div>
+
+
+<!-- === Undergraduate Researchers === -->
+<div class="people-section">
+  <h2>Undergraduate Researchers</h2>
+  <div class="people-grid">
+
+
+  <div class="person-card">
+      <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/bio-photo.jpg"></a>
+      <a href="{{ site.baseurl }}/people/" target="_blank"><h3>Michael North</h3></a>
+      <p>B.S. BE, 2026<br>2024-present<br><em>Undergraduate Researcher</em></p>
+  </div>
+  </div>
+</div>
+
 
 
 <!-- === Alumni (completed/⋆) === -->
