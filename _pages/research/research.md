@@ -70,7 +70,6 @@ permalink: /research/
 .main .page__content { padding-top: 0.5rem; }
 
 /* ---------- FULL-BLEED WRAPPER ---------- */
-/* Make this section span the full browser width (escapes theme container) */
 .rb-fullbleed{
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -79,7 +78,6 @@ permalink: /research/
 
 /* Centered intro content inside the full-bleed band */
 .rb-intro{
-  /* change this to taste; this controls how wide the text can get */
   max-width: 1200px;
   margin: 0 auto 1.75rem;
   padding: 0 24px;
@@ -94,28 +92,22 @@ permalink: /research/
 .rb-intro p{
   margin: 0 auto;
   line-height: 1.85;
-  /* keep the paragraph a bit narrower than the container for comfort */
   max-width: 1000px;
 }
 
 /* ---------- RESPONSIVE GRID ---------- */
 .rb-grid{
-  /* grid container is also wide and centered, but not full-bleed */
   max-width: 1400px;
   margin: 0 auto 2.5rem;
   padding: 0 24px;
   display: grid;
   gap: 28px;
-  grid-template-columns: 1fr;            /* phones: 1 across */
-  justify-items: center;                  /* center cards in their tracks */
+  grid-template-columns: 1fr;           /* phones: 1 across */
+  justify-items: center;
 }
-
-/* Tablets: 2 across */
 @media (min-width: 700px){
   .rb-grid{ grid-template-columns: repeat(2, 1fr); }
 }
-
-/* Desktops: 3 across */
 @media (min-width: 1000px){
   .rb-grid{ grid-template-columns: repeat(3, 1fr); }
 }
@@ -123,7 +115,7 @@ permalink: /research/
 /* ---------- CARD ---------- */
 .rb-card{
   width: 100%;
-  max-width: 520px;                       /* keeps columns from getting *too* wide on huge screens */
+  max-width: 520px;
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -131,28 +123,29 @@ permalink: /research/
   align-items: center;
 }
 
+/* Image frame: UNIFORM height via aspect-ratio, show FULL image (no crop) */
 .rb-img{
   width: 100%;
+  aspect-ratio: 4 / 3;                 /* adjust if you prefer 3/2 or 16/9 */
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,.08);
   background: #f3f4f6;
+  display: flex;                        /* center letterboxed images */
+  align-items: center;
+  justify-content: center;
 }
-
-/* Choose ONE look:
-   1) Consistent card height (slight cropping): object-fit: cover + fixed height.
-   2) Never crop (heights vary): height:auto.  */
 .rb-img img{
   width: 100%;
-  height: 340px;          /* consistent card height */
-  object-fit: cover;      /* crop edges to fill nicely */
+  height: 100%;
+  object-fit: contain;                  /* ✅ show the whole photo, no cropping */
   display: block;
   transition: transform .35s ease, filter .35s ease;
 }
 
 .rb-card:hover .rb-img img{
-  transform: scale(1.03);
-  filter: brightness(1.03);
+  transform: scale(1.02);
+  filter: brightness(1.02);
 }
 
 .rb-card h3{
