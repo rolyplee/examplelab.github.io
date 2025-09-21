@@ -61,22 +61,21 @@ permalink: /research/
 <style>
 .main .page__content { padding-top: 0.5rem; }
 
-/* full-width intro text */
+/* full-width intro */
 .rb-fullbleed{
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  background: transparent;
 }
 .rb-intro{
   max-width: 1200px;
-  margin: 0 auto 1.75rem;
+  margin: 0 auto 2rem;
   padding: 0 24px;
   text-align: justify;
   text-justify: inter-word;
 }
 .rb-intro h1{
   text-align: center;
-  margin: 0 0 1rem;
+  margin-bottom: 1rem;
   font-weight: 800;
 }
 .rb-intro p{
@@ -85,32 +84,33 @@ permalink: /research/
   max-width: 1000px;
 }
 
-/* responsive grid */
+/* grid */
 .rb-grid{
-  max-width: 1600px;
-  margin: 0 auto 2.5rem;
+  max-width: 1800px;          /* allow a wider grid */
+  margin: 0 auto 3rem;
   padding: 0 24px;
   display: grid;
-  gap: 36px;                          /* bigger gap for bigger cards */
+  gap: 40px;                  /* bigger space between cards */
   grid-template-columns: 1fr;
   justify-items: center;
 }
 @media (min-width: 700px){ .rb-grid{ grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1100px){ .rb-grid{ grid-template-columns: repeat(3, 1fr); } }
 
-/* bigger cards + taller image frame */
+/* cards */
 .rb-card{
   width: 100%;
-  max-width: 620px;                    /* allow larger card width */
+  max-width: 800px;           /* ✅ wider cards for bigger pictures */
   text-decoration: none;
   color: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .rb-img{
   width: 100%;
-  aspect-ratio: 3 / 2;                  /* slightly taller frame */
+  aspect-ratio: 4 / 3;        /* ✅ taller frame for larger photos */
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 12px 36px rgba(0,0,0,.1);
@@ -122,18 +122,20 @@ permalink: /research/
 .rb-img img{
   width: 100%;
   height: 100%;
-  object-fit: contain;                  /* show whole image */
+  object-fit: contain;        /* show full image, no crop */
   display: block;
   transition: transform .35s ease, filter .35s ease;
 }
+
 .rb-card:hover .rb-img img{
   transform: scale(1.02);
   filter: brightness(1.02);
 }
+
 .rb-card h3{
   margin: 1rem 0 0;
   text-align: center;
-  font-size: clamp(1.1rem, 1.2vw + .9rem, 1.6rem);
+  font-size: clamp(1.2rem, 1.5vw + .9rem, 1.8rem);
   font-weight: 800;
 }
 </style>
