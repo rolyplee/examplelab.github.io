@@ -88,7 +88,7 @@ permalink: /people/
 <div class="people-section">
 <h2>Principal Investigator</h2>
 <div class="people-grid">
-<div class="person-card"><a href="https://nbfigueroa.github.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/nadia_figueroa.png"></a><a href="https://nbfigueroa.github.io/" target="_blank"><h3>Dr. Nadia Figueroa</h3></a><p>Shalini and Rajeev Misra Presidential Assistant Professor, MEAM</p></div>
+<div class="person-card"><a href="https://nbfigueroa.github.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/nadia_figueroa.JPG"></a><a href="https://nbfigueroa.github.io/" target="_blank"><h3>Dr. Nadia Figueroa</h3></a><p>Shalini and Rajeev Misra Presidential Assistant Professor, MEAM</p></div>
 </div>
 </div>
 
