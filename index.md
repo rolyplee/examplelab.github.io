@@ -85,7 +85,7 @@ permalink: /
   box-sizing: border-box;
   text-align: center;           /* centers the heading text */
   position: relative;
-  left: -5%;                    /* ✅ small nudge to the left */
+  left: -15%;                    /* ✅ small nudge to the left */
 }
 
 .lab-title{
