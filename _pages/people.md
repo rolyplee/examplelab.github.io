@@ -96,16 +96,16 @@ permalink: /people/
 <div class="people-section">
 <h2>PhD Students</h2>
 <div class="people-grid">
-<div class="person-card"><a href="http://imtianyuli.com/"  target="_blank"><img src="{{ site.baseurl }}/assets/images/people/tianyu_li.png"></a><a href="http://imtianyuli.com/" target="_blank"><h3>Tianyu Li</h3></a><p>MEAM, 2022–present</p></div>
-<div class="person-card"><a href="{{ site.baseurl }}/people/yifan_xue/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/yifan_xue/"><h3>Yifan Xue</h3></a><p>MEAM, 2022–present</p></div>
-<div class="person-card"><a href="{{ site.baseurl }}/people/shafagh_keyvanian/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/shafagh_keyvanian/"><h3>Shafagh Keyvanian</h3></a><p>MEAM, 2022–present<br><em>Co-advised with Michelle Johnson</em></p></div>
+<div class="person-card"><a href="http://imtianyuli.com/"  target="_blank"><img src="{{ site.baseurl }}/assets/images/people/tianyu_li.JPG"></a><a href="http://imtianyuli.com/" target="_blank"><h3>Tianyu Li</h3></a><p>MEAM, 2022–present</p></div>
+<div class="person-card"><a href="{{ site.baseurl }}/people/yifan_xue/"><img src="{{ site.baseurl }}/assets/images/people/yifan_xue.JPG"></a><a href="https://www.linkedin.com/in/yifan-xue-523168178/" target="_blank"><h3>Yifan Xue</h3></a><p>MEAM, 2022–present</p></div>
+<div class="person-card"><a href="{{ site.baseurl }}/people/shafagh_keyvanian/"><img src="{{ site.baseurl }}/assets/images/people/shafagh_keyvanian.JPG"></a><a href="https://www.linkedin.com/in/shafagh-keyvanian-609b607a/" target="_blank"><h3>Shafagh Keyvanian</h3></a><p>MEAM, 2022–present<br><em>Co-advised with Michelle Johnson</em></p></div>
 <div class="person-card"><a href="{{ site.baseurl }}/people/yifei_simon_shao/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/yifei_simon_shao/"><h3>Yifei Simon Shao</h3></a><p>CIS, 2023–present<br><em>Co-advised with V. Kumar & P. Chaudhari</em></p></div>
-<div class="person-card"><a href="https://sites.google.com/view/farhad-nawaz" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/farhad_nawaz.png"></a><a href="https://sites.google.com/view/farhad-nawaz" target="_blank"><h3>Farhad Nawaz</h3></a><p>ESE, 2023–present<br><em>Co-advised with Nikolai Matni</em></p></div>  
-<div class="person-card"><a href="{{ site.baseurl }}/people/ho_jin_choi/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a><a href="{{ site.baseurl }}/people/ho_jin_choi/"><h3>Ho Jin Choi</h3></a><p>MEAM, 2024–present</p></div>
+<div class="person-card"><a href="https://sites.google.com/view/farhad-nawaz" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/farhad_nawaz.JPG"></a><a href="https://sites.google.com/view/farhad-nawaz" target="_blank"><h3>Farhad Nawaz</h3></a><p>ESE, 2023–present<br><em>Co-advised with Nikolai Matni</em></p></div>  
+<div class="person-card"><a href="{{ site.baseurl }}/people/ho_jin_choi/"><img src="{{ site.baseurl }}/assets/images/people/ho_jin_choi.JPG"></a><a href="https://www.linkedin.com/in/ho-jin-choi-425856208/" target="_blank"><h3>Ho Jin Choi</h3></a><p>MEAM, 2024–present</p></div>
 
 <div class="person-card">
   <a href="https://sunan-sun.github.io/" target="_blank">
-    <img src="{{ site.baseurl }}/assets/images/people/sunan_sun.png">
+    <img src="{{ site.baseurl }}/assets/images/people/sunan_sun.JPG">
   </a>
   <a href="https://sunan-sun.github.io/" target="_blank">
     <h3>Sunan Sun</h3>
