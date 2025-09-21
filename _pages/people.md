@@ -148,13 +148,13 @@ sanghyub-lee" target="_blank">
     </div>
 
   <div class="person-card">
-      <a href="https://www.linkedin.com/in/nateykim/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
+      <a href="https://www.linkedin.com/in/nateykim/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/natey_kim.JPG"></a>
       <a href="https://www.linkedin.com/in/nateykim/" target="_blank"><h3>Natey Kim</h3></a>
       <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “Real-time Human Limb Dynamics Tracking via HD-sEMG driven Musculoskeletal Digital Twin Modeling”</em></p>
     </div>
 
   <div class="person-card">  
-      <a href="http://www.yihanli.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/ekaterina_skorniakova.JPG"></a>
+      <a href="http://www.yihanli.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/yihan_li.JPG"></a>
       <a href="http://www.yihanli.io/" target="_blank"><h3>Yihan Li </h3></a>
       <p>M.S. Robotics, 2026<br>2025–present<br><em>Thesis: “RoboHockey: A Robotic Benchmark for Dynamic Whole-body Contact-rich Tasks”</em></p>
     </div>
@@ -181,10 +181,24 @@ sanghyub-lee" target="_blank">
       <p>M.S. ESE/Robotics, 2026<br>2025–present<br><em>Research Intern Spring 2025</em></p>
     </div>
 
+  <div class="person-card">   
+      <a href="https://www.linkedin.com/in/yicong-wang-0a8b60324/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/yicong_wang.JPG"></a>
+      <a href="https://www.linkedin.com/in/yicong-wang-0a8b60324/" target="_blank"><h3>Zizhe Zhang</h3></a>
+      <p>M.S. ESE/Robotics, 2026<br>2025–present<br><em>Research Intern Spring 2025</em></p>
+    </div>
+
+
   <div class="person-card">
-      <a href="{{ site.baseurl }}/people/yihan_li/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="{{ site.baseurl }}/people/yihan_li/"><h3>Yihan Li</h3></a>
-      <p>M.S. Robotics, 2026<br>2024–present<br><em>Independent Study Fall 2024</em></p>
+      <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/guanhua_ji.JPG"></a>
+      <a href="{{ site.baseurl }}/people/"><h3>Guanhua Ji</h3></a>
+      <p>M.S. Robotics, 2026<br>2024–present<br><em>Research Intern Fall 2025</em></p>
+    </div>
+
+
+  <div class="person-card">
+      <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/dayoon_suh.JPG"></a>
+      <a href="{{ site.baseurl }}/people/"><h3>Dayoon Suh</h3></a>
+      <p>M.S. Robotics, 2026<br>2024–present<br><em>Independent Study Fall 2025</em></p>
     </div>
   </div>
 </div>
