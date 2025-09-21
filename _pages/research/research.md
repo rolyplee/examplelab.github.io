@@ -95,7 +95,7 @@ permalink: /research/
 
 /* Paragraph block: comfortably wide + better justification */
 .research-text{
-  max-width: min(1200px, 90vw);      /* tweak this to widen/narrow the text */
+  max-width: min(1800px, 90vw);      /* tweak this to widen/narrow the text */
   margin: 0 auto 3rem;
   font-size: 1.05rem;
   line-height: 1.85;
