@@ -66,7 +66,7 @@ permalink: /
 .hero-title--bottom{
   align-items: end;           /* push content to bottom */
   justify-items: center;      /* center horizontally */
-  padding-bottom: 20px;       /* space from bottom edge */
+  padding-bottom: 40px;       /* space from bottom edge */
 }
 .hero-title h1{
   margin: 0;
