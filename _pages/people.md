@@ -116,7 +116,7 @@ permalink: /people/
 <div class="person-card">
   <a href="https://sites.google.com/seas.upenn.edu/
 sanghyub-lee" target="_blank">
-    <img src="{{ site.baseurl }}/assets/images/people/sanghyub_lee.png">
+    <img src="{{ site.baseurl }}/assets/images/people/sanghyub_lee.JPG">
   </a>
   <a href="https://sites.google.com/seas.upenn.edu/
 sanghyub-lee" target="_blank">
