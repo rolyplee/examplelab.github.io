@@ -296,7 +296,7 @@ sanghyub-lee" target="_blank">
       <tr>
         <td>Paul [Sanghyub] Lee</td>
         <td>M.S. Robotics, 2025</td>
-        <td>2024–2025</td>
+        <td>2023–2025</td>
         <td>“Towards Real-Time Muscle Health Monitoring and Muscle-in-the-Loop Robotic Assistants via AI-Driven Wearable Ultrasound Processing”; now Ph.D. candidate in MEAM (Penn)</td>
       </tr>
       <tr>
