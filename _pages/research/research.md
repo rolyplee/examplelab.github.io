@@ -5,25 +5,24 @@ permalink: /research/
 ---
 
 <div class="research-wrap">
-  <h1 class="research-title">Our Research</h1>
+  <h2 class="research-title">Our Research</h2>
 
   <div class="research-text">
-    <p>
-      Established in Fall 2022. The goal of my research group is to study and develop the physical and perceptual
-      adaptive intelligence necessary for robots to learn from and interact with humans, while being able to adapt to a
-      wide-range of human capabilities, needs and ever-changing environments achieving fluid human-robot collaborative
-      autonomy; i.e., when humans and robots collaborate harmoniously. We focus on applications where such fluid
-      collaboration is necessary or safety critical, such as teaching robots cumbersome dexterous manipulation tasks
-      with minimal human effort, navigating swiftly and safely in busy human-centric spaces, physically assisting humans
-      in heavy work and contact-rich activities, physical therapy and rehabilitation. We tackle these problems by
-      developing novel and tightly coupled learning, control and estimation algorithms that enjoy from stability, safety,
-      efficiency and robustness guarantees. This involves research at the intersection of control theory, machine
-      learning, artificial intelligence, perception and biomechanics—with a physical human-robot interaction perspective.
-    </p>
+    Established in Fall 2022. The goal of my research group is to study and develop the physical
+    and perceptual adaptive intelligence necessary for robots to learn from and interact with humans,
+    while being able to adapt to a wide-range of human capabilities, needs and ever-changing
+    environments achieving fluid human-robot collaborative autonomy; i.e., when humans and robots
+    collaborate harmoniously. We focus on applications where such fluid collaboration is necessary
+    or safety critical, such as teaching robots cumbersome dexterous manipulation tasks with minimal
+    human effort, navigating swiftly and safely in busy human-centric spaces, physically assisting
+    humans in heavy work and contact-rich activities, physical therapy and rehabilitation.
+    We tackle these problems by developing novel and tightly coupled learning, control and estimation
+    algorithms that enjoy stability, safety, efficiency and robustness guarantees. This involves
+    research at the intersection of control theory, machine learning, artificial intelligence,
+    perception and biomechanics—with a physical human-robot interaction perspective.
   </div>
 
   <div class="research-grid">
-
     <!-- A (Assistive Robotics) -->
     <a class="research-card" href="{{ site.baseurl }}/research/" aria-label="Assistive Robotics">
       <div class="img-wrap">
@@ -63,56 +62,43 @@ permalink: /research/
       </div>
       <h3>Perception for Manipulation</h3>
     </a>
-
   </div>
 </div>
 
 <style>
-/* ===== Center the entire page content wider than Minimal-Mistakes default ===== */
-.page__content {
-  max-width: none;     /* remove theme’s built-in narrow width */
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* Wrap and optional manual nudge */
+/* === overall wrapper === */
 .research-wrap {
-  max-width: 1400px;          /* total width of the centered block */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 3vw;
-  /* ---- OPTIONAL manual nudge ----
-     Uncomment and tweak the value below if you want to shift the
-     whole block horizontally (positive = right, negative = left) */
-  /* transform: translateX(-20px); */
+  max-width: 1600px;          /* wide container */
+  margin: 0 auto;             /* center on page */
+  padding: 0 4vw 3rem;        /* responsive side padding */
+  text-align: center;
 }
 
-/* Title + paragraph */
+/* === title and paragraph === */
 .research-title {
-  text-align: center;
-  font-size: clamp(1.8rem, 2.4vw + 0.6rem, 2.6rem);
-  font-weight: 700;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin: 2rem 0 1rem;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 2.6vw + .8rem, 2.8rem);
 }
 
 .research-text {
-  max-width: 1000px;          /* wider text block */
-  margin: 0 auto 2rem auto;
+  max-width: 1200px;          /* tweak this for paragraph width */
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
   line-height: 1.85;
-  text-align: justify;        /* even left/right edges */
-  text-align-last: center;    /* center last line for balanced finish */
+  text-align: justify;        /* flush left/right edges */
+  text-align-last: center;    /* center last line for a balanced block */
+  padding: 0 1rem;
 }
 
-/* Grid of team images */
+/* === research team grid === */
 .research-grid {
   display: grid;
-  justify-content: center;    /* center grid inside wrapper */
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 2.5rem;
+  justify-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .research-card {
@@ -132,15 +118,15 @@ permalink: /research/
 
 .research-card img {
   width: 100%;
-  height: auto;               /* show full image without cropping */
-  display: block;
+  height: 360px;
+  object-fit: contain;        /* show full image without cropping */
+  background: #f5f5f5;        /* neutral background if aspect ratio differs */
   transition: transform .35s ease, filter .35s ease;
 }
 
 .research-card h3 {
-  margin-top: .85rem;
-  text-align: center;
-  font-size: clamp(1.1rem, 1.3vw + .7rem, 1.6rem);
+  margin-top: 0.85rem;
+  font-size: clamp(1.2rem, 1.4vw + .8rem, 1.8rem);
   font-weight: 700;
 }
 
@@ -149,7 +135,22 @@ permalink: /research/
   filter: brightness(1.05);
 }
 
+/* === override theme’s default narrow inner wrap === */
+.page__content,
+.page .page__inner-wrap {
+  max-width: none !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 @media (max-width: 640px) {
-  .research-grid { gap: 1.5rem; grid-template-columns: 1fr; }
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .research-card img {
+    height: 300px;
+  }
 }
 </style>
