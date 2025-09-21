@@ -5,11 +5,11 @@ author_profile: false
 permalink: /
 ---
 
-<!-- ===== FULL-BLEED HERO SLIDER WITH CENTERED TITLE ===== -->
+<!-- ===== FULL-BLEED HERO SLIDER WITH BOTTOM-CENTER TITLE ===== -->
 <div class="hero-slider fullbleed" aria-label="Figueroa Robotics Lab Photo Gallery">
 
-  <!-- Centered Overlay Title -->
-  <div class="hero-title">
+  <!-- Bottom overlay title (no background box) -->
+  <div class="hero-title hero-title--bottom">
     <h1>Welcome to the Figueroa Robotics Lab</h1>
   </div>
 
@@ -30,7 +30,7 @@ permalink: /
 .hero-slider{
   position: relative;
   overflow: hidden;
-  background: #f2f2f2;       /* ✅ light grey fallback while images load */
+  background: #f2f2f2;       /* light gray while images load */
 }
 .hero-slider.fullbleed{
   width: 100vw;
@@ -51,27 +51,34 @@ permalink: /
   width: 100%;
   display: block;
   height: auto;
-  object-fit: contain;
+  object-fit: contain;        /* never crop */
   max-height: 85vh;
 }
 
-/* ---------- Overlay Title ---------- */
+/* ---------- Overlay Title (no box, bottom centered) ---------- */
 .hero-title{
   position: absolute;
   inset: 0;
   display: grid;
-  place-items: center;
-  pointer-events: none;       /* let clicks pass through to arrows */
+  pointer-events: none;       /* let clicks reach the arrows */
   z-index: 3;                 /* above images */
 }
+.hero-title--bottom{
+  align-items: end;           /* push content to bottom */
+  justify-items: center;      /* center horizontally */
+  padding-bottom: 20px;       /* space from bottom edge */
+}
 .hero-title h1{
-  color: rgba(255,255,255,0.85);   /* white, slightly transparent */
-  background: rgba(0,0,0,0.25);    /* subtle dark pad for readability */
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
-  font-weight: 800;
   margin: 0;
+  color: #ffffff;             /* fully white */
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
+  line-height: 1.1;
+  text-align: center;
+  /* subtle glow for readability on busy photos */
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.45),
+    0 1px 2px rgba(0,0,0,0.35);
 }
 
 /* ---------- Controls & dots ---------- */
@@ -79,7 +86,7 @@ permalink: /
   position: absolute; top: 50%; transform: translateY(-50%);
   border: none; background: rgba(0,0,0,0.5); color:#fff;
   width: 48px; height: 48px; border-radius: 50%; cursor: pointer; font-size: 24px;
-  z-index: 4;                 /* above title overlay */
+  z-index: 4;                 /* above overlay */
 }
 .hs-prev{ left: 16px; }
 .hs-next{ right: 16px; }
@@ -95,7 +102,7 @@ permalink: /
 }
 .hs-dots button[aria-selected="true"]{ background:#fff; }
 
-/* Tighten gap to the masthead if needed */
+/* Remove extra top padding under theme container */
 .main .page__content { padding-top: 0; }
 </style>
 
