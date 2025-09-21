@@ -178,27 +178,39 @@ sanghyub-lee" target="_blank">
   <div class="person-card">   
       <a href="https://zizhe.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/zizhe_zhang.JPG"></a>
       <a href="https://zizhe.io/" target="_blank"><h3>Zizhe Zhang</h3></a>
-      <p>M.S. ESE/Robotics, 2026<br>2025–present<br><em>Research Intern Spring 2025</em></p>
+      <p>M.S. ESE/Robotics, 2026<br>2025–present<br><em>Research Intern Spring-Fall 2025</em></p>
     </div>
 
   <div class="person-card">   
+      <a href="https://www.linkedin.com/in/jason-chen-2580621b7/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/jason_chen.JPG"></a>
+      <a href="https://www.linkedin.com/in/jason-chen-2580621b7/" target="_blank"><h3>Jason Chen</h3></a>
+      <p>M.S. MEAM, 2026<br>2025–present<br><em>Research Intern Fall 2025</em></p>
+    </div>
+
+  <div class="person-card">   
+      <a href="http://www.linkedin.com/in/dhyey-shah-3039371b5" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/dhyeh_shah.JPG"></a>
+      <a href="http://www.linkedin.com/in/dhyey-shah-3039371b5" target="_blank"><h3>Dhyey Shah</h3></a>
+      <p>M.S. ESE, 2026<br>2025–present<br><em>Research Intern Fall 2025</em></p>
+    </div>
+    
+  <div class="person-card">   
       <a href="https://www.linkedin.com/in/yicong-wang-0a8b60324/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/yicong_wang.JPG"></a>
-      <a href="https://www.linkedin.com/in/yicong-wang-0a8b60324/" target="_blank"><h3>Zizhe Zhang</h3></a>
-      <p>M.S. ESE/Robotics, 2026<br>2025–present<br><em>Research Intern Spring 2025</em></p>
+      <a href="https://www.linkedin.com/in/yicong-wang-0a8b60324/" target="_blank"><h3>Yicong Wang</h3></a>
+      <p>M.S. Robotics, 2026<br>2025–present<br><em>Research Intern Fall 2025</em></p>
     </div>
 
 
   <div class="person-card">
       <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/guanhua_ji.JPG"></a>
       <a href="{{ site.baseurl }}/people/"><h3>Guanhua Ji</h3></a>
-      <p>M.S. Robotics, 2026<br>2024–present<br><em>Research Intern Fall 2025</em></p>
+      <p>M.S. Robotics, 2027<br>2024–present<br><em>Research Intern Fall 2025</em></p>
     </div>
 
 
   <div class="person-card">
       <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/dayoon_suh.JPG"></a>
       <a href="{{ site.baseurl }}/people/"><h3>Dayoon Suh</h3></a>
-      <p>M.S. Robotics, 2026<br>2024–present<br><em>Independent Study Fall 2025</em></p>
+      <p>M.S. Robotics, 2027<br>2024–present<br><em>Research Intern Fall 2025</em></p>
     </div>
   </div>
 </div>
@@ -208,22 +220,12 @@ sanghyub-lee" target="_blank">
 <div class="people-section">
   <h2>Research Engineers</h2>
   <div class="people-grid">
-    <div class="person-card">
-      <a href="#"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="#"><h3>Daudi Zein</h3></a>
-      <p>M.S. Robotics, 2025<br>2025–present</p>
-  </div>
+
 
   <div class="person-card">
-      <a href="{{ site.baseurl }}/people/jalaj_shukla/"><img src="{{ site.baseurl }}/assets/images/people/generic_avatar.png"></a>
-      <a href="{{ site.baseurl }}/people/jalaj_shukla/"><h3>Jalaj Shukla</h3></a>
-      <p>M.S. MEAM, 2025<br>2025–present</p>
-  </div>
-
-  <div class="person-card">
-      <a href="https://ggao22.github.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/george_gao.png"></a>
-      <a href="https://ggao22.github.io/" target="_blank"><h3>George [Jiayuan] Gao</h3></a>
-      <p>M.S. Robotics, 2025<br>2025<br><em>Research Engineer at Dyna Robotics</em></p>
+      <a href="https://www.linkedin.com/in/daudizein/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/daudi_zein.JPG"></a>
+      <a href="https://www.linkedin.com/in/daudizein/" target="_blank"><h3>Daudi Zein</h3></a>
+      <p>M.S. Robotics, 2025<br>2025<br><em>Research Engineer</em></p>
   </div>
   </div>
 </div>
