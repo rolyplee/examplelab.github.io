@@ -5,8 +5,14 @@ author_profile: false
 permalink: /
 ---
 
-<!-- ===== FULL-BLEED HERO SLIDER ===== -->
+<!-- ===== FULL-BLEED HERO SLIDER WITH CENTERED TITLE ===== -->
 <div class="hero-slider fullbleed" aria-label="Figueroa Robotics Lab Photo Gallery">
+
+  <!-- Centered Overlay Title -->
+  <div class="hero-title">
+    <h1>Welcome to the Figueroa Robotics Lab</h1>
+  </div>
+
   <button class="hs-nav hs-prev" aria-label="Previous slide">‹</button>
 
   <div class="hs-track" role="region" aria-live="polite">
@@ -19,30 +25,12 @@ permalink: /
   <div class="hs-dots" role="tablist" aria-label="Choose slide"></div>
 </div>
 
-<!-- ===== CONTENT BELOW (≈ half page width, centered & slightly left-shifted) ===== -->
-<section class="content-wrap">
-  <h1 class="lab-title">Welcome to the Figueroa Robotics Lab</h1>
-
-  <p class="lab-text">
-    The goal of our research is to study and develop the physical and perceptual adaptive intelligence necessary for robots
-    to learn from and interact with humans, while being able to adapt to a wide range of human capabilities, needs, and
-    ever-changing environments—achieving fluid human-robot collaborative autonomy; i.e., when humans and robots collaborate
-    harmoniously. We focus on applications where such fluid collaboration is necessary or safety critical, such as teaching
-    robots cumbersome dexterous manipulation tasks with minimal human effort, navigating swiftly and safely in busy human-centric
-    spaces, physically assisting humans in heavy work and contact-rich activities, physical therapy and rehabilitation.
-    We tackle these problems by developing novel and tightly coupled learning, control, and estimation algorithms that enjoy
-    stability, safety, efficiency, and robustness guarantees. This involves research at the intersection of machine learning,
-    control theory, artificial intelligence, perception, biomechanics, and psychology—with a physical human-robot interaction
-    perspective.
-  </p>
-</section>
-
 <style>
 /* ---------- Slider: full-browser-width ---------- */
 .hero-slider{
   position: relative;
   overflow: hidden;
-  background: #f2f2f2;
+  background: #000;  /* fallback while images load */
 }
 .hero-slider.fullbleed{
   width: 100vw;
@@ -57,7 +45,24 @@ permalink: /
   height: auto; object-fit: contain; max-height: 85vh;
 }
 
-/* Controls & dots */
+/* ---------- Overlay Title ---------- */
+.hero-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-title h1{
+  color: rgba(255,255,255,0.85);   /* ✅ white with slight transparency */
+  background: rgba(0,0,0,0.25);    /* faint dark backdrop for readability */
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
+  font-weight: 800;
+}
+
+/* ---------- Controls & dots ---------- */
 .hs-nav{
   position: absolute; top: 50%; transform: translateY(-50%);
   border: none; background: rgba(0,0,0,0.5); color:#fff;
@@ -70,48 +75,12 @@ permalink: /
 }
 .hs-dots button{
   width: 12px; height: 12px; border-radius: 50%;
-  border: none; background: rgba(0,0,0,0.35); cursor: pointer;
+  border: none; background: rgba(255,255,255,0.4); cursor: pointer;
 }
-.hs-dots button[aria-selected="true"]{ background:#000; }
-
-/* ---------- Text section: half page width, perfectly centered with slight left shift ---------- */
-.content-wrap{
-  width: min(50vw, 900px);      /* about half the viewport, capped on very wide screens */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-  padding: 0 1rem;
-  box-sizing: border-box;
-  text-align: center;           /* centers the heading text */
-  position: relative;
-  left: -15%;                    /* ✅ small nudge to the left */
-}
-
-.lab-title{
-  margin: 1.5rem 0 1rem;
-  font-weight: 800;
-  font-size: clamp(1.6rem, 2.2vw + 0.6rem, 2.4rem);
-  line-height: 1.2;
-  text-align: center;
-  white-space: nowrap;          /* keep one line on large screens */
-}
-
-@media (max-width: 768px){
-  .content-wrap{ width: min(90vw, 900px); left: 0; } /* reset shift on phones */
-  .lab-title{ white-space: normal; }
-}
-
-.lab-text{
-  margin: 0 auto;
-  max-width: 70ch;              /* comfortable line length */
-  line-height: 1.85;
-  text-align: justify;          /* even left/right edges */
-  text-align-last: center;      /* last line centered for a balanced finish */
-}
+.hs-dots button[aria-selected="true"]{ background:#fff; }
 
 /* Tighten gap to the masthead if needed */
-.main .page__content { padding-top: 1.25rem; }
+.main .page__content { padding-top: 0; }
 </style>
 
 <script>
