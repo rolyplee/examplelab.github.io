@@ -61,7 +61,7 @@ permalink: /research/
 <style>
 .main .page__content { padding-top: 0.5rem; }
 
-/* full-width intro */
+/* full-width intro text */
 .rb-fullbleed{
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -84,23 +84,23 @@ permalink: /research/
   max-width: 1000px;
 }
 
-/* grid */
+/* grid layout */
 .rb-grid{
-  max-width: 1800px;          /* allow a wider grid */
+  max-width: 2000px;          /* allow a very wide grid */
   margin: 0 auto 3rem;
   padding: 0 24px;
   display: grid;
-  gap: 40px;                  /* bigger space between cards */
+  gap: 48px;                  /* bigger space between cards */
   grid-template-columns: 1fr;
   justify-items: center;
 }
 @media (min-width: 700px){ .rb-grid{ grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1100px){ .rb-grid{ grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1200px){ .rb-grid{ grid-template-columns: repeat(3, 1fr); } }
 
 /* cards */
 .rb-card{
   width: 100%;
-  max-width: 800px;           /* ✅ wider cards for bigger pictures */
+  max-width: 950px;           /* ✅ even wider cards for bigger pictures */
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -108,12 +108,14 @@ permalink: /research/
   align-items: center;
 }
 
+/* image wrapper */
 .rb-img{
   width: 100%;
-  aspect-ratio: 4 / 3;        /* ✅ taller frame for larger photos */
-  border-radius: 16px;
+  /* BIGGER HEIGHT: use a taller fixed height so pictures dominate */
+  height: 480px;              /* ✅ much taller picture area */
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 36px rgba(0,0,0,.1);
+  box-shadow: 0 14px 40px rgba(0,0,0,.1);
   background: #f3f4f6;
   display: flex;
   align-items: center;
@@ -129,13 +131,13 @@ permalink: /research/
 
 .rb-card:hover .rb-img img{
   transform: scale(1.02);
-  filter: brightness(1.02);
+  filter: brightness(1.03);
 }
 
 .rb-card h3{
   margin: 1rem 0 0;
   text-align: center;
-  font-size: clamp(1.2rem, 1.5vw + .9rem, 1.8rem);
+  font-size: clamp(1.4rem, 1.6vw + 1rem, 2rem);
   font-weight: 800;
 }
 </style>
