@@ -4,6 +4,7 @@ title: "Research"
 permalink: /research/
 ---
 
+<!-- ===== FULL-WIDTH INTRO ===== -->
 <section class="rb-fullbleed">
   <div class="rb-intro">
     <h1>Our Research</h1>
@@ -21,6 +22,7 @@ permalink: /research/
   </div>
 </section>
 
+<!-- ===== FULL-WIDTH GRID ===== -->
 <section class="rb-grid">
   <a class="rb-card" href="{{ site.baseurl }}/research/">
     <div class="rb-img">
@@ -59,9 +61,10 @@ permalink: /research/
 </section>
 
 <style>
+/* keep the theme’s top spacing small */
 .main .page__content { padding-top: 0.5rem; }
 
-/* full-width intro text */
+/* ---------- FULL-BLEED INTRO ---------- */
 .rb-fullbleed{
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -84,23 +87,31 @@ permalink: /research/
   max-width: 1000px;
 }
 
-/* grid layout */
+/* ---------- FULL-BLEED GRID (fixes width limit) ---------- */
 .rb-grid{
-  max-width: 2000px;          /* allow a very wide grid */
-  margin: 0 auto 3rem;
-  padding: 0 24px;
+  width: 100vw;                         /* break out of the theme container */
+  margin-left: calc(50% - 50vw);
+  padding: 0 clamp(16px, 5vw, 48px);    /* responsive side padding */
   display: grid;
-  gap: 48px;                  /* bigger space between cards */
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-@media (min-width: 700px){ .rb-grid{ grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1200px){ .rb-grid{ grid-template-columns: repeat(3, 1fr); } }
+  gap: clamp(20px, 3vw, 40px);
 
-/* cards */
+  /* 3 columns on wide screens, but each column must be at least 380px */
+  grid-template-columns: repeat(3, minmax(380px, 1fr));
+  justify-items: center;                /* center cards inside their tracks */
+}
+
+/* fallbacks for smaller screens */
+@media (max-width: 1200px){
+  .rb-grid{ grid-template-columns: repeat(2, minmax(360px, 1fr)); }
+}
+@media (max-width: 800px){
+  .rb-grid{ grid-template-columns: minmax(300px, 1fr); }
+}
+
+/* ---------- CARD ---------- */
 .rb-card{
   width: 100%;
-  max-width: 950px;           /* ✅ even wider cards for bigger pictures */
+  max-width: 720px;                     /* let cards grow wide */
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -108,14 +119,13 @@ permalink: /research/
   align-items: center;
 }
 
-/* image wrapper */
+/* image frame — wide aspect so no tall letterbox */
 .rb-img{
   width: 100%;
-  /* BIGGER HEIGHT: use a taller fixed height so pictures dominate */
-  height: 480px;              /* ✅ much taller picture area */
-  border-radius: 18px;
+  aspect-ratio: 16 / 9;                 /* wide and roomy */
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 14px 40px rgba(0,0,0,.1);
+  box-shadow: 0 12px 36px rgba(0,0,0,.08);
   background: #f3f4f6;
   display: flex;
   align-items: center;
@@ -124,20 +134,20 @@ permalink: /research/
 .rb-img img{
   width: 100%;
   height: 100%;
-  object-fit: contain;        /* show full image, no crop */
+  object-fit: cover;                    /* fill the frame (no tiny centered strip) */
   display: block;
   transition: transform .35s ease, filter .35s ease;
 }
 
 .rb-card:hover .rb-img img{
-  transform: scale(1.02);
+  transform: scale(1.03);
   filter: brightness(1.03);
 }
 
 .rb-card h3{
   margin: 1rem 0 0;
   text-align: center;
-  font-size: clamp(1.4rem, 1.6vw + 1rem, 2rem);
+  font-size: clamp(1.2rem, 1.4vw + .9rem, 1.8rem);
   font-weight: 800;
 }
 </style>
