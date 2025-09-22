@@ -35,9 +35,7 @@ permalink: /publication/
              </td>
           <td><em>IEEE Robotics and Automation Letters (RA-L)</em>, vol. 9, no. 7, pp. 6248–6255</td>
           <td>2024</td>
-          <td><a href="https://ieeexplore.ieee.org/document/10530930" target="_blank" rel="noopener">
-            Directionality-Aware Mixture Model Parallel Sampling for Efficient Linear Parameter Varying Dynamical System Learning
-             </a></td>
+          <td></td>
         </tr>
         <tr>
           <td>J2</td>
