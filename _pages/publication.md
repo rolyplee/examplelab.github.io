@@ -25,12 +25,64 @@ permalink: /publication/
         </tr>
       </thead>
       <tbody>
-        <tr><td>J1</td><td>Sun, S., Gao, H., Li, T. and Figueroa, N.</td><td>Directionality-Aware Mixture Model Parallel Sampling for Efficient Linear Parameter Varying Dynamical System Learning</td><td><em>IEEE Robotics and Automation Letters (RA-L)</em>, vol. 9, no. 7, pp. 6248–6255</td><td>2024</td><td></td></tr>
-        <tr><td>J2</td><td>Koptev, M., Figueroa, N. and Billard, A.</td><td>Reactive Collision-Free Motion Generation in Joint Space via Dynamical Systems and Sampling-Based MPC</td><td><em>The International Journal of Robotics Research (IJRR)</em>, 43(13):2049–2069</td><td>2024</td><td></td></tr>
-        <tr><td>J3</td><td>Fourie, C., Figueroa, N. and Shah, J.</td><td>On-Manifold Strategies for Reactive Dynamical System Modulation with Non-Convex Obstacles</td><td><em>IEEE Transactions on Robotics (TRO)</em>, 40:2390–2409</td><td>2024</td><td>Honorable Mention for IEEE TRO King-Sun Fu Memorial Best Paper Award</td></tr>
-        <tr><td>J4</td><td>Jin, L., Yang, Y., Maldonado, B.O.T., Lee, S.D., Figueroa, N., Full, R.J. and Yang, S.</td><td>Ultrafast, Programmable, and Electronics-Free Soft Robots Enabled by Snapping Metacaps</td><td><em>Advanced Intelligent Systems</em></td><td>2023</td><td><a href="https://doi.org/10.1002/aisy.202300039" target="_blank">DOI</a></td></tr>
-        <tr><td>J5</td><td>Koptev, M., Figueroa, N., Billard, A.</td><td>Neural Joint-Space Implicit Distance Functions for Reactive Robot Manipulator Control</td><td><em>IEEE Robotics and Automation Letters (RA-L)</em>, 8(2):480–487</td><td>2023</td><td></td></tr>
-        <tr><td>J6</td><td>Figueroa, N. and Billard, A.</td><td>Locally Active Globally Stable Dynamical Systems: Theory, Learning and Experiments</td><td><em>The International Journal of Robotics Research (IJRR)</em>, 41(3):312–347</td><td>2022</td><td></td></tr>
+        <tr>
+          <td>J1</td>
+          <td>Sun, S., Gao, H., Li, T. and Figueroa, N.</td>
+          <td>
+             <a href="https://ieeexplore.ieee.org/document/10530930" target="_blank" rel="noopener">
+            Directionality-Aware Mixture Model Parallel Sampling for Efficient Linear Parameter Varying Dynamical System Learning
+             </a>
+             </td>
+          <td><em>IEEE Robotics and Automation Letters (RA-L)</em>, vol. 9, no. 7, pp. 6248–6255</td>
+          <td>2024</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>J2</td>
+          <td>Koptev, M., Figueroa, N. and Billard, A.</td>
+          <td>Reactive Collision-Free Motion Generation in Joint Space via Dynamical Systems and Sampling-Based MPC</td>
+          <td><em>The International Journal of Robotics Research (IJRR)</em>, 43(13):2049–2069</td>
+          <td>2024</td>
+          <td><a href="https://ieeexplore.ieee.org/document/10530930" target="_blank" rel="noopener">
+            Directionality-Aware Mixture Model Parallel Sampling for Efficient Linear Parameter Varying Dynamical System Learning
+             </a></td>
+        </tr>
+        <tr>
+          <td>J3</td>
+          <td>Fourie, C., Figueroa, N. and Shah, J.</td>
+          <td>On-Manifold Strategies for Reactive Dynamical System Modulation with Non-Convex Obstacles</td>
+          <td><em>IEEE Transactions on Robotics (TRO)</em>, 40:2390–2409</td>
+          <td>2024</td>
+          <td>Honorable Mention for IEEE TRO King-Sun Fu Memorial Best Paper Award</td>
+        </tr>
+        <tr>
+          <td>J4</td>
+          <td>Jin, L., Yang, Y., Maldonado, B.O.T., Lee, S.D., Figueroa, N., Full, R.J. and Yang, S.</td>
+          <td>
+            <a href="https://doi.org/10.1002/aisy.202300039" target="_blank" rel="noopener">
+              Ultrafast, Programmable, and Electronics-Free Soft Robots Enabled by Snapping Metacaps
+            </a>
+          </td>
+          <td><em>Advanced Intelligent Systems</em></td>
+          <td>2023</td>
+          <td><a href="https://doi.org/10.1002/aisy.202300039" target="_blank" rel="noopener">DOI</a></td>
+        </tr>
+        <tr>
+          <td>J5</td>
+          <td>Koptev, M., Figueroa, N., Billard, A.</td>
+          <td>Neural Joint-Space Implicit Distance Functions for Reactive Robot Manipulator Control</td>
+          <td><em>IEEE Robotics and Automation Letters (RA-L)</em>, 8(2):480–487</td>
+          <td>2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>J6</td>
+          <td>Figueroa, N. and Billard, A.</td>
+          <td>Locally Active Globally Stable Dynamical Systems: Theory, Learning and Experiments</td>
+          <td><em>The International Journal of Robotics Research (IJRR)</em>, 41(3):312–347</td>
+          <td>2022</td>
+          <td></td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -83,7 +135,7 @@ permalink: /publication/
   width: min(96vw, 1400px);   /* nice and wide */
   margin: 0 auto 2rem;
   padding: 0 1rem;
-  margin-left: -400px;         /* 👈 shift entire section slightly left */
+  margin-left: -400px;        /* shift entire section slightly left to visually center */
 }
 
 /* Section headings */
