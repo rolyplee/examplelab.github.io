@@ -35,7 +35,9 @@ permalink: /publication/
              </td>
           <td><em>IEEE Robotics and Automation Letters (RA-L)</em>, vol. 9, no. 7, pp. 6248–6255</td>
           <td>2024</td>
-          <td></td>
+          <td><a href="https://ieeexplore.ieee.org/document/10530930" target="_blank" rel="noopener">
+            Directionality-Aware Mixture Model Parallel Sampling for Efficient Linear Parameter Varying Dynamical System Learning
+             </a></td>
         </tr>
         <tr>
           <td>J2</td>
@@ -43,9 +45,7 @@ permalink: /publication/
           <td>Reactive Collision-Free Motion Generation in Joint Space via Dynamical Systems and Sampling-Based MPC</td>
           <td><em>The International Journal of Robotics Research (IJRR)</em>, 43(13):2049–2069</td>
           <td>2024</td>
-          <td><a href="https://ieeexplore.ieee.org/document/10530930" target="_blank" rel="noopener">
-            Directionality-Aware Mixture Model Parallel Sampling for Efficient Linear Parameter Varying Dynamical System Learning
-             </a></td>
+          <td></td>
         </tr>
         <tr>
           <td>J3</td>
