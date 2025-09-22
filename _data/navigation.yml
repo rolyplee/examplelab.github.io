@@ -7,11 +7,6 @@ main:
 
   - title: "Research"
     url: /research/
-    children:
-      - title: "Projects"
-        url: /research/projects/
-      - title: "Facilities"
-        url: /research/facilities/
 
   - title: "Publication"
     url: /publication/
