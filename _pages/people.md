@@ -201,15 +201,15 @@ sanghyub-lee" target="_blank">
 
 
   <div class="person-card">
-      <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/guanhua_ji.JPG"></a>
-      <a href="{{ site.baseurl }}/people/"><h3>Guanhua Ji</h3></a>
+      <a href="https://www.linkedin.com/in/guanhua-ji-a96053374/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/guanhua_ji.JPG"></a>
+      <a href="https://www.linkedin.com/in/guanhua-ji-a96053374/" target="_blank"><h3>Guanhua Ji</h3></a>
       <p>M.S. Robotics, 2027<br>2025–present<br><em>Research Intern Fall 2025</em></p>
     </div>
 
 
   <div class="person-card">
-      <a href="{{ site.baseurl }}/people/"><img src="{{ site.baseurl }}/assets/images/people/dayoon_suh.JPG"></a>
-      <a href="{{ site.baseurl }}/people/"><h3>Dayoon Suh</h3></a>
+      <a href="https://www.linkedin.com/in/dayoonsuh/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/dayoon_suh.JPG"></a>
+      <a href="https://www.linkedin.com/in/dayoonsuh/" target="_blank"><h3>Dayoon Suh</h3></a>
       <p>M.S. Robotics, 2027<br>2025–present<br><em>Research Intern Fall 2025</em></p>
     </div>
   </div>
