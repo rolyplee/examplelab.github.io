@@ -197,7 +197,9 @@ permalink: /publication/
   width: min(96vw, 1400px);
   margin: 0 auto 2rem;
   padding: 0 1rem;
+  margin-left: -400px;   /* ❗️ re-apply your manual shift */
 }
+
 
 /* Section headings */
 .pub-heading{
