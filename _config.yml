@@ -7,15 +7,17 @@ github_username: ""
 minimal_mistakes_skin: default
 search: true
 
-
-
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 permalink: pretty
 timezone: America/New_York
+
 collections:
   pages:
     output: true
+  people:
+    output: true
+
 include:
   - _pages
 
@@ -26,26 +28,24 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# ✅ Removed paginate to disable blog layout
+# ✅ No blog pagination
 # paginate: 5
 # paginate_path: /page:num/
-collections:
-  people:
-    output: true
+
 url: "https://rolyplee.github.io"
 baseurl: "/examplelab.github.io"
-
 
 navigation:
   dropdowns:
     enabled: true
-    
+
+# ===== Footer =====
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/penn-figueroa-lab"
-    - label: "Youtube"
+    - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/@figueroa-robotics-lab"
 
@@ -53,7 +53,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: single  # ✅ Use 'single' layout instead of 'home' to remove Recent Posts
+      layout: single    # keep single layout
       custom_css: "/assets/css/custom.css"
 
 category_archive:
