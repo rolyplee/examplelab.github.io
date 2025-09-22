@@ -28,7 +28,7 @@ permalink: /research/
     <div class="rb-img">
       <img src="{{ site.baseurl }}/assets/images/Assistive_Robotics.JPG" alt="Assistive Robotics team">
     </div>
-    <h3>Assistive Robotics</h3>
+    <h3>Assistive Robotics & Biomechanics</h3>
   </a>
 
   <a class="rb-card" href="{{ site.baseurl }}/research/">
