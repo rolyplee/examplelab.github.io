@@ -197,9 +197,22 @@ permalink: /publication/
   width: min(96vw, 1400px);
   margin: 0 auto 2rem;
   padding: 0 1rem;
-  margin-left: -400px;   /* ❗️ re-apply your manual shift */
 }
 
+/* ✅ Optional desktop-only “shift left” for visual alignment */
+@media (min-width: 1500px){
+  .pub-wrap{
+    margin-left: -400px;    /* your manual nudge */
+    margin-right: auto;
+  }
+}
+/* On anything smaller, auto-center again */
+@media (max-width: 1499.98px){
+  .pub-wrap{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* Section headings */
 .pub-heading{
@@ -210,7 +223,10 @@ permalink: /publication/
 }
 
 /* Let tables scroll horizontally on very narrow screens */
-.pub-table-wrapper{ overflow-x: auto; }
+.pub-table-wrapper{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
 /* Table look & spacing */
 .pub-table{
@@ -219,7 +235,7 @@ permalink: /publication/
   margin: 0.5rem 0 2rem;
   font-size: 1rem;
   line-height: 1.5;
-  table-layout: fixed;
+  table-layout: fixed; /* works with colgroup widths */
 }
 .pub-table thead th{ font-weight: 700; }
 .pub-table td, .pub-table th{
@@ -234,6 +250,16 @@ permalink: /publication/
 .pub-table td:nth-child(4){
   word-break: normal;
   overflow-wrap: anywhere;
+}
+
+/* 🔁 Mobile tweaks: relax rigid widths and let the table breathe */
+@media (max-width: 980px){
+  .pub-table{ table-layout: auto; }              /* allow natural widths */
+  .pub-table col{ width: auto !important; }      /* override colgroup % */
+  .pub-table td, .pub-table th{
+    padding: 0.55rem 0.7rem;
+    font-size: 0.97rem;
+  }
 }
 
 /* 🔕 Hide the Minimal Mistakes pager on this page */
