@@ -125,23 +125,124 @@ permalink: /publication/
           Rapid Mismatch Estimation via Neural Network Informed Variational Inference
           </a>
           </td><td>9th Conference on Robot Learning (CoRL)</td><td>2025</td><td>To appear</td></tr>
-        <tr><td>C2</td><td>Li, T., Sun, S., Aditya, S., and Figueroa, N.</td><td>Elastic Motion Policy: An Adaptive Dynamical System for Robust and Efficient One-Shot Imitation Learning</td><td>IEEE/RSJ IROS</td><td>2025</td><td>To appear</td></tr>
-        <tr><td>C3</td><td>Gao, J., Li, T. and Figueroa, N.</td><td>Out-of-Distribution Recovery with Object-Centric Keypoint Inverse Policy for Visuomotor Imitation Learning</td><td>IEEE/RSJ IROS</td><td>2025</td><td>To appear</td></tr>
-        <tr><td>C4</td><td>Zhang, Z., Xue, Y., Figueroa, N. and Åkesson, K.</td><td>Gradient Field-Based Dynamic Window Approach for Collision Avoidance in Complex Environments</td><td>IEEE/RSJ IROS</td><td>2025</td><td>To appear</td></tr>
-        <tr><td>C5</td><td>Nawaz, F., Sung, M., Gadginmath, D., D’sa, J., Bae, S., Isele, D., Figueroa, N., Matni, N. and Tariq, F.M.</td><td>Graph-based Path Planning with Dynamic Obstacle Avoidance for Autonomous Parking</td><td>IEEE Intelligent Vehicles Symposium (IV)</td><td>2025</td><td>Romania</td></tr>
-        <tr><td>C6</td><td>Srikanthan, A.*, Xue, Y.*, Kumar, V., Matni, N. and Figueroa, N.</td><td>ADMM-MCBF-LCA: A Layered Control Architecture for Safe Real-Time Navigation</td><td>IEEE ICRA</td><td>2025</td><td>Atlanta, USA — Equal contribution</td></tr>
-        <tr><td>C7</td><td>Unger, G., Shenoy, S., Li, T., Figueroa, N., and Sung, C.</td><td>MOrF: Magnetic Origami Folding System for Repeatably Reconfigurable Structures with Enhanced Fold Angle Control</td><td>IEEE ICRA</td><td>2025</td><td>Atlanta, USA</td></tr>
-        <tr><td>C8</td><td>Sun, S. and Figueroa, N.</td><td>SE(3) Linear Parameter Varying Dynamical Systems for Globally Asymptotically Stable End-Effector Control</td><td>IEEE/RSJ IROS</td><td>2024</td><td>Abu Dhabi, UAE</td></tr>
-        <tr><td>C9</td><td>Nawaz, F., Peng, S., Lindemann, L., Figueroa, N. and Matni, N.</td><td>Reactive Temporal Logic-based Planning and Control for Interactive Robotic Tasks</td><td>IEEE/RSJ IROS</td><td>2024</td><td>Abu Dhabi, UAE</td></tr>
-        <tr><td>C10</td><td>Martini, E., Parekh, H., Peng, S., Bombieri, N., and Figueroa, N.</td><td>A Robust Filter for Marker-less Multi-person Tracking in Human-Robot Interaction Scenarios</td><td>IEEE RO-MAN</td><td>2024</td><td>USA</td></tr>
-        <tr><td>C11</td><td>Shao, Y., Li, T., Keyvanian, S., Chaudhari, P., Kumar, V., and Figueroa, N.</td><td>Constraint-Aware Intent Estimation for Dynamic Human-Robot Object Co-Manipulation</td><td>RSS</td><td>2024</td><td>Netherlands</td></tr>
-        <tr><td>C12</td><td>Peng, S., Wang, X., Wang, M., Shah, J.A., and Figueroa, N.</td><td>Object Permanence Filters for Robust Tracking with Interactive Robots</td><td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
-        <tr><td>C13</td><td>Nawaz, F., Li, T., Matni, N. and Figueroa, N.</td><td>Learning Complex Motion Plans using Neural ODEs with Safety and Stability Guarantees</td><td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
-        <tr><td>C14</td><td>Zhang, Z., Li, T. and Figueroa, N.</td><td>Constrained Passive Interaction Control: Leveraging Passivity and Safety for Robot Manipulators</td><td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
-        <tr><td>C15</td><td>Choi, H., and Figueroa, N.</td><td>Towards Feasible Dynamic Grasping: Leveraging Gaussian Process Distance Fields, SE(3) Equivariance and Riemannian Mixture Models</td><td>IEEE ICRA</td><td>2024</td><td>Japan</td></tr>
-        <tr><td>C16</td><td>Choi, H., Das, S., Peng, S., Bajcsy, R. and Figueroa, N.</td><td>On the Feasibility of EEG-based Motor Intention Detection for Real-Time Robot Assistive Control</td><td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
-        <tr><td>C17</td><td>Beik-Mohammadi, H., Hauberg, S., Arvanitidis, G., Figueroa, N., Neumann, G., and Rozo, L.</td><td>Neural Contractive Dynamical Systems</td><td>ICLR (Spotlight 5% acc. rate)</td><td>2024</td><td>Vienna, Austria</td></tr>
-        <tr><td>C18</td><td>Keyvanian, S., Johnson, M.J. and Figueroa, N.</td><td>Learning Realistic Joint Space Boundaries for Range of Motion Analysis of Healthy and Impaired Human Arms</td><td>IEEE Humanoids</td><td>2023</td><td>Austin, USA</td></tr>
+        <tr><td>C2</td><td>Li, T., Sun, S., Aditya, S., and Figueroa, N.</td>
+          <td>
+            <a href="https://arxiv.org/abs/2503.08029" target="_blank" rel="noopener">
+            Elastic Motion Policy: An Adaptive Dynamical System for Robust and Efficient One-Shot Imitation Learning
+          </a>
+          </td>
+          <td>IEEE/RSJ IROS</td><td>2025</td><td>To appear</td></tr>
+        <tr><td>C3</td><td>Gao, J., Li, T. and Figueroa, N.</td>
+          <td>
+            <a href="https://arxiv.org/abs/2411.03294" target="_blank" rel="noopener">
+            Out-of-Distribution Recovery with Object-Centric Keypoint Inverse Policy for Visuomotor Imitation Learning
+            </a>
+          </td><td>IEEE/RSJ IROS</td><td>2025</td><td>To appear</td></tr>
+        <tr><td>C4</td><td>Zhang, Z., Xue, Y., Figueroa, N. and Åkesson, K.</td>
+          
+          <td>
+          <a href="https://arxiv.org/abs/2504.03260" target="_blank" rel="noopener">
+          Gradient Field-Based Dynamic Window Approach for Collision Avoidance in Complex Environments
+          </a>
+          </td><td>IEEE/RSJ IROS</td><td>2025</td>
+          
+          <td>To appear</td></tr>
+        <tr><td>C5</td><td>Nawaz, F., Sung, M., Gadginmath, D., D’sa, J., Bae, S., Isele, D., Figueroa, N., Matni, N. and Tariq, F.M.</td>
+        
+        <td>
+
+        <a href="https://arxiv.org/abs/2504.12616" target="_blank" rel="noopener">
+        Graph-based Path Planning with Dynamic Obstacle Avoidance for Autonomous Parking
+        </a>
+        </td>
+        <td>IEEE Intelligent Vehicles Symposium (IV)</td><td>2025</td><td>Romania</td></tr>
+        <tr><td>C6</td><td>Srikanthan, A.*, Xue, Y.*, Kumar, V., Matni, N. and Figueroa, N.</td>
+        <td>
+        <a href="https://arxiv.org/abs/2503.02208" target="_blank" rel="noopener">
+        ADMM-MCBF-LCA: A Layered Control Architecture for Safe Real-Time Navigation
+        </a>
+        </td>
+        <td>IEEE ICRA</td><td>2025</td><td>Atlanta, USA — Equal contribution</td></tr>
+        <tr><td>C7</td><td>Unger, G., Shenoy, S., Li, T., Figueroa, N., and Sung, C.</td>
+        <td>
+        <a href="https://repository.upenn.edu/entities/publication/0c5b8627-d270-455a-9a74-0bd136f28eaa" target="_blank" rel="noopener">
+        MOrF: Magnetic Origami Folding System for Repeatably Reconfigurable Structures with Enhanced Fold Angle Control
+        </a>
+        </td><td>IEEE ICRA</td><td>2025</td><td>Atlanta, USA</td></tr>
+        <tr><td>C8</td><td>Sun, S. and Figueroa, N.</td>
+        <td> 
+        <a href="https://arxiv.org/abs/2403.16366" target="_blank" rel="noopener">
+        SE(3) Linear Parameter Varying Dynamical Systems for Globally Asymptotically Stable End-Effector Control
+        </a>
+        </td>
+        <td>IEEE/RSJ IROS</td><td>2024</td><td>Abu Dhabi, UAE</td></tr>
+        <tr><td>C9</td><td>Nawaz, F., Peng, S., Lindemann, L., Figueroa, N. and Matni, N.</td>
+        
+        <td>
+        <a href="https://arxiv.org/abs/2404.19594" target="_blank" rel="noopener">
+        Reactive Temporal Logic-based Planning and Control for Interactive Robotic Tasks</td><td>IEEE/RSJ IROS</td><td>2024
+        </a>
+        </td>
+        <td>Abu Dhabi, UAE</td></tr>
+        <tr><td>C10</td><td>Martini, E., Parekh, H., Peng, S., Bombieri, N., and Figueroa, N.</td>
+        
+        <td>
+        <a href="https://arxiv.org/abs/2406.01832" target="_blank" rel="noopener">
+        A Robust Filter for Marker-less Multi-person Tracking in Human-Robot Interaction Scenarios
+        </a>
+        </td><td>IEEE RO-MAN</td><td>2024</td><td>USA</td></tr>
+        <tr><td>C11</td><td>Shao, Y., Li, T., Keyvanian, S., Chaudhari, P., Kumar, V., and Figueroa, N.</td><td>
+        <a href="https://bibbase.org/network/publication/shao-li-keyvanian-chadhuari-kumar-figueroa-constraintawareintentestimationfordynamichumanrobotobjectcomanipulation-2024" target="_blank" rel="noopener">
+        Constraint-Aware Intent Estimation for Dynamic Human-Robot Object Co-Manipulation
+        </a>
+        </td><td>RSS</td><td>2024</td><td>Netherlands</td></tr>
+        <tr><td>C12</td><td>Peng, S., Wang, X., Wang, M., Shah, J.A., and Figueroa, N.</td>
+        <td>
+        <a href="https://arxiv.org/abs/2403.08231" target="_blank" rel="noopener">
+        Object Permanence Filters for Robust Tracking with Interactive Robots
+        </a>
+        </td><td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
+        <tr><td>C13</td><td>Nawaz, F., Li, T., Matni, N. and Figueroa, N.</td>
+        
+        <td>
+        <a href="https://arxiv.org/abs/2308.00186" target="_blank" rel="noopener">
+        Learning Complex Motion Plans using Neural ODEs with Safety and Stability Guarantees
+        </a>
+        </td><td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
+        <tr><td>C14</td><td>Zhang, Z., Li, T. and Figueroa, N.</td>
+        
+        <td> 
+        <a href="https://arxiv.org/abs/2403.09853" target="_blank" rel="noopener">
+        Constrained Passive Interaction Control: Leveraging Passivity and Safety for Robot Manipulators
+        </a>
+        </td><td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
+        <tr><td>C15</td><td>Choi, H., and Figueroa, N.</td>
+        <td> 
+        <a href="https://arxiv.org/abs/2311.02576" target="_blank" rel="noopener">
+        Towards Feasible Dynamic Grasping: Leveraging Gaussian Process Distance Fields, SE(3) Equivariance and Riemannian Mixture Models
+        </a>
+        </td><td>IEEE ICRA</td><td>2024</td><td>Japan</td></tr>
+        <tr><td>C16</td><td>Choi, H., Das, S., Peng, S., Bajcsy, R. and Figueroa, N.</td>
+        
+        <td>
+        <a href="https://arxiv.org/abs/2403.08149" target="_blank" rel="noopener">
+        On the Feasibility of EEG-based Motor Intention Detection for Real-Time Robot Assistive Control</td>
+        </a>
+        <td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
+        <tr><td>C17</td><td>Beik-Mohammadi, H., Hauberg, S., Arvanitidis, G., Figueroa, N., Neumann, G., and Rozo, L.</td>
+        <td>
+        <a href="https://openreview.net/forum?id=iAYIRHOYy8" target="_blank" rel="noopener">
+        Neural Contractive Dynamical System
+        </a>
+        </td><td>ICLR (Spotlight 5% acc. rate)</td><td>2024</td><td>Vienna, Austria</td></tr>
+        <tr><td>C18</td><td>Keyvanian, S., Johnson, M.J. and Figueroa, N.</td>
+        
+        <td>
+        <a href="https://sites.google.com/seas.upenn.edu/learning-rom/home" target="_blank" rel="noopener">
+        Learning Realistic Joint Space Boundaries for Range of Motion Analysis of Healthy and Impaired Human Arms </a>
+
+        </td>
+        <td>IEEE Humanoids</td><td>2023</td><td>Austin, USA</td></tr>
       </tbody>
     </table>
   </div>
