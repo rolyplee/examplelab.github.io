@@ -139,18 +139,14 @@ permalink: /publication/
             </a>
           </td><td>IEEE/RSJ IROS</td><td>2025</td><td>To appear</td></tr>
         <tr><td>C4</td><td>Zhang, Z., Xue, Y., Figueroa, N. and Åkesson, K.</td>
-          
           <td>
           <a href="https://arxiv.org/abs/2504.03260" target="_blank" rel="noopener">
           Gradient Field-Based Dynamic Window Approach for Collision Avoidance in Complex Environments
           </a>
           </td><td>IEEE/RSJ IROS</td><td>2025</td>
-          
           <td>To appear</td></tr>
         <tr><td>C5</td><td>Nawaz, F., Sung, M., Gadginmath, D., D’sa, J., Bae, S., Isele, D., Figueroa, N., Matni, N. and Tariq, F.M.</td>
-        
         <td>
-
         <a href="https://arxiv.org/abs/2504.12616" target="_blank" rel="noopener">
         Graph-based Path Planning with Dynamic Obstacle Avoidance for Autonomous Parking
         </a>
@@ -177,7 +173,6 @@ permalink: /publication/
         </td>
         <td>IEEE/RSJ IROS</td><td>2024</td><td>Abu Dhabi, UAE</td></tr>
         <tr><td>C9</td><td>Nawaz, F., Peng, S., Lindemann, L., Figueroa, N. and Matni, N.</td>
-        
         <td>
         <a href="https://arxiv.org/abs/2404.19594" target="_blank" rel="noopener">
         Reactive Temporal Logic-based Planning and Control for Interactive Robotic Tasks</td><td>IEEE/RSJ IROS</td><td>2024
@@ -185,7 +180,6 @@ permalink: /publication/
         </td>
         <td>Abu Dhabi, UAE</td></tr>
         <tr><td>C10</td><td>Martini, E., Parekh, H., Peng, S., Bombieri, N., and Figueroa, N.</td>
-        
         <td>
         <a href="https://arxiv.org/abs/2406.01832" target="_blank" rel="noopener">
         A Robust Filter for Marker-less Multi-person Tracking in Human-Robot Interaction Scenarios
@@ -203,14 +197,12 @@ permalink: /publication/
         </a>
         </td><td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
         <tr><td>C13</td><td>Nawaz, F., Li, T., Matni, N. and Figueroa, N.</td>
-        
         <td>
         <a href="https://arxiv.org/abs/2308.00186" target="_blank" rel="noopener">
         Learning Complex Motion Plans using Neural ODEs with Safety and Stability Guarantees
         </a>
         </td><td>IEEE ICRA</td><td>2024</td><td>Yokohama, Japan</td></tr>
         <tr><td>C14</td><td>Zhang, Z., Li, T. and Figueroa, N.</td>
-        
         <td> 
         <a href="https://arxiv.org/abs/2403.09853" target="_blank" rel="noopener">
         Constrained Passive Interaction Control: Leveraging Passivity and Safety for Robot Manipulators
@@ -223,7 +215,6 @@ permalink: /publication/
         </a>
         </td><td>IEEE ICRA</td><td>2024</td><td>Japan</td></tr>
         <tr><td>C16</td><td>Choi, H., Das, S., Peng, S., Bajcsy, R. and Figueroa, N.</td>
-        
         <td>
         <a href="https://arxiv.org/abs/2403.08149" target="_blank" rel="noopener">
         On the Feasibility of EEG-based Motor Intention Detection for Real-Time Robot Assistive Control</td>
@@ -236,11 +227,9 @@ permalink: /publication/
         </a>
         </td><td>ICLR (Spotlight 5% acc. rate)</td><td>2024</td><td>Vienna, Austria</td></tr>
         <tr><td>C18</td><td>Keyvanian, S., Johnson, M.J. and Figueroa, N.</td>
-        
         <td>
         <a href="https://sites.google.com/seas.upenn.edu/learning-rom/home" target="_blank" rel="noopener">
         Learning Realistic Joint Space Boundaries for Range of Motion Analysis of Healthy and Impaired Human Arms </a>
-
         </td>
         <td>IEEE Humanoids</td><td>2023</td><td>Austin, USA</td></tr>
       </tbody>
