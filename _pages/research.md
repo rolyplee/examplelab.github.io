@@ -61,6 +61,9 @@ permalink: /research/
 </section>
 
 <style>
+/* 🔕 Hide the Minimal Mistakes pager on this page */
+.pagination{ display:none !important; }
+
 /* keep the theme’s top spacing small */
 .main .page__content { padding-top: 0.5rem; }
 
