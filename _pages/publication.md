@@ -40,7 +40,11 @@ permalink: /publication/
         <tr>
           <td>J2</td>
           <td>Koptev, M., Figueroa, N. and Billard, A.</td>
-          <td>Reactive Collision-Free Motion Generation in Joint Space via Dynamical Systems and Sampling-Based MPC</td>
+          <td>
+            <a href="https://journals.sagepub.com/doi/10.1177/02783649241246557" target="_blank" rel="noopener">
+            Reactive Collision-Free Motion Generation in Joint Space via Dynamical Systems and Sampling-Based MPC
+            </a>
+            </td>
           <td><em>The International Journal of Robotics Research (IJRR)</em>, 43(13):2049–2069</td>
           <td>2024</td>
           <td></td>
@@ -48,7 +52,11 @@ permalink: /publication/
         <tr>
           <td>J3</td>
           <td>Fourie, C., Figueroa, N. and Shah, J.</td>
-          <td>On-Manifold Strategies for Reactive Dynamical System Modulation with Non-Convex Obstacles</td>
+          <td>
+            <a href="https://ieeexplore.ieee.org/document/10473149" target="_blank" rel="noopener">
+            On-Manifold Strategies for Reactive Dynamical System Modulation with Non-Convex Obstacles
+            </a>
+            </td>
           <td><em>IEEE Transactions on Robotics (TRO)</em>, 40:2390–2409</td>
           <td>2024</td>
           <td>Honorable Mention for IEEE TRO King-Sun Fu Memorial Best Paper Award</td>
@@ -63,12 +71,16 @@ permalink: /publication/
           </td>
           <td><em>Advanced Intelligent Systems</em></td>
           <td>2023</td>
-          <td><a href="https://doi.org/10.1002/aisy.202300039" target="_blank" rel="noopener">DOI</a></td>
+          <td></td>
         </tr>
         <tr>
           <td>J5</td>
           <td>Koptev, M., Figueroa, N., Billard, A.</td>
-          <td>Neural Joint-Space Implicit Distance Functions for Reactive Robot Manipulator Control</td>
+          <td>
+            <a href="https://ieeexplore.ieee.org/document/9976191" target="_blank" rel="noopener">
+            Neural Joint-Space Implicit Distance Functions for Reactive Robot Manipulator Control
+            </a>
+            </td>
           <td><em>IEEE Robotics and Automation Letters (RA-L)</em>, 8(2):480–487</td>
           <td>2023</td>
           <td></td>
@@ -76,7 +88,11 @@ permalink: /publication/
         <tr>
           <td>J6</td>
           <td>Figueroa, N. and Billard, A.</td>
-          <td>Locally Active Globally Stable Dynamical Systems: Theory, Learning and Experiments</td>
+          <td>
+            <a href="https://journals.sagepub.com/doi/10.1177/02783649211030952" target="_blank" rel="noopener">
+            Locally Active Globally Stable Dynamical Systems: Theory, Learning and Experiments
+            </a>
+            </td>
           <td><em>The International Journal of Robotics Research (IJRR)</em>, 41(3):312–347</td>
           <td>2022</td>
           <td></td>
@@ -103,7 +119,12 @@ permalink: /publication/
         </tr>
       </thead>
       <tbody>
-        <tr><td>C1</td><td>Jaszczuk, M. and Figueroa, N.</td><td>Rapid Mismatch Estimation via Neural Network Informed Variational Inference</td><td>9th Conference on Robot Learning (CoRL)</td><td>2025</td><td>To appear</td></tr>
+        <tr><td>C1</td><td>Jaszczuk, M. and Figueroa, N.</td>
+          <td>
+          <a href="https://openreview.net/forum?id=2CIKnIwSta#discussion" target="_blank" rel="noopener">
+          Rapid Mismatch Estimation via Neural Network Informed Variational Inference
+          </a>
+          </td><td>9th Conference on Robot Learning (CoRL)</td><td>2025</td><td>To appear</td></tr>
         <tr><td>C2</td><td>Li, T., Sun, S., Aditya, S., and Figueroa, N.</td><td>Elastic Motion Policy: An Adaptive Dynamical System for Robust and Efficient One-Shot Imitation Learning</td><td>IEEE/RSJ IROS</td><td>2025</td><td>To appear</td></tr>
         <tr><td>C3</td><td>Gao, J., Li, T. and Figueroa, N.</td><td>Out-of-Distribution Recovery with Object-Centric Keypoint Inverse Policy for Visuomotor Imitation Learning</td><td>IEEE/RSJ IROS</td><td>2025</td><td>To appear</td></tr>
         <tr><td>C4</td><td>Zhang, Z., Xue, Y., Figueroa, N. and Åkesson, K.</td><td>Gradient Field-Based Dynamic Window Approach for Collision Avoidance in Complex Environments</td><td>IEEE/RSJ IROS</td><td>2025</td><td>To appear</td></tr>
