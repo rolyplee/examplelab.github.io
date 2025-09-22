@@ -16,3 +16,18 @@ body,
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+/* ===== Center Footer Icons ===== */
+.page__footer-follow {
+  text-align: center;     /* center entire footer follow section */
+}
+
+.page__footer-follow .social-icons {
+  justify-content: center; /* center the icons horizontally */
+}
+
+/* Optional spacing/tweaks */
+.page__footer-follow .social-icons li {
+  margin: 0 0.75rem;
+}
+
