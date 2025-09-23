@@ -30,7 +30,7 @@ permalink: /
 .hero-slider{
   position: relative;
   overflow: hidden;
-  background: #f2f2f2;       /* light gray while images load */
+  background: #f2f2f2;
 }
 .hero-slider.fullbleed{
   width: 100vw;
@@ -44,7 +44,7 @@ permalink: /
   transition: transform 300ms ease;
   will-change: transform;
   position: relative;
-  z-index: 1;                 /* images below overlay & controls */
+  z-index: 1;
 }
 .hs-slide{
   flex: 0 0 100%;
@@ -70,15 +70,19 @@ permalink: /
 }
 .hero-title h1{
   margin: 0;
-  color: #ffffff;             /* fully white */
+  color: #fff;
   font-weight: 800;
-  font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
-  line-height: 1.1;
+  /* ✅ Use px-based clamp so OS/browser text scaling doesn't blow it up */
+  font-size: clamp(24px, 3vw + 8px, 48px);
+  line-height: 1.12;
   text-align: center;
-  /* subtle glow for readability on busy photos */
   text-shadow:
     0 2px 6px rgba(0,0,0,0.45),
     0 1px 2px rgba(0,0,0,0.35);
+}
+/* Slightly smaller on very narrow phones */
+@media (max-width: 360px){
+  .hero-title h1{ font-size: clamp(20px, 5vw + 6px, 36px); }
 }
 
 /* ---------- Controls & dots ---------- */
@@ -86,7 +90,7 @@ permalink: /
   position: absolute; top: 50%; transform: translateY(-50%);
   border: none; background: rgba(0,0,0,0.5); color:#fff;
   width: 48px; height: 48px; border-radius: 50%; cursor: pointer; font-size: 24px;
-  z-index: 4;                 /* above overlay */
+  z-index: 4;
 }
 .hs-prev{ left: 16px; }
 .hs-next{ right: 16px; }
