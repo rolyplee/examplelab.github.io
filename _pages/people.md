@@ -90,7 +90,7 @@ permalink: /people/
   <div class="people-grid">
     <div class="person-card">
       <a href="https://nbfigueroa.github.io/" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/people/nadia_figueroa.JPG">
+        <img src="{{ site.baseurl }}/assets/images/people/nadia_figueroa_reduced.jpg">
       </a>
       <a href="https://nbfigueroa.github.io/" target="_blank"><h3>Dr. Nadia Figueroa</h3></a>
       <p>Shalini and Rajeev Misra Presidential Assistant Professor, MEAM</p>
