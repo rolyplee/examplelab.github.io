@@ -170,7 +170,7 @@ permalink: /people/
     <div class="person-card">   
       <a href="https://zizhe.io/" target="_blank"><img src="{{ site.baseurl }}/assets/images/people/zizhe_zhang.JPG"></a>
       <a href="https://zizhe.io/" target="_blank"><h3>Zizhe Zhang</h3></a>
-      <p>M.S. ESE/Robotics, 2026<br>2025–present<br><em>Research Intern Spring-Fall 2025</em></p>
+      <p>M.S. Robotics, 2026<br>2024–present<br><em>Research Intern Spring-Fall 2025</em></p>
     </div>
 
     <div class="person-card">   
